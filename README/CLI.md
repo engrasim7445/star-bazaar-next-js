@@ -16,6 +16,17 @@ npm run test
 npm run generate
 
 npm install @reduxjs/toolkit react-redux
+npx tailwindcss init --full
+npm run build-css
 
 git config --global --add --bool push.autoSetupRemote true
+```
+
+## Script for Package.json
+```json
+{
+  "scripts": {
+    "build-css" : "tailwindcss build src/css/global.css -o src/css/global.css"
+  }
+}
 ```

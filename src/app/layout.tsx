@@ -18,8 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>{/* <script src="/js/common.js" async  /> */}</head>
-      <body className={inter.className}>
-        <div className="container-fluid bg-blue1">
+      <body className={inter.className + ' bg-blue1'}>
+        <div className="container-fluid">
           <nav>{/* <Learn_Nav /> */}</nav>
           <Providers>{children}</Providers>
         </div>

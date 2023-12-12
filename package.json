@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-css": "tailwindcss build src/css/global.css -o src/css/global.css"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",

@@ -1,0 +1,17 @@
+.bg-blue1{
+  background: #110e51;
+}
+.bg-blue2{
+  background: #110e51;
+}
+.bg-nav1{
+  background: linear-gradient(0deg,rgba(10,8,54,.7607843137) 10%,rgba(14,10,83,.8392156863) 90%) 0% 0% padding-box;
+}
+.bg-nav2 {
+  background: linear-gradient(0deg, #0a0836c2 22%,#0e0a53ab 55%) 0% 0% no-repeat padding-box;
+}
+
+
+* {
+  color:white;
+}

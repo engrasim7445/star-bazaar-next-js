@@ -1,12 +1,13 @@
-export default function Footer(){
+export  function Footer() {
   return (
-    <div className="container">
-      <div className="grid grid-cols-12 gap-1">
-        <div className="col-start-2 col-span-4 bg-slate-500 h-8  border-spacing-5">01</div>
-        <div className="col-start-1 col-end-3 bg-slate-500 h-8  border-spacing-5">02</div>
-        <div className="col-end-7 col-span-2 bg-slate-500 h-8  border-spacing-5">03</div>
-        <div className="col-start-1 col-end-7 bg-slate-500 h-8  border-spacing-5">04</div>
+    <div className="w-100 bg-blue2">
+      <div className="sm:w-100 md:w-95 lg:w-90 xl:container mx-auto">
+        <div className="grid grid-cols-12">
+          <div className="p-4 col-span-5 md:col-span-5 row-span-2 bg-blue-500"></div>
+          <div className="p-4 col-span-7 md:col-span-4 row-span-1 bg-yellow-500"></div>
+          <div className="p-4 col-span-7 md:col-span-3 row-span-1 bg-pink-500"></div>
+        </div>
       </div>
     </div>
-  )
+  );
 }

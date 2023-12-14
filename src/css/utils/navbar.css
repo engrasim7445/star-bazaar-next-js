@@ -1,0 +1,6 @@
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background: linear-gradient(0deg,rgba(10,8,54,.7607843137) 10%,rgba(14,10,83,.8392156863) 90%) 0% 0% padding-box;
+}

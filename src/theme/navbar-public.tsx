@@ -1,4 +1,4 @@
-export default function NavbarPublic(){
+export function NavbarPublic(){
   return (
     <div className="container-fluid bg-nav2">
       {/* 

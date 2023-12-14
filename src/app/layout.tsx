@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Providers } from '@/core/redux/providers';
+import NavBar from '@/theme/navbar';
+import Footer from '@/theme/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,12 +19,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>{/* <script src="/js/common.js" async  /> */}</head>
+      <head>
+        {/* <script src="https://cdn.tailwindcss.com" async/> */}
+        {/* <script src="/js/common.js" async/> */}
+      </head>
       <body className={inter.className + ' bg-blue1'}>
-        <div className="container-fluid">
-          <nav>{/* <Learn_Nav /> */}</nav>
-          <Providers>{children}</Providers>
+        <div className="grid grid-cols-12 gap-0">
+          <div className="col-span-12">
+            {children}
+          </div>
         </div>
+
+        {/* <NavBar /> */}
       </body>
     </html>
   );

@@ -1,17 +1,11 @@
 /* @import url('bootstrap/dist/css/bootstrap.min.css'); */
 
-@tailwind base;
 
-@tailwind components;
-
-@tailwind utilities;
-
-/* @import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities'; */
 
 @import url('./theme.css');
 
 @import url('./form.css');
 
 @import url('./table.css');
+
+@import url('./utils/model.css');

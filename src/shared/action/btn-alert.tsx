@@ -1,6 +1,6 @@
 'use client';
 
-export default function BtnAlert({data}: any) {
+export function BtnAlert({data}: any) {
   const showAlert = (fruitName = 'My Message') => {
     alert("Fruit Name : " + fruitName)
   }

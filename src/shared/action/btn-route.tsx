@@ -1,7 +1,7 @@
 'use client';
 import { useRouter } from "next/navigation";
 
-export default function BtnRoute({url, lbl}: any) {
+export function BtnRoute({url, lbl}: any) {
   const router = useRouter();
   return (
     <button type='button' className='btn btn-info btn-sm m-1'

@@ -1,0 +1,1 @@
+export { Iconz } from "./iconz";

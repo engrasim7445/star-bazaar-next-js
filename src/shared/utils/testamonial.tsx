@@ -1,56 +1,73 @@
-'use client'
+'use client';
 import { ContentZ } from '@/theme';
 import { Imgz } from '.';
+// import Sli from "../../../node_modules/react-slick/dist/react-slick.js";
+import Slider from 'react-slick';
+import Head from 'next/head';
 
 export function Testamonial() {
+  let slider: any;
   let data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   data = [...data, ...data, ...data];
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <ContentZ>
+    <ContentZ clz="mb-1">
+      {/* <Head> </Head> */}
       <h4 className="text-2xl col-span-12">Testamonial</h4>
-      <div className="col-span-12 flex justify-end">
-        <span 
-        className="material-icons rounded-full bg-blue-950  !text-5xl mx-2 cursor-pointer">navigate_before</span>
-        <span className="material-icons rounded-full bg-blue-950  !text-5xl mx-2 cursor-pointer">navigate_next</span>
+      <div className="col-span-12 flex justify-end mb-2">
+        <span
+          className="material-icons rounded-full bg-blue-950  !text-5xl mx-2 cursor-pointer"
+          onClick={() => slider.slickPrev()}
+        >
+          navigate_before
+        </span>
+        <span
+          className="material-icons rounded-full bg-blue-950  !text-5xl mx-2 cursor-pointer"
+          onClick={() => slider.slickNext()}
+        >
+          navigate_next
+        </span>
       </div>
+      <div className="col-span-12 overflow-hidden" style={{ height: '180px' }}>
+        <Slider {...settings} ref={(c) => (slider = c)}>
+          <div>
+            <div
+              className="mx-1 rounded-lg p-3"
+              style={{
+                height: '180px',
+                background: 'linear-gradient(to top,#0A0476,#851BC0)',
+              }}
+            >
+              <div className="flex">
+                <Imgz width="50" height="50" />
+                <h2 className="mt-3 ms-2 text-xl ">Name Goes Here</h2>
+              </div>
 
+              <div>
+                <div className='my-2'>
+                  <span className="material-icons text-yellow-200 " style={{textShadow:'0px 0px 8px yellow '}}>star</span>
+                  <span className="material-icons text-yellow-200">star</span>
+                  <span className="material-icons text-yellow-200">star</span>
+                  <span className="material-icons text-yellow-200">star</span>
+                  <span className="material-icons text-gray-700">star</span>
+                </div>
 
-
-       {/* {data.map((x, i) => (
-    
-          ))} */}
-    </ContentZ>
-    
-  );
-}
-{
-  /* <div class="wrapper" *ngIf="dataz?.length">
-
-  <ul class="specific-carousel carousel ps-3" [ngStyle]="{'gap': !util.isSmall ? '0px': 'unset'}">
-    <li *ngFor="let x of dataz" class="card p-3 px-4 mx-1" style="display: flex; justify-content:  space-between">
-      <div class="img-name-class">
-        <div class="img">
-          <img className='testamonial-img' [src]="x?.image" *ngIf="x.image" alt="img" draggable="false">
-          <div class="no-image" *ngIf="!x.image">
-            <span class="fa fa-user" style="color: white; font-size: 30px;"></span>
+                <p className="text-sm">
+                  {' '}
+                  <i>Here goes my some text that needs to be displayed</i>{' '}
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <h2 class="ms-3" style="font-size: 1rem;">
-            {{x.name || ''}}
-          </h2>
-        </div>
+          
+        </Slider>
       </div>
-      <!-- <h6>Ratings</h6> -->
-      <div class="col-12" style="display: flex; margin-top: 0.5rem;">
-        <span class="fa" style="color:yellow; font-size: 1rem;" *ngFor="let item of [1,2,3,4,5]"
-          [ngClass]="{'fa-star': item <=  +x?.rating || 0, 'fa-star-o': item > +x?.rating || 0 }"
-          [ngStyle]="{'padding-left': item == 1 ? '0px':'5px', 'text-shadow': item <= +x?.rating || 0 ?  '0px 0px 10px #fafafa85': 'unset'}"></span>
-      </div>
-      <p class="comment" style="text-overflow: ellipsis;">
-        {{x?.comment || ''}}
-      </p>
-    </li>
-  </ul>
-</div> */
+    </ContentZ>
+  );
 }

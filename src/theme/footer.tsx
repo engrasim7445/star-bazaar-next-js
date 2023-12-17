@@ -3,7 +3,7 @@ import { Contentz } from '.';
 
 export function Footer() {
   return (
-    <Contentz>
+    <Contentz clz='pt-6'>
       <div className="col-span-12 md:col-span-2">
         <Imgz />
       </div>

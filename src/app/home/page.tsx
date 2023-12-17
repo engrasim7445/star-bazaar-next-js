@@ -1,4 +1,4 @@
-import { BusinessPartner } from '@/shared';
+import { BusinessPartner, Testamonial } from '@/shared';
 import Banners from './banner';
 import Sliderz from './sliderz';
 
@@ -8,6 +8,7 @@ export default function Home() {
       <Banners />
       <Sliderz />
       <BusinessPartner />
+      <Testamonial />
     </>
   );
 }

@@ -1,5 +1,11 @@
+import Banners from './banner';
+import Sliderz from './sliderz';
+
 export default function Home() {
-  return <>
-    
-  </>
+  return (
+    <>
+      <Banners />
+      <Sliderz />
+    </>
+  );
 }

@@ -10,7 +10,9 @@
     "build-css": "tailwindcss build src/css/global.css -o src/css/global.css"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.474.0",
     "@reduxjs/toolkit": "^2.0.1",
+    "aws-sdk": "^2.1520.0",
     "bootstrap": "^5.3.2",
     "next": "14.0.4",
     "react": "^18",

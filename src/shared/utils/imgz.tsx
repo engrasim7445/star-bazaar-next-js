@@ -12,6 +12,7 @@ export function Imgz(props: any) {
       alt="image link"
       width={def.width}
       height={def.height}
+      className={def.clz}
       />
       // quality={100}
   );

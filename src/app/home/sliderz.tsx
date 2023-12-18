@@ -1,4 +1,5 @@
 // 'use client';
+import { Iconz } from '@/shared';
 import { Container } from '@/theme';
 import Image from 'next/image';
 
@@ -45,7 +46,11 @@ export default function Sliderz() {
           </div>
         </div>
 
-        <div className="grid-cols-3 gap-6 md:gap-12 grid lg:hidden mx-6 md:mx-12" >
+        <div className="grid-cols-3 gap-3 md:gap-x-32 grid lg:hidden mx-6 md:mx-12" >
+        <div className="col-span-3 flex align-middle text-lg">
+          <h1 className='col-span-3 '>How to Order  </h1>
+          <Iconz icon='not_started' clz='ps-1' /> 
+          </div>
           <div className="col-span-1">
             <Image
               alt="Image"
@@ -53,8 +58,9 @@ export default function Sliderz() {
               height={200}
               style={{ width: '100%', height: 'auto' }}
               src='/icon/standard.webp'
-              className="rounded-full sm:w-100 md:w-50"
+              className="rounded-full box-border border-2 p-1 border-purple-900"
             />
+            {/* border-[#67098c] */}
             <h2 className='text-xl text-center wra'>Standard Shoutout</h2>
           </div>
           <div className="col-span-1">
@@ -64,9 +70,10 @@ export default function Sliderz() {
               height={200}
               style={{ width: '100%', height: 'auto' }}
               src='/icon/custom.webp'
-              className="rounded-full"
+              className="rounded-full border-2 p-1 border-orange-600"
             />
-            <h2 className='text-xl text-center'>Custom Shoutout</h2>
+            {/* border-[#e96343] */}
+            <h2 className='text-xl text-center'>&nbsp;Custom&nbsp; Shoutout</h2>
           </div>
           <div className="col-span-1">
             <Image
@@ -75,8 +82,9 @@ export default function Sliderz() {
               height={200}
               style={{ width: '100%', height: 'auto' }}
               src='/icon/business.webp'
-              className="rounded-full"
+              className="rounded-full border-2 p-1 border-green-700 "
             />
+            {/* border-[#055f1a] */}
             <h2 className='text-xl text-center'>Business Shoutout</h2>
           </div>
         </div>

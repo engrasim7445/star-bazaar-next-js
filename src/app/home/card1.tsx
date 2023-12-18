@@ -1,5 +1,9 @@
 export function Card1() {
-
+  return (
+    <div className="w-100">
+      
+    </div>
+  )
 }
 {/* <a [id]="star._id" style="padding:0px; margin:0px" *ngIf="show">
   <div class="item zoom" (click)="goToStarDetail()">

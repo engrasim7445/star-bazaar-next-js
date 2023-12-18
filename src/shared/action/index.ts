@@ -1,6 +1,4 @@
-export { NavLinkz } from "./nav-link";
-export { AppLink } from "./app-link";
-export { BtnAlert } from "./btn-alert";
-export { BtnRoute } from "./btn-route";
+export { LinkFooter, LinkRouter, LinkNav } from "./linkz";
+export { BtnAlert, BtnRoute } from "./btn";
 
 

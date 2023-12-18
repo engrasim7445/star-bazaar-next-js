@@ -1,4 +1,4 @@
-import { AppLink, Iconz, Imgz } from '@/shared';
+import { LinkFooter, Iconz, Imgz } from '@/shared';
 import { Contentz } from '.';
 
 export function Footer() {
@@ -10,21 +10,11 @@ export function Footer() {
       <div className="col-span-5 md:col-span-4 row-span-2 text-orange-600">
         <h5 className="mb-3 text-xl">Quick Links</h5>
         <div className="inline-block">
-          <AppLink url="./about-us" clz="mb-2 hover:text-yellow-200 block ">
-            <i className="material-icons px-3">link</i> About Us
-          </AppLink>
-          <AppLink url="./contact-us" clz="mb-2 hover:text-yellow-200">
-            <i className="material-icons px-3">link</i> Contact Us
-          </AppLink>
-          <AppLink url="faqs" clz="mb-2 hover:text-yellow-200">
-            <i className="material-icons px-3">link</i> FAQs
-          </AppLink>
-          <AppLink url="term-and-conditions" clz="mb-2 hover:text-yellow-200">
-            <i className="material-icons px-3">link</i> Terms & Conditions
-          </AppLink>
-          <AppLink url="privacy-policy" clz="mb-2 hover:text-yellow-200">
-            <i className="material-icons px-3">link</i> Privacy Policy
-          </AppLink>
+          <LinkFooter url="./about-us" lbl='About us' />
+          <LinkFooter url="./contact-us" lbl='Contact Us'/>
+          <LinkFooter url="faqs" lbl='FAQs'/>
+          <LinkFooter url="term-and-conditions" lbl='Terms & Conditions' />
+          <LinkFooter url="privacy-policy" lbl='Privacy Policy' />
         </div>
       </div>
       <div className="col-span-7 md:col-span-3 text-orange-600">

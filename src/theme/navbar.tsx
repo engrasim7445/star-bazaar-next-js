@@ -1,34 +1,52 @@
 // import BtnLink from "@/shared/button/btn-link";
 // import BtnRoute from "@/shared/button/btn-route";
 
-import { Imgz, LinkNav } from '@/shared';
-import { Contentz } from '.';
+import { Iconz, Imgz, LinkNav } from '@/shared';
+import { Container, Navz } from '.';
 
 export function NavBar() {
   return (
-    <Contentz bgColor="bg-blue2" >
-      <div className="col-span-2 md:col-span-1 md:order-1 bg-pink-500
+    <Container clz1='bg-nav1 sticky top-0 z-10' clz2=''  >
+      <div
+        className="col-span-2 md:col-span-1 md:order-1
       flex justify-center md:justify-end items-center
-      ">
-        <LinkNav lbl='Notification' icon='link' />
+      "
+      >
+        <LinkNav lbl="Notification" icon="link" />
       </div>
-      <div className="col-span-8 md:col-span-2 flex justify-center  md:justify-start bg-blue-500 ">
+      <div className="col-span-8 md:col-span-2 flex justify-center  md:justify-start  ">
         <Imgz
           // width="50"
           height="50"
           clz="mx-3"
-          src='/icon/favicon-white.png'
+          src="/icon/favicon-white.png"
         />
       </div>
-      <div className="col-span-2 md:col-span-1 flex justify-center items-center md:order-3 bg-purple-500">
-        <LinkNav lbl='Profile' icon='link' />
+      <div className="col-span-2 md:col-span-1 flex justify-center items-center md:order-3 ">
+        <LinkNav lbl="Profile" icon="link" />
       </div>
-      <div className="col-span-8 md:col-span-6  bg-gray-500">
-        Search
+      <div className="col-span-10 md:col-span-6 flex justify-center items-center ">
+        <div
+          className="w-11/12 rounded-full flex justify-between items-center"
+          style={{ padding:'2px', height: '40px', border: '1px solid white' }}
+        >
+          <input
+            type="text"
+            style={{height: '100%', width: '100%'}}
+            className="bg-transparent text-white border-transparent w-full h-full mx-2 rounded-tl-full rounded-bl-full"
+            placeholder='Search your favorite creators'
+          />
+          <button
+            type="button"
+            style={{height: '100%'}}
+            className="flex items-center bg-[#06b22e] rounded-tr-full rounded-br-full ps-2 pe-4">
+            <Iconz icon="saved_search" clz='pe-2' />
+            Search
+          </button>
+        </div>
       </div>
-      <div className="col-span-4 md:col-span-2 bg-red-500">
-        Sort By 
-        <span className='mater'></span>
+      <div className="col-span-2 md:col-span-2 flex items-center cursor-pointer">
+        Sort By: <Iconz icon="arrow_drop_down" />
       </div>
       {/* <div className="h-100 md:col-span-2 hidden md:flex bg-yellow-500 ">
             Creator Login
@@ -36,6 +54,6 @@ export function NavBar() {
           <div className="h-100 md:col-span-2 hidden md:flex bg-green-500 ">
             Customer Login
           </div> */}
-    </Contentz>
+    </Container>
   );
 }

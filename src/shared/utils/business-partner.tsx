@@ -1,11 +1,11 @@
-import { ContentZ } from '@/theme';
+import { Container } from '@/theme';
 import { Imgz } from '.';
 
 export function BusinessPartner() {
   let data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   data = [...data, ...data, ...data];
   return (
-    <ContentZ>
+    <Container>
       <h4 className="text-2xl col-span-12">Business Partner</h4>
       <div className="col-span-12 overflow-hidden">
       <div className="logos-slide">
@@ -26,6 +26,6 @@ export function BusinessPartner() {
         } */}
        
       </div>
-    </ContentZ>
+    </Container>
   );
 }

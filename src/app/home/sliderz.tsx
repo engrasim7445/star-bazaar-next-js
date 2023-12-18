@@ -1,5 +1,5 @@
 // 'use client';
-import { ContentZ } from '@/theme';
+import { Container } from '@/theme';
 import Image from 'next/image';
 
 export default function Sliderz() {
@@ -10,7 +10,7 @@ export default function Sliderz() {
   ];
 
   return (
-    <ContentZ>
+    <Container>
       <div className="col-span-12">
         <div className="grid-cols-3 gap-2 hidden lg:grid" >
           <div className="col-span-1">
@@ -81,6 +81,6 @@ export default function Sliderz() {
           </div>
         </div>
       </div>
-    </ContentZ>
+    </Container>
   );
 }

@@ -1,5 +1,5 @@
 'use client';
-import { ContentZ } from '@/theme';
+import { Container } from '@/theme';
 import { Imgz } from '.';
 // import Sli from "../../../node_modules/react-slick/dist/react-slick.js";
 import Slider from 'react-slick';
@@ -17,7 +17,7 @@ export function Testamonial() {
     slidesToScroll: 1,
   };
   return (
-    <ContentZ clz="mb-1">
+    <Container clz2="mb-1">
       {/* <Head> </Head> */}
       <h4 className="text-2xl col-span-12">Testamonial</h4>
       <div className="col-span-12 flex justify-end mb-2">
@@ -67,6 +67,6 @@ export function Testamonial() {
           </div>
         </Slider>
       </div>
-    </ContentZ>
+    </Container>
   );
 }

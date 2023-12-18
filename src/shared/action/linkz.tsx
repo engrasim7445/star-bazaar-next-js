@@ -17,7 +17,7 @@ export function LinkFooter({ url, clz, lbl }: any) {
 
 export function LinkNav({ lbl, icon, clz }: any) {
   return (
-    <div className={`flex flex-col text-center cursor-pointer ${clz}`}>
+    <div className={`flex flex-col text-center cursor-pointer text-orange-400 ${clz}`}>
       <Iconz icon={icon} />
       <span> {lbl}</span>
     </div>

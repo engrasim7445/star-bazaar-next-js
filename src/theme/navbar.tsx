@@ -2,11 +2,11 @@
 // import BtnRoute from "@/shared/button/btn-route";
 
 import { Iconz, Imgz, LinkNav } from '@/shared';
-import { Container, Navz } from '.';
+import { Container } from '.';
 
 export function NavBar() {
   return (
-    <Container clz1='bg-nav1 sticky top-0 z-10' clz2=''  >
+    <Container clz1='bg-nav1 sticky top-0 z-10' clz2=' py-1 '  >
       <div
         className="col-span-2 md:col-span-1 md:order-1
       flex justify-center md:justify-end items-center

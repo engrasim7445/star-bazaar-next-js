@@ -19,21 +19,24 @@ export function Testamonial() {
   return (
     <Container clz2="mb-1">
       {/* <Head> </Head> */}
-      <h4 className="text-2xl col-span-12">Testamonial</h4>
-      <div className="col-span-12 flex justify-end mb-2">
-        <span
-          className="material-icons rounded-full bg-blue-950  !text-5xl mx-2 cursor-pointer"
-          onClick={() => slider.slickPrev()}
-        >
-          navigate_before
-        </span>
-        <span
-          className="material-icons rounded-full bg-blue-950  !text-5xl mx-2 cursor-pointer"
-          onClick={() => slider.slickNext()}
-        >
-          navigate_next
-        </span>
+      <div className="col-span-12 flex justify-between items-center">
+        <h4 className="text-2xl col-span-12">Testamonial</h4>
+        <div className="col-span-12 flex justify-end mb-2">
+          <span
+            className="material-icons rounded-full bg-blue-950  !text-5xl mx-2 cursor-pointer"
+            onClick={() => slider.slickPrev()}
+          >
+            navigate_before
+          </span>
+          <span
+            className="material-icons rounded-full bg-blue-950  !text-5xl mx-2 cursor-pointer"
+            onClick={() => slider.slickNext()}
+          >
+            navigate_next
+          </span>
+        </div>
       </div>
+     
       <div className="col-span-12 overflow-hidden" style={{ height: '180px' }}>
         <Slider {...settings} ref={(c) => (slider = c)}>
           <div>

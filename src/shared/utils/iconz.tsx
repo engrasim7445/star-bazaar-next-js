@@ -1,5 +1,5 @@
-export function Iconz({clz, children}: any) {
+export function Iconz({clz, icon}: any) {
   return (
-    <i className={'material-icons ' + clz && ''}>{children}</i>
+    <span className={`material-icons ${clz}`}>{icon}</span>
   );
 }

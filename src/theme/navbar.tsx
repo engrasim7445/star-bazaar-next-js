@@ -9,13 +9,12 @@ export function NavBar() {
     <Container clz1="bg-nav1 sticky top-0 z-10" clz2=" py-1 ">
       <div
         className="col-span-2 md:col-span-1 md:order-1
-      flex justify-center md:justify-end items-center
-      "
+      flex justify-center md:justify-end items-center"
       >
         <LinkNav lbl="Notification" icon="link" />
       </div>
       <div className="col-span-8 md:col-span-2 flex justify-center  md:justify-start  ">
-        <LinkWrap url="/home">
+        <LinkWrap url="\home">
           <Imgz
             // width="50"
             height="50"
@@ -38,7 +37,7 @@ export function NavBar() {
             className="bg-transparent text-white border-transparent w-full h-full mx-2 rounded-tl-full rounded-bl-full"
             placeholder="Search your favorite creators"
           />
-          <LinkWrap url="search">
+          <LinkWrap url="\search">
             <button
               type="button"
               style={{ height: '100%' }}

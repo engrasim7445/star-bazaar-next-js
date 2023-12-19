@@ -1,5 +1,5 @@
 import { ContainerA } from '@/theme';
-import { Card_6 } from '../home/home-row';
+import { Card_6 } from '../home/components/home-row';
 // import { RowHome } from "../home/home-row";
 
 export default function Details() {

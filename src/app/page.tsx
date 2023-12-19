@@ -1,9 +1,9 @@
-// import { Footer, NavBar } from '@/theme';
+import { HomeComponent } from './home/components';
 
-export default function Home() {
+export default function Index() {
   return (
     <>
-
+      <HomeComponent />
     </>
   );
 }

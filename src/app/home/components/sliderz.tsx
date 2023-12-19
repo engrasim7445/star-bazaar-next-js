@@ -3,7 +3,7 @@ import { Iconz } from '@/shared';
 import { Container } from '@/theme';
 import Image from 'next/image';
 
-export default function Sliderz() {
+export function Sliderz() {
   const imgz = [
     'https://dqc65nwcqwvpl.cloudfront.net/assets/images/standard.webp',
     'https://dqc65nwcqwvpl.cloudfront.net/assets/images/custom.webp',

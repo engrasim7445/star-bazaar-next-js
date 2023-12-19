@@ -1,5 +1,5 @@
 import { Container } from '@/theme';
-import { HomeCard } from './home-card';
+import { HomeCard } from '.';
 
 export function HomeRow({ d }: any) {
   return (

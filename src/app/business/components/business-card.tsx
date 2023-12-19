@@ -1,8 +1,34 @@
-export function Card2() {
+import { CardImage } from '@/app/home/components';
+import { Iconz } from '@/shared';
 
+export function BusinessCard({ d }: any) {
+  d = d || {
+    image:
+      'https://dqc65nwcqwvpl.cloudfront.net/1701759239804-EYVxlOSXsAExOpX.jpg',
+  };
+  return (
+    <div className="col-span-2 md:col-span-1 h-full  text-sm xl:text-xl text-white ">
+      <CardImage d={d} />
+      <div className='pt-2'>
+        <div className="md:text-xl h-10 flex justify-between items-start">
+          <h3 className="leading-4 sm:text-xl " style={{lineHeight: 0.85}}>Name of the Creator Goes Here</h3>
+          <button className="flex px-3 py-[4px] rounded-full bg-green-500 text-white text-[10px] whitespace-nowrap leading-none">
+            Add to Compare
+          </button>
+        </div>
+        <h3 className='h-5 leading-none'>
+          Followers <span className="text-yellow-300">500 K</span>
+        </h3>
+        <h3 className='h-5 leading-none'>
+          Starting Price <span className="text-yellow-300 ">PKR 100,000</span>
+        </h3>
+      </div>
+    </div>
+  );
 }
 
-{/* <a [id]="star._id" style="padding:0px; margin:0px" *ngIf="show">
+{
+  /* <a [id]="star._id" style="padding:0px; margin:0px" *ngIf="show">
   <!-- (click)="goToStarDetail()" -->
   <!-- (click)="goToStarDetail(star._id)" -->
   <div class="item zoom" >
@@ -69,4 +95,5 @@ export function Card2() {
           <div style="height: 15px; border-radius: 3px;" class="my-1 col-8 skeleton-animation"></div>
       </div>
     </div>
-</div> */}
+</div> */
+}

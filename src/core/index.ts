@@ -1,2 +1,3 @@
+
 export * from './constants'
-export {useScreenSize }from './hooks/screen-size'
+export { useScreenSize } from './hooks/use-screen-size'

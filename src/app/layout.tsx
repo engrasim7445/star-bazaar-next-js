@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { Alumni_Sans } from 'next/font/google'; //Roboto_Flex, Poppins, Oswald, Alumni Sans
 import './globals.css';
-import { Providers } from '@/core/redux/providers';
+// import { Providers } from '@/core/redux/providers';
 import { Footer, NavBar } from '@/theme';
+// import { useEffect } from 'react';
 
 const inter = Alumni_Sans({
   weight: ['100', '400'],
@@ -20,6 +21,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // useEffect(() => {
+  //   console.log('called!')
+  // })
   return (
     <html lang="en">
       <head>

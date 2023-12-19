@@ -10,9 +10,9 @@ export function BusinessCard({ d }: any) {
     <div className="col-span-2 md:col-span-1 h-full  text-sm xl:text-xl text-white ">
       <CardImage d={d} />
       <div className='pt-2'>
-        <div className="md:text-xl h-10 flex justify-between items-start">
+        <div className="md:text-xl h-10 md:h-14 lg:h-10 flex flex-row justify-between md:flex-col md:justify-stretch lg:flex-row xl:justify-between  items-start">
           <h3 className="leading-4 sm:text-xl " style={{lineHeight: 0.85}}>Name of the Creator Goes Here</h3>
-          <button className="flex px-3 py-[4px] rounded-full bg-green-500 text-white text-[10px] whitespace-nowrap leading-none">
+          <button className="flex justify-center px-3 py-[4px] rounded-full bg-green-500 w-auto md:w-full lg:w-auto text-white text-[10px] whitespace-nowrap leading-none">
             Add to Compare
           </button>
         </div>

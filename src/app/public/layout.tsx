@@ -1,11 +1,10 @@
-import Footer from '@/theme/footer';
-import NavbarPublic from '@/theme/navbar-public';
+import { ContainerA, Footer, NavbarPublic } from '@/theme';
 
 export default function PublicLayout({ children }: any) {
   return (
     <>
       <NavbarPublic />
-      <main>{children}</main>
+      <ContainerA>{children}</ContainerA>
       <Footer />
     </>
   );

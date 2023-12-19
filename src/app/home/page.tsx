@@ -1,8 +1,7 @@
 import { BusinessPartner, Testamonial } from '@/shared';
 import Banners from './banner';
 import Sliderz from './sliderz';
-import { RowHome } from './card-home';
-import { Container } from '@/theme';
+import { HomeRow } from './home-row';
 
 export default function Home() {
   return (
@@ -10,8 +9,9 @@ export default function Home() {
       <Banners />
       <Sliderz />
       <BusinessPartner />
-      <RowHome />
-      <RowHome />
+      <HomeRow />
+      <HomeRow />
+      <HomeRow />
       <Testamonial />
     </>
   );

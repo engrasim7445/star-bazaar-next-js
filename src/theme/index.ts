@@ -3,4 +3,4 @@ export { Footer } from "./footer";
 export { NavbarFooter } from "./navbar-footer";
 export { NavbarPublic } from "./navbar-public";
 export { Modal } from "./model";
-export { Container } from './content'
+export { Container, ContainerA } from './containers'

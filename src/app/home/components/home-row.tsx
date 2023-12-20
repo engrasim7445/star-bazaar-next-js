@@ -3,7 +3,7 @@ import { HomeCard } from '.';
 
 export function HomeRow({ d }: any) {
   return (
-    <Container>
+    <>
       <div className="col-span-12 flex justify-between mb-2">
         <h2 className="text-2xl">Heading for Row</h2>
         <div className="col-span-4">Buttons</div>
@@ -14,7 +14,7 @@ export function HomeRow({ d }: any) {
           {/* <HomeCard d={{ image: '/temp/mikaal.webp' }} /> */}
         </div>
       </div>
-    </Container>
+    </>
   );
 }
 export function Card_6() {

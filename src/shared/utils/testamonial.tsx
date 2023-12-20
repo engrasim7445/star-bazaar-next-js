@@ -22,9 +22,9 @@ export function Testamonial() {
   };
 
   return (
-    <Container clz2="mb-1">
+    <>
       {/* <Head> </Head> */}
-      <div className="col-span-12 flex justify-between items-center">
+      <div className="col-span-12 flex justify-between items-center my-2">
         <h4 className="text-2xl col-span-12">Testamonial</h4>
         <div className="col-span-12 flex justify-end mb-2">
           <span
@@ -57,7 +57,7 @@ export function Testamonial() {
           <InternalSlide />
         </Slider>
       </div>
-    </Container>
+    </>
   );
 }
 

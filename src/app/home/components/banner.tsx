@@ -1,15 +1,16 @@
 'use client';
+import { LinkWrap } from '@/shared';
 import Image from 'next/image';
 
 export function Banners() {
   return (
-    <>
+    <LinkWrap url='./business'>
       <Image
         alt="Image"
         width={600}
         height={300}
         style={{ width: '100%', height: 'auto' }}
-        className="block md:hidden"
+        className="block md:hidden "
         src="/other/banner-small.webp"
       />
       <Image
@@ -28,7 +29,7 @@ export function Banners() {
         className="hidden lg:block"
         src="https://dqc65nwcqwvpl.cloudfront.net/new_banner_meta_1.webp"
       />
-    </>
+    </LinkWrap>
   );
 }
 

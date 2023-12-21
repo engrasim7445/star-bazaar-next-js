@@ -1,6 +1,6 @@
 export function ShoutoutPackages() {
   return (
-    <div className="col-span-12 md:col-span-6 lg:col-span-5">
+    <div className="col-span-12 md:col-span-7 lg:col-span-5">
       <h5 className="text-2xl mb-3"><b>Select Shoutout Package</b></h5>
       <h5 className="text-xl">Personal Shoutout</h5>
       <ShoutoutPackageLayer clz="bg-purple-gredient">

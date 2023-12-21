@@ -5,6 +5,15 @@
 .bg-blue2{
   background-color: #0a0836;
 }
+.bg-purple-gredient {
+  background: transparent linear-gradient(348deg,#8822B0 22%,#953289 55%) 0% 0% no-repeat padding-box
+}
+.bg-orange-gredient {
+  background: transparent linear-gradient(348deg,#D8465C 22%,#EC6C3F 55%) 0% 0% no-repeat padding-box
+}
+.bg-green-gredient {
+  background: transparent linear-gradient(348deg,#06B22E 22%,#009523 55%) 0% 0% no-repeat padding-box
+}
 .bg-nav1{
   background: linear-gradient(0deg,rgba(10,8,54,.7607843137) 10%,rgba(14,10,83,.8392156863) 90%) 0% 0% padding-box;
 }

@@ -1,9 +1,28 @@
 
+.bg-green {
+  background-color: #06B22E;
+}
+.bg-orange {
+  background-color: #EC6C3F;
+}
+.bg-yellow {
+  background-color: #FFF400;
+}
+.text-green {
+  color: #06B22E;
+}
+.text-orange {
+  color: #EC6C3F;
+}
+.text-yellow {
+  color: #FFF400;
+}
+
 .bg-blue1{
-  background-color: #110e51;
+  background-color: #110E51;
 }
 .bg-blue2{
-  background-color: #0a0836;
+  background-color: #0A0836;
 }
 .bg-purple-gredient {
   background: transparent linear-gradient(348deg,#8822B0 22%,#953289 55%) 0% 0% no-repeat padding-box

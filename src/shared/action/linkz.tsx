@@ -23,7 +23,7 @@ export function LinkFooter({ url, clz, lbl }: any) {
 export function LinkNav({ lbl, icon, clz, url }: any) {
   const router = useRouter();
   return (
-    <div onClick={() => router.push(url)} className={`flex flex-col text-center cursor-pointer text-orange-400 ${clz}`}>
+    <div onClick={() => router.push(url)} className={`flex flex-col text-center cursor-pointer text-orange ${clz}`}>
       <Iconz icon={icon} />
       <span> {lbl}</span>
     </div>

@@ -3,7 +3,7 @@ import { Container } from '.';
 
 export function Footer() {
   return (
-    <Container clz1='bg-blue2' clz2='pt-6 text-orange-400'>
+    <Container clz1='bg-blue2' clz2='pt-6 text-orange'>
       <div className="col-span-12 md:col-span-2">
         <Imgz />
       </div>

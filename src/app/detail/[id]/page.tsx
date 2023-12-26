@@ -1,4 +1,3 @@
-import { BusinessPartner, Testamonial } from '@/shared';
 import { ContainerA } from '@/theme';
 import { ShoutoutDemos } from '../components/shoutout-demos';
 import { ShoutoutPackages } from '../components/shoutout-packages';

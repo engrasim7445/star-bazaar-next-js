@@ -36,7 +36,7 @@ export function ShoutoutPackages() {
 }
 function ShoutoutPackageLayer({ children, clz }: any) {
   return ( 
-    <div className={`justify-center items-center p-5 rounded-2xl text-center my-3 cursor-pointer ${clz}`}>
+    <div className={`justify-center items-center p-5 rounded-2xl text-center my-3 cursor-pointer ${clz} hover-effect`}>
       {children}
     </div>
   );

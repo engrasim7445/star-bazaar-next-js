@@ -1,6 +1,6 @@
-export { NavBar } from "./navbar";
-export { Footer } from "./footer";
-export { NavbarFooter } from "./navbar-footer";
-export { NavbarPublic } from "./navbar-public";
-export { Modal } from "./model";
-export { Container, ContainerA } from './containers'
+export * from "./navbar";
+export * from "./footer";
+export * from "./navbar-footer";
+export * from "./navbar-public";
+export * from "./model";
+export * from './containers'

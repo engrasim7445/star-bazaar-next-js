@@ -1,5 +1,5 @@
 import { OrderShoutoutLayout } from '@/app/creator-detail/components';
-import { BtnSuccess, Iconz, Radioz, TxtArea } from '@/shared';
+import { BtnSuccess, Iconz, TxtArea } from '@/shared';
 
 export default function CustomMessage() {
   return (
@@ -9,8 +9,7 @@ export default function CustomMessage() {
         style={{ borderBottom: '1px solid yellow' }}
       >
         {/* history_edu */}
-        <Iconz icon="draw" clz="me-3" />
-        Custom Shoutout
+        <Iconz icon="draw" clz="me-3" /> Custom Shoutout
       </h2>
       <div className="px-4">
         <TxtArea placeholder="Enter your custom shoutout message" />
@@ -20,11 +19,6 @@ export default function CustomMessage() {
         </div>
 
         <h3 className="text-lg mt-5 mb-3">Select Shoutout Video Language</h3>
-        <div className="flex">
-          <Radioz name="language" id="english" lbl="Shoutout in English" />
-          <Radioz name="language" id="urdu" lbl="Shoutout in Urdu" />
-        </div>
-
         <BtnSuccess clz={`w-full py-2 mt-5`} >Submit</BtnSuccess>
       </div>
     </OrderShoutoutLayout>

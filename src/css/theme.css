@@ -22,3 +22,13 @@
 body {
   color:white;
 }
+* {
+  scroll-behavior: smooth;
+}
+
+* {
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transition: min-width 0.4s ease-in-out, min-height 0.4s ease-in-out;
+  transition: max-width 0.4s ease-in-out, max-height 0.4s ease-in-out;
+  -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}

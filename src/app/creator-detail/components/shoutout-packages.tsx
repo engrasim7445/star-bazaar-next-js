@@ -4,7 +4,7 @@ import { useRouter, usePathname } from 'next/navigation';
 
 export function ShoutoutPackages() {
   return (
-    <div className="col-span-12 md:col-span-7 lg:col-span-5 row-span-2 order-3 lg:order-2">
+    <div className="col-span-12 md:col-span-7 lg:col-span-5 row-span-3 order-3 lg:order-2">
       <h5 className="text-2xl mb-3">
         <b>Select Shoutout Package</b>
       </h5>

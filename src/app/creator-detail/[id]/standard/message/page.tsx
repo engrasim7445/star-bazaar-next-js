@@ -1,4 +1,4 @@
-import { OrderShoutoutLayout } from '@/app/detail/components';
+import { OrderShoutoutLayout } from '@/app/creator-detail/components';
 import { Iconz } from '@/shared';
 
 export default function OrderStandard() {

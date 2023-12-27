@@ -1,0 +1,137 @@
+:root {
+  --green1: #06B22E;
+  --green2: #04671b;
+  --purple1: #7800FF;
+  --purple2: #5000AA;
+  --orange1: #EC6C3F;
+  --orange2: #B95531;
+  --yellow1: #FFF400;
+  --yellow2: #AFA601;
+  --blue1: #110E51;
+  --blue2: #0A0836;
+
+}
+
+.bg-white1 {
+  background-image: linear-gradient(white, rgb(166, 166, 166));
+}
+
+.bg-green {
+  background-color: var(--green1) !important;
+}
+
+.bg-green1 {
+  background-image: linear-gradient(var(--green1), var(--green2));
+}
+
+.bg-orange {
+  background-color: var(--orange1);
+}
+
+.bg-orange1 {
+  background-image: linear-gradient(var(--orange1), var(--orange2));
+}
+
+.bg-yellow {
+  background-color: var(--yellow1);
+}
+
+.bg-yellow1 {
+  background-image: linear-gradient(var(--yellow1), var(--yellow2));
+}
+
+.bg-purple1 {
+  background-image: linear-gradient(var(--purple1), var(--purple2));
+}
+
+.text-green {
+  color: var(--green1);
+}
+
+.text-orange {
+  color: var(--orange1);
+}
+
+.text-yellow {
+  color: var(--yellow1);
+}
+
+.bg-blue1 {
+  background-color: var(--blue1);
+}
+
+.bg-blue2 {
+  background-color: var(--blue2);
+}
+
+.bg-blue3 {
+  background-color: #0A0836;
+  backdrop-filter: blur(8px);
+}
+
+.bg-purple-gredient {
+  background: linear-gradient(348deg, #8822B0 22%, #953289 55%) 0% 0% no-repeat padding-box;
+  border: 1px solid transparent;
+  position: relative;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.bg-purple-gredient:hover {
+  background: linear-gradient(348deg,#953289 22%,#8822B0 55%) 0% 0% no-repeat padding-box;
+  border:1px solid white;
+  transition: background 1s linear, border 1s;
+}
+/* .bg-purple-gredient::before {
+  border:1px solid white;
+  border-radius: 15px;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(348deg, #953289 22%, #8822B0 55%) 0% 0% no-repeat padding-box;
+  z-index: -1;
+  transition: opacity 1s linear, border 1s;
+  opacity: 0;
+}
+
+.bg-purple-gredient:hover::before {
+  opacity: 1;
+} */
+
+.bg-orange-gredient {
+  background: transparent linear-gradient(348deg, #D8465C 22%, var(--orange1) 55%) 0% 0% no-repeat padding-box;
+  border: 1px solid transparent;
+}
+
+.bg-orange-gredient:hover {
+  background: transparent linear-gradient(348deg, var(--orange1) 22%, #D8465C 55%) 0% 0% no-repeat padding-box;
+  border: 1px solid white;
+  transition: background 1s, border 1s;
+}
+
+.bg-green-gredient {
+  background: transparent linear-gradient(348deg, var(--green1) 22%, #009523 55%) 0% 0% no-repeat padding-box;
+  border: 1px solid transparent;
+}
+
+.bg-green-gredient:hover {
+  background: transparent linear-gradient(348deg, #009523 22%, var(--green1) 55%) 0% 0% no-repeat padding-box;
+  border: 1px solid white;
+  transition: background 1s, border 1s;
+}
+
+
+.bg-nav1 {
+  background: linear-gradient(0deg, rgba(10, 8, 54, .7607843137) 10%, rgba(14, 10, 83, .8392156863) 90%) 0% 0% padding-box;
+  backdrop-filter: blur(8px);
+  transition: top 1s
+}
+
+.bg-nav2 {
+  background: linear-gradient(0deg, #0a0836c2 22%, #0e0a53ab 55%) 0% 0% no-repeat padding-box;
+  backdrop-filter: blur(8px);
+  transition: bottom 1s
+}

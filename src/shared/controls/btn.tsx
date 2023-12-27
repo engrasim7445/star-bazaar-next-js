@@ -3,7 +3,7 @@ export function Btnz({ onClick, clz, children }: any) {
     <button
       type="button"
       className={`rounded-full flex justify-center items-center text-xl p-3 bg-green ${clz}`}
-      // onClick={onClick}
+      onClick={onClick}
     >
       {children}
     </button>

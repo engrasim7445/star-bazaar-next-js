@@ -1,4 +1,4 @@
-import { OrderShoutoutLayout } from '@/app/detail/components';
+import { OrderShoutoutLayout } from '@/app/creator-detail/components';
 import { BtnSuccess, Iconz, Radioz, TxtArea } from '@/shared';
 
 export default function CustomMessage() {
@@ -8,7 +8,8 @@ export default function CustomMessage() {
         className="p-3 bg-orange1 text-xl flex items-center mb-3"
         style={{ borderBottom: '1px solid yellow' }}
       >
-        <Iconz icon="history_edu" clz="me-3" />
+        {/* history_edu */}
+        <Iconz icon="draw" clz="me-3" />
         Custom Shoutout
       </h2>
       <div className="px-4">
@@ -24,7 +25,7 @@ export default function CustomMessage() {
           <Radioz name="language" id="urdu" lbl="Shoutout in Urdu" />
         </div>
 
-        <BtnSuccess clz={`w-full py-2 mt-5`}>Submit</BtnSuccess>
+        <BtnSuccess clz={`w-full py-2 mt-5`} >Submit</BtnSuccess>
       </div>
     </OrderShoutoutLayout>
   );

@@ -1,12 +1,14 @@
 'use client';
 import Link from 'next/link';
 import { Iconz } from '..';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 
 // For Images and Buttons
-export function LinkWrap({ url, children }: any) {
-  return <Link href={url}  className='h-full cursor-pointer'>{children}</Link>;
+export function LinkWrap({ url, children, isRelative, clz }: any) {
+  const pathName = usePathname();
+  const finalURL = isRelative ? pathName + '/' + url : url;
+  return <Link href={finalURL}  className={`h-full cursor-pointer ${clz}`}>{children}</Link>;
 }
 
 export function LinkFooter({ url, clz, lbl }: any) {

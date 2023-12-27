@@ -1,13 +1,30 @@
 
+.bg-white1 {
+  background-image: linear-gradient(white,rgb(166, 166, 166));
+}
 .bg-green {
-  background-color: #06B22E;
+  background-color: #06B22E !important;
+}
+.bg-green1 {
+  background-image: linear-gradient(#06B22E,#04671b);
 }
 .bg-orange {
   background-color: #EC6C3F;
 }
+.bg-orange1 {
+  background-image: linear-gradient(#EC6C3F,#b95531);
+}
+
 .bg-yellow {
   background-color: #FFF400;
 }
+.bg-yellow1 {
+  background-image: linear-gradient(#FFF400,#afa601);
+}
+.bg-purple1 {
+  background-image: linear-gradient(#7800FF,#5000AA);
+}
+
 .text-green {
   color: #06B22E;
 }

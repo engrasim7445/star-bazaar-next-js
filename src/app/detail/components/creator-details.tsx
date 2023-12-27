@@ -1,4 +1,4 @@
-import { CardImageUtil } from "@/shared";
+import { CardImageUtil } from '@/shared';
 
 export function CreatorDetails() {
   return (
@@ -9,22 +9,31 @@ export function CreatorDetails() {
         </div>
         <div className="col-span-8 md:col-span-12 lg:col-span-9">
           <h2 className="text-2xl">Name of the Creator</h2>
-          <h2 className="text-xl">Starting From : <b className="text-yellow px-3 rounded-md " >PKR 20,00,000</b></h2>
-          <h2 className="text-xl mb-1">Response In : <b className="text-orange px-3 rounded-md " >3 Days</b></h2>
+          <h2 className="text-xl">
+            Starting From :{' '}
+            <b className="text-yellow px-3 rounded-md ">PKR 20,00,000</b>
+          </h2>
+          <h2 className="text-xl mb-1">
+            Response In : <b className="text-orange px-3 rounded-md ">3 Days</b>
+          </h2>
           {/* <h3>
             Profession:
            
           </h3> */}
           <h3>
-          <span className="bg-green rounded-sm px-2 me-2">Actor</span>
+            <span className="bg-green rounded-sm px-2 me-2">Actor</span>
             <span className=" bg-green rounded-sm px-2 me-2 ">
               Female Action
             </span>
             <span className="bg-green rounded-sm px-2">Musician</span>
           </h3>
           {/* style={{textDecoration: '0.01px underline wavy yellow'}} */}
-          <p className="w-11/12 mt-3 p-2 min-h-[70px] bg-blue2 rounded-md text-justify">Description of the Creator would display here
-          Description of the Creator would display here Description of the Creator would display here Description of the Creator would display here Description of the Creator would display here</p>
+          <p className="w-11/12 mt-3 p-2 min-h-[70px] bg-blue2 rounded-md text-justify">
+            Description of the Creator would display here Description of the
+            Creator would display here Description of the Creator would display
+            here Description of the Creator would display here Description of
+            the Creator would display here
+          </p>
         </div>
       </div>
     </div>

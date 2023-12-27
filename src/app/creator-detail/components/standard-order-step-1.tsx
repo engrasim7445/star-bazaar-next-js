@@ -1,10 +1,6 @@
 'use client';
-import { Txt, Radioz, Iconz, BtnSuccess } from '@/shared';
-import { usePathname, useRouter } from 'next/navigation';
-
+import { Txt, Radioz, Iconz, BtnSuccess, LinkWrap } from '@/shared';
 export function StandardOrderStop1() {
-  const router = useRouter();
-  const pathName = usePathname();
   return (
     <>
       <h2
@@ -25,7 +21,9 @@ export function StandardOrderStop1() {
           <Radioz name="language" id="english" lbl="Shoutout in English" />
           <Radioz name="language" id="urdu" lbl="Shoutout in Urdu" />
         </div>
-        <BtnSuccess clz={`w-full py-2 mt-5`} onClick={() => router.push(pathName + '/message')}>Continue</BtnSuccess>
+        <LinkWrap isRelative='true' url='message'>
+          <BtnSuccess clz={`w-full py-2 mt-5`}>Continue</BtnSuccess>
+        </LinkWrap>
       </div>
     </>
   );

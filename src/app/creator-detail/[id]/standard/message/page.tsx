@@ -13,7 +13,7 @@ export default function OrderStandard() {
         Select Occasion
       </h2>
       <div className="px-4">
-        <div className="grid grid-cols-2 gap-y-1 gap-x-1">
+        <div className="grid grid-cols-2 gap-y-2 gap-x-5">
           {dataz.map((x) => (
             <div
               key={x}
@@ -22,9 +22,9 @@ export default function OrderStandard() {
               <Iconz
                 icon="mosque"
                 clz="me-2 text-green"
-                stl={{ fontSize: '40px' }}
+                stl={{ fontSize: '30px' }}
               />
-              <h2 className="text-2xl ms-3">Hajj Shoutout</h2>
+              <h2 className="text-xl ms-3">Hajj Shoutout</h2>
             </div>
           ))}
         </div>

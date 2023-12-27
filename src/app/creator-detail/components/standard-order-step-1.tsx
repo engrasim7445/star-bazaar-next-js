@@ -1,6 +1,8 @@
 'use client';
 import { Txt, Radioz, Iconz, BtnSuccess, LinkWrap } from '@/shared';
+import { useState } from 'react';
 export function StandardOrderStop1() {
+  const [orderFor, setOrderFor] = useState('forMe');
   return (
     <>
       <h2
@@ -11,17 +13,28 @@ export function StandardOrderStop1() {
       </h2>
       <div className="px-4">
         <div className="flex">
-          <Radioz name="orderFor" id="forMe" lbl="For Me" />
-          <Radioz name="orderFor" id="forElse" lbl="For Someone Else" />
+          <Radioz
+            // name="orderFor"
+            id="forMe"
+            val={orderFor}
+            setVal={setOrderFor}
+            lbl="For Me"
+          />
+          <Radioz
+            // name="orderFor"
+            id="forElse"
+            val={orderFor}
+            setVal={setOrderFor}
+            lbl="For Someone Else"
+          />
         </div>
-        <ForMe />
-        {/* <ForSomeoneElse /> */}
+        {orderFor == 'forMe' ? <ForMe /> : <ForSomeoneElse />}
         <h3 className="text-lg mt-5 mb-3">Select Shoutout Video Language</h3>
         <div className="flex">
           <Radioz name="language" id="english" lbl="Shoutout in English" />
           <Radioz name="language" id="urdu" lbl="Shoutout in Urdu" />
         </div>
-        <LinkWrap isRelative='true' url='message'>
+        <LinkWrap isRelative="true" url="message">
           <BtnSuccess clz={`w-full py-2 mt-5`}>Continue</BtnSuccess>
         </LinkWrap>
       </div>

@@ -27,7 +27,7 @@ export function ContainerB({ children, className, clz2 }: IContainer) {
 }
 export function ContainerC({ children, className }: IContainer) {
   return (
-    <div className={`grid grid-cols-12 gap-3 bg-blue2 p-3 rounded-lg ${className}`}>
+    <div className={`grid grid-cols-12 gap-3 bg-blue2 p-3 rounded-lg overflow-hidden ${className}`}>
       {children}
     </div>
   );

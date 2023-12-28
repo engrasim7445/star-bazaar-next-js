@@ -35,7 +35,7 @@ export function ShoutoutPackages() {
       </ShoutoutPackageLayer>
       <h5 className="text-xl">Business Shoutout</h5>
       <ShoutoutPackageLayer clz="bg-green-gredient">
-        <LinkWrap url='./payment/business/101'>
+        <LinkWrap url='../payment/101/business'>
           <h3 className="text-3xl">Business Shoutout</h3>
           <h4 className="text-4xl">
             <b> PKR 100,000 </b>

@@ -11,17 +11,24 @@ export function Container({ children, clz1, clz2 }: IContainer) {
 export function ContainerA({ children, clz1, clz2 }: IContainer) {
   return (
     // min-h-[92vh]
-    <Container clz1={`min-h-[63vh] ${clz1}`} clz2={clz2} >
+    <Container clz1={`min-h-[63vh] ${clz1}`} clz2={clz2}>
       {children}
     </Container>
   );
 }
 export function ContainerB({ children, clz1, clz2 }: IContainer) {
   return (
-    <div className={`w-full min-h-[63vh] ${clz1} px-1 py-3`}>
+    <div className={`w-full min-h-[63vh] px-1 py-3 ${clz1} `}>
       <div className={`sm:w-full md:w-10/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 rounded-2xl mx-auto ${clz2}`}>
           {children}
-      </div>
+        </div>
+    </div>
+  );
+}
+export function ContainerC({ children, clz1 }: IContainer) {
+  return (
+    <div className={`grid grid-cols-12 gap-3 bg-blue2 p-3 rounded-lg ${clz1}`}>
+      {children}
     </div>
   );
 }

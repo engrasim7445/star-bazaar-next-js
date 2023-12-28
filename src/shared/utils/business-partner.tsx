@@ -17,13 +17,6 @@ export function BusinessPartner() {
               />
             ))}
           </div>
-        {/* {
-          [1,2].map(x => (
-          
-
-          ))
-        } */}
-       
       </div>
     </>
   );

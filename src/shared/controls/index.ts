@@ -4,4 +4,4 @@ export * from "./num";
 export * from "./radio";
 export * from "./txt";
 export * from "./txt-area"
-
+export * from './input-helper'

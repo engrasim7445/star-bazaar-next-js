@@ -1,4 +1,4 @@
-import { CardImageUtil } from '@/shared';
+import { CardImageUtil, ProfessionBage } from '@/shared';
 
 export function CreatorDetails() {
   return (
@@ -16,16 +16,10 @@ export function CreatorDetails() {
           <h2 className="text-xl mb-1">
             Response In : <b className="text-orange px-3 rounded-md ">3 Days</b>
           </h2>
-          {/* <h3>
-            Profession:
-           
-          </h3> */}
           <h3>
-            <span className="bg-green rounded-sm px-2 me-2">Actor</span>
-            <span className=" bg-green rounded-sm px-2 me-2 ">
-              Female Action
-            </span>
-            <span className="bg-green rounded-sm px-2">Musician</span>
+            <ProfessionBage item='Influencer' />
+            <ProfessionBage item='Female Actor' />
+            <ProfessionBage item='Musician' />
           </h3>
           {/* style={{textDecoration: '0.01px underline wavy yellow'}} */}
           <p className="w-11/12 mt-3 p-2 min-h-[70px] bg-blue2 rounded-md text-justify">

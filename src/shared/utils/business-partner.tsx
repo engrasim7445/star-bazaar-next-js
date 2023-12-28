@@ -12,7 +12,7 @@ export function BusinessPartner() {
               <Imgz
                 width="100"
                 height="100"
-                clz="mx-3"
+                className="mx-3"
                 key={'partner_' + i}
               />
             ))}

@@ -9,7 +9,7 @@ export default function OrderStandard() {
         className="p-3 bg-purple1 text-xl flex items-center mb-3"
         style={{ borderBottom: '1px solid yellow' }}
       >
-        <Iconz icon="celebration" clz="me-3" />
+        <Iconz icon="celebration" className="me-3" />
         Select Occasion
       </h2>
       <div className="px-4">
@@ -21,7 +21,7 @@ export default function OrderStandard() {
             >
               <Iconz
                 icon="mosque"
-                clz="me-2 text-green"
+                className="me-2 text-green"
                 stl={{ fontSize: '30px' }}
               />
               <h2 className="text-xl ms-3">Hajj Shoutout</h2>

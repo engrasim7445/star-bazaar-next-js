@@ -3,7 +3,7 @@ import { Container } from '.';
 
 export function Footer() {
   return (
-    <Container clz1='bg-blue2' clz2='pt-6 text-orange'>
+    <Container className='bg-blue2' clz2='pt-6 text-orange'>
       <div className="col-span-12 md:col-span-2">
         <Imgz />
       </div>
@@ -20,23 +20,23 @@ export function Footer() {
       <div className="col-span-7 md:col-span-3">
         <h5 className="mb-3 text-xl">Connect with us</h5>
         <div className='flex justify-start relative h- '>
-          <Imgz width="45" clz='ms-1 h-10 md:h-11 xl:h-12 w-auto' />
-          <Imgz width="45" clz='ms-1 h-10 md:h-11 xl:h-12 w-auto' />
-          <Imgz width="45" clz='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
-          <Imgz width="45" clz='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
+          <Imgz width="45" className='ms-1 h-10 md:h-11 xl:h-12 w-auto' />
+          <Imgz width="45" className='ms-1 h-10 md:h-11 xl:h-12 w-auto' />
+          <Imgz width="45" className='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
+          <Imgz width="45" className='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
         </div>
       </div>
       <div className="col-span-7 md:col-span-3 ">
         <h5 className="my-3 md:mt-0 text-xl">Download our App</h5>
         <div className='flex justify-start relative'>
-          <Imgz width="45" clz='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
-          <Imgz width="45" clz='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
+          <Imgz width="45" className='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
+          <Imgz width="45" className='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
         </div>
         <h5 className="my-3 text-xl">Secure Payment Methods</h5>
         <div className='flex justify-start relative'>
-          <Imgz width="45" clz='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
-          <Imgz width="45" clz='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
-          <Imgz width="45" clz='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
+          <Imgz width="45" className='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
+          <Imgz width="45" className='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
+          <Imgz width="45" className='ms-1 h-10 md:h-11 xl:h-12 w-auto'/>
         </div>
       </div>
       <div className="col-span-12 row-span-1 text-center pt-3 text-white">

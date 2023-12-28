@@ -5,7 +5,7 @@ export function CreatorDetails() {
     <div className="col-span-12 md:col-span-5 lg:col-span-7 row-span-1 order-2">
       <div className="grid grid-cols-12 mb-3">
         <div className="col-span-4 md:col-span-6 lg:col-span-3">
-          <CardImageUtil clz1="h-52  me-3" />
+          <CardImageUtil className="h-52  me-3" />
         </div>
         <div className="col-span-8 md:col-span-12 lg:col-span-9">
           <h2 className="text-2xl">Name of the Creator</h2>

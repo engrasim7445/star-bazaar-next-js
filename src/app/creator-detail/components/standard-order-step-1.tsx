@@ -35,7 +35,7 @@ export function StandardOrderStop1() {
           <Radioz name="language" id="urdu" lbl="Shoutout in Urdu" />
         </div>
         <LinkWrap isRelative="true" url="message">
-          <BtnSuccess clz={`w-full py-2 mt-5`}>Continue</BtnSuccess>
+          <BtnSuccess className={`w-full py-2 mt-5`}>Continue</BtnSuccess>
         </LinkWrap>
       </div>
     </>

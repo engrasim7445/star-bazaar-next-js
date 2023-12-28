@@ -1,10 +1,10 @@
 // 'use client'
 import Image from "next/image";
 
-export function CardImageUtil({url, clz1, clz2}: any) {
+export function CardImageUtil({url, className, clz2}: any) {
   url = url || 'https://dqc65nwcqwvpl.cloudfront.net/1701759239804-EYVxlOSXsAExOpX.jpg';
   return (<>
-  <div className={`rounded-xl overflow-hidden ${clz1}`}>
+  <div className={`rounded-xl overflow-hidden ${className}`}>
         <Image
           alt="Image"
           width={150}

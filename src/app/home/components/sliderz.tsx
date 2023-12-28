@@ -47,7 +47,7 @@ export function Sliderz() {
         </div>
         <div className="flex items-center text-2xl lg:hidden mb-2">
             <h1 >How to Order  </h1>
-            <Iconz icon='not_started' clz='ps-1' /> 
+            <Iconz icon='not_started' className='ps-1' /> 
           </div>
         <div className="grid-cols-3 gap-3 md:gap-x-32 grid lg:hidden mx-6 md:mx-12" >
           <div className="col-span-1">

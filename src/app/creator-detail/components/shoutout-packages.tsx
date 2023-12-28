@@ -9,7 +9,7 @@ export function ShoutoutPackages() {
         <b>Select Shoutout Package</b>
       </h5>
       <h5 className="text-xl">Personal Shoutout</h5>
-      <ShoutoutPackageLayer clz="bg-purple-gredient">
+      <ShoutoutPackageLayer className="bg-purple-gredient">
         <LinkWrap isRelative={true} url="standard">
           <h3 className="text-3xl">
             Standard Shoutout <b>For Fans</b>
@@ -21,7 +21,7 @@ export function ShoutoutPackages() {
           <p>Happiest birthday on behalf of _sender_name_</p>
         </LinkWrap>
       </ShoutoutPackageLayer>
-      <ShoutoutPackageLayer  clz="bg-orange-gredient">
+      <ShoutoutPackageLayer  className="bg-orange-gredient">
         <LinkWrap isRelative={true} url="custom">
           <h3 className="text-3xl">
             Custom Shoutout <b>For Fans</b>
@@ -34,7 +34,7 @@ export function ShoutoutPackages() {
         </LinkWrap>
       </ShoutoutPackageLayer>
       <h5 className="text-xl">Business Shoutout</h5>
-      <ShoutoutPackageLayer clz="bg-green-gredient">
+      <ShoutoutPackageLayer className="bg-green-gredient">
         <LinkWrap url='../payment/101/business'>
           <h3 className="text-3xl">Business Shoutout</h3>
           <h4 className="text-4xl">
@@ -47,10 +47,10 @@ export function ShoutoutPackages() {
     </div>
   );
 }
-function ShoutoutPackageLayer({ children, clz }: any) {
+function ShoutoutPackageLayer({ children, className }: any) {
   return (
     <div
-      className={`justify-center items-center p-5 rounded-2xl text-center my-3 cursor-pointer ${clz} hover-effect`}
+      className={`justify-center items-center p-5 rounded-2xl text-center my-3 cursor-pointer ${className} hover-effect`}
     >
       {children}
     </div>

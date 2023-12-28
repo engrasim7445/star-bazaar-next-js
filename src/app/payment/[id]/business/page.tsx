@@ -11,7 +11,7 @@ import { ContainerB, ContainerC } from '@/theme';
 export default function PaymentBusiness() {
   return (
     <ContainerB>
-      <ContainerC clz1="mb-3 p-0 pe-2">
+      <ContainerC className="mb-3 p-0 pe-2">
         {/* lg:col-span-8 */}
         <div className="col-span-12  flex justify-start items-center">
           <div className="w-2/12 me-3 ">
@@ -34,29 +34,29 @@ export default function PaymentBusiness() {
           </div>
         </div>
       </ContainerC>
-      <ContainerC clz1='gap-x-10'>
+      <ContainerC className='gap-x-10'>
         <div className="col-span-12 flex items-center">
           <span className="-full flex items-center">
-            <Iconz icon="edit_note" clz="me-3" stl={{ fontSize: '40px' }} />
+            <Iconz icon="edit_note" className="me-3" stl={{ fontSize: '40px' }} />
           </span>
           <h1 className="text-2xl"> Business Payments</h1>
         </div>
-        <InputWrapper clz='md:col-span-6'>
+        <InputWrapper className='md:col-span-6'>
           <Txt name="businessName" lbl="Business Name" />
         </InputWrapper>
-        <InputWrapper clz='md:col-span-6'>
+        <InputWrapper className='md:col-span-6'>
           <Txt name="url" lbl="Website or Social URL of Business" />
         </InputWrapper>
-        <InputWrapper clz='md:col-span-6'>
+        <InputWrapper className='md:col-span-6'>
           <Txt name="contactPerson" lbl="Contact Person" />
         </InputWrapper >
-        <InputWrapper clz='md:col-span-6'>
+        <InputWrapper className='md:col-span-6'>
           <Txt name="contactNumber" lbl="Contact Number" />
         </InputWrapper>
-        <InputWrapper clz='md:col-span-6'>
+        <InputWrapper className='md:col-span-6'>
           <Txt name="deliveryDate" lbl="Delivery Date" />
         </InputWrapper>
-        <InputWrapper clz='md:col-span-6'>
+        <InputWrapper className='md:col-span-6'>
           <Txt name="email" lbl="Business Email" />
         </InputWrapper>
         <InputWrapper >

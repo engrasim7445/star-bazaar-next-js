@@ -9,7 +9,7 @@ export default function CustomMessage() {
         style={{ borderBottom: '1px solid yellow' }}
       >
         {/* history_edu */}
-        <Iconz icon="draw" clz="me-3" /> Custom Shoutout
+        <Iconz icon="draw" className="me-3" /> Custom Shoutout
       </h2>
       <div className="px-4">
         <TxtArea placeholder="Enter your custom shoutout message" />
@@ -19,7 +19,7 @@ export default function CustomMessage() {
         </div>
 
         <h3 className="text-lg mt-5 mb-3">Select Shoutout Video Language</h3>
-        <BtnSuccess clz={`w-full py-2 mt-5`} >Submit</BtnSuccess>
+        <BtnSuccess className={`w-full py-2 mt-5`} >Submit</BtnSuccess>
       </div>
     </OrderShoutoutLayout>
   );

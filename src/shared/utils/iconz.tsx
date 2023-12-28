@@ -1,5 +1,5 @@
-export function Iconz({clz, icon, stl}: any) {
+export function Iconz({className, icon, stl}: any) {
   return (
-    <span className={`material-icons flex justify-center items-center ${clz} `} style={stl || {}}>{icon}</span>
+    <span className={`material-icons flex justify-center items-center ${className} `} style={stl || {}}>{icon}</span>
   );
 }

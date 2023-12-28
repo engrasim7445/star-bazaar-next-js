@@ -6,7 +6,7 @@ import { Container } from '.';
 
 export function NavBar() {
   return (
-    <Container clz1="bg-nav1 sticky top-0 z-10" clz2=" py-1 ">
+    <Container className="bg-nav1 sticky top-0 z-10" clz2=" py-1 ">
       <div
         className="col-span-2 md:col-span-1 md:order-1
       flex justify-center md:justify-end items-center"
@@ -18,7 +18,7 @@ export function NavBar() {
           <Imgz
             // width="50"
             height="50"
-            clz="mx-3"
+            className="mx-3"
             src="/icon/favicon-white.png"
           />
         </LinkWrap>
@@ -43,7 +43,7 @@ export function NavBar() {
               style={{ height: '100%' }}
               className="flex items-center bg-[#06b22e] rounded-tr-full rounded-br-full ps-2 pe-4"
             >
-              <Iconz icon="saved_search" clz="pe-2" />
+              <Iconz icon="saved_search" className="pe-2" />
               Search
             </button>
           </LinkWrap>

@@ -1,5 +1,5 @@
 import { OrderShoutoutLayout } from '@/app/creator-detail/components';
-import { BtnSuccess, Iconz, TxtArea } from '@/shared';
+import { BtnSuccess, Iconz, LinkWrap, TxtArea } from '@/shared';
 
 export default function CustomMessage() {
   return (
@@ -19,7 +19,9 @@ export default function CustomMessage() {
         </div>
 
         <h3 className="text-lg mt-5 mb-3">Select Shoutout Video Language</h3>
-        <BtnSuccess className={`w-full py-2 mt-5`} >Submit</BtnSuccess>
+        <LinkWrap  url='/payment/101/custom'>
+          <BtnSuccess className={`w-full py-2 mt-5`} >Submit</BtnSuccess>
+        </LinkWrap>
       </div>
     </OrderShoutoutLayout>
   );

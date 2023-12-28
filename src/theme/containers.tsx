@@ -32,6 +32,15 @@ export function ContainerC({ children, className }: IContainer) {
     </div>
   );
 }
+export function ContainerBB({ children, className, clz2 }: IContainer) {
+  return (
+    <div className={`w-full min-h-[63vh] px-1 py-3 ${className} `}>
+      <div className={`sm:w-full md:w-8/12 lg:w-6/12 xl:w-5/12 rounded-2xl mx-auto ${clz2}`}>
+          {children}
+        </div>
+    </div>
+  );
+}
 export interface IContainer {
   children?: any;
   className?: string;

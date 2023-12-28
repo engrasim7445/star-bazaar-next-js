@@ -4,7 +4,7 @@ import {
   Txt,
 } from '@/shared';
 
-export default function PaymentStandard() {
+export default function PaymentCustom() {
   return (
     <>
       <InputWrapper className="md:col-span-6">

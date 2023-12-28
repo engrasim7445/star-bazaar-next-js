@@ -1,4 +1,4 @@
-import { Followerz } from "../../payment-creator-detail";
+import { Followerz } from "@/shared/utils/payment-creator-detail";
 
 export default function PaymentStandard() {
   return (

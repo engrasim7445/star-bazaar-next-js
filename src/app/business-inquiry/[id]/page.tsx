@@ -1,18 +1,14 @@
-import { GridHeading } from '@/app/payment/heading-grid';
-import {
-  Followerz,
-  PaymentCreatorDetail,
-} from '@/app/payment/payment-creator-detail';
+
 import {
   BtnSuccess,
   BtnWarn,
-  CardImageUtil,
-  Iconz,
+  GridHeading,
   InputWrapper,
-  ProfessionBage,
+  PaymentCreatorDetail,
   Txt,
   TxtArea,
 } from '@/shared';
+import { Followerz } from '@/shared/utils/payment-creator-detail';
 import { ContainerB, ContainerC } from '@/theme';
 
 export default function BusinessInquiry() {

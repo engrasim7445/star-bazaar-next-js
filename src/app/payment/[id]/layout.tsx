@@ -1,14 +1,11 @@
 import {
   BtnSuccess,
-  CardImageUtil,
-  Iconz,
+  GridHeading,
   InputWrapper,
-  ProfessionBage,
+  PaymentCreatorDetail,
   Txt,
 } from '@/shared';
 import { ContainerBB, ContainerC } from '@/theme';
-import { GridHeading } from '../heading-grid';
-import { PaymentCreatorDetail } from '../payment-creator-detail';
 
 export default function PaymentBusiness({ children }: any) {
   const backgroundColor = 'bg-green1';
@@ -16,7 +13,7 @@ export default function PaymentBusiness({ children }: any) {
   const icon = 'business_center';
   return (
     <ContainerBB>
-      {/* <PaymentCreatorDetail>{children}</PaymentCreatorDetail> */}
+      <PaymentCreatorDetail>{children}</PaymentCreatorDetail>
       <ContainerC className="mb-3">
         <GridHeading
           className="bg-white1 text-black"

@@ -18,9 +18,8 @@ export default function CustomMessage() {
           <p className="text-orange">Max 200 characters</p>
         </div>
 
-        <h3 className="text-lg mt-5 mb-3">Select Shoutout Video Language</h3>
-        <LinkWrap  url='/payment/101/custom'>
-          <BtnSuccess className={`w-full py-2 mt-5`} >Submit</BtnSuccess>
+        <LinkWrap  url='/payment/101/custom' className='float-right'>
+          <BtnSuccess className={`w-52 py-2 mt-5`} >Submit</BtnSuccess>
         </LinkWrap>
       </div>
     </OrderShoutoutLayout>

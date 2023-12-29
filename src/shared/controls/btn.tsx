@@ -1,48 +1,61 @@
 'use client';
+
+import { Iconz } from "..";
+
 export function Btnz({ onClick, className, children }: any) {
   return (
     <button
       type="button"
-      className={`rounded-full flex justify-center items-center text-xl p-3 ${className}`}
+      className={`rounded-full flex justify-center items-center text-md md:text-xl  p-3 btn-animate ${className}`}
       onClick={onClick}
     >
       {children}
     </button>
   );
 }
+export function BtnDefault({ onClick, className, children }: any) {
+  return (
+    <Btnz onClick={onClick} className={`bg-white1 ${className}`}>
+      {children}
+    </Btnz>
+  );
+}
 export function BtnSuccess({ onClick, className, children }: any) {
   return (
-    <Btnz 
-      onClick={onClick}
-      className={`bg-green1 ${className}`}>
+    <Btnz onClick={onClick} className={`bg-green1 ${className}`}>
       {children}
     </Btnz>
   );
 }
 export function BtnWarn({ onClick, className, children }: any) {
   return (
-    <Btnz 
-      onClick={onClick}
-      className={`bg-orange1 ${className}`}>
+    <Btnz onClick={onClick} className={`bg-orange1 ${className}`}>
       {children}
     </Btnz>
   );
 }
 export function BtnPrimary({ onClick, className, children }: any) {
   return (
-    <Btnz 
-    onClick={onClick}
-    className={`bg-purple ${className}`}>
-    {children}
-  </Btnz>
+    <Btnz onClick={onClick} className={`bg-purple ${className}`}>
+      {children}
+    </Btnz>
   );
 }
 export function BtnDanger({ onClick, className, children }: any) {
   return (
-    <Btnz 
-    onClick={onClick}
-    className={`bg-red-500 ${className}`}>
-    {children}
-  </Btnz>
+    <Btnz onClick={onClick} className={`bg-red-500 ${className}`}>
+      {children}
+    </Btnz>
+  );
+}
+export function PaymentMethodButtons({icon, lbl, onClick, isActive}: any) {
+  const bgColor = isActive ? 'bg-orange1' : 'bg-white1' 
+  return (
+    <BtnDefault className={`rounded-sm w-3/12 flex-col py-1 px-0 ${bgColor}`} onClick={onClick}>
+      <span className="h-5">
+        <Iconz icon={icon}/>
+      </span>
+      <span>{lbl}</span>
+    </BtnDefault>
   );
 }

@@ -12,51 +12,18 @@
 
 }
 
-
+.btn-animate {
+  border: 1px solid transparent;
+}
+.btn-animate:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.567) ;
+  border: 1px solid white;
+  transition:  all 0.6s ease-in-out;
+}
 .bg-white1 {
-  background-image: linear-gradient(white, rgb(166, 166, 166));
+  background-image: linear-gradient(white, rgb(166, 166, 166)) !important;
+  color: black;
 }
-
-.bg-green {
-  background-color: var(--green1) !important;
-}
-
-.bg-green1 {
-  background-image: linear-gradient(var(--green1), var(--green2)) !important;
-}
-
-.bg-orange {
-  background-color: var(--orange1) !important;
-}
-
-.bg-orange1 {
-  background-image: linear-gradient(var(--orange1), var(--orange2)) !important;
-}
-
-.bg-yellow {
-  background-color: var(--yellow1) !important;
-}
-
-.bg-yellow1 {
-  background-image: linear-gradient(var(--yellow1), var(--yellow2)) !important;
-}
-
-.bg-purple1 {
-  background-image: linear-gradient(var(--purple1), var(--purple2)) !important;
-}
-
-.text-green {
-  color: var(--green1) !important;
-}
-
-.text-orange {
-  color: var(--orange1) !important;
-}
-
-.text-yellow {
-  color: var(--yellow1) !important;
-}
-
 .bg-blue1 {
   background-color: var(--blue1) !important;
 }
@@ -69,7 +36,40 @@
   background-color: #0A0836 !important;
   backdrop-filter: blur(8px) !important;
 }
+.bg-green {
+  background-color: var(--green1) !important;
+  color:white;
+}
 
+.bg-green1 {
+  background-image: linear-gradient(var(--green1), var(--green2)) !important;
+  color:white;
+}
+
+.bg-orange {
+  background-color: var(--orange1) !important;
+  color:white;
+}
+
+.bg-orange1 {
+  background-image: linear-gradient(var(--orange1), var(--orange2)) !important;
+  color:white;
+}
+
+.bg-yellow {
+  background-color: var(--yellow1) !important;
+  color: black;
+}
+
+.bg-yellow1 {
+  background-image: linear-gradient(var(--yellow1), var(--yellow2)) !important;
+  color:black;
+}
+
+.bg-purple1 {
+  background-image: linear-gradient(var(--purple1), var(--purple2)) !important;
+  color:white;
+}
 .bg-purple-gredient {
   background: linear-gradient(348deg, #8822B0 22%, #953289 55%) 0% 0% no-repeat padding-box !important;
   border: 1px solid transparent;
@@ -137,3 +137,16 @@
   backdrop-filter: blur(8px);
   transition: bottom 1s
 }
+
+.text-green {
+  color: var(--green1) !important;
+}
+
+.text-orange {
+  color: var(--orange1) !important;
+}
+
+.text-yellow {
+  color: var(--yellow1) !important;
+}
+

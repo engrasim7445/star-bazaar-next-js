@@ -1,8 +1,13 @@
 import {
+  BtnDefault,
   BtnSuccess,
+  Chk,
   GridHeading,
+  Iconz,
   InputWrapper,
+  LinkWrap,
   PaymentCreatorDetail,
+  PaymentMethodButtons,
   Txt,
 } from '@/shared';
 import { ContainerBB, ContainerC } from '@/theme';
@@ -35,11 +40,34 @@ export default function PaymentBusiness({ children }: any) {
           heading="Payment Methods"
           icon={'shopping_cart'}
         />
+         <div className="col-span-12 flex justify-center gap-2">
+          <PaymentMethodButtons lbl="EasyPaisa" isActive={true} />
+          <PaymentMethodButtons lbl="JazzCash" />
+          <PaymentMethodButtons lbl="1 Link" />
+          <PaymentMethodButtons lbl="Visa / Master" />
+        </div>
         <InputWrapper>
-          <Txt name="businessName" lbl="Business Name" />
+          <Txt name="mobileNo" lbl="Mobile Number" />
         </InputWrapper>
-
-        <div className="col-span-12 flex justify-center">
+       
+        <div className="col-span-12 mt-4">
+          <Chk name='userPermit'>
+          You permit to StarBazaar to use your order video for promotions on the starbazaar platform,<br className='hidden md:block'/> social media and for other promotional purposes.
+          </Chk>
+          <Chk name='termsAndCondition'>
+            I agree to Star Tech Bazaar Pvt. Ltd &nbsp;
+            <LinkWrap url='#' className='text-orange underline'>
+              Terms & Conditions
+            </LinkWrap>
+          </Chk>
+          <Chk name='privacyPolicy'>
+            I agree to Star Tech Bazaar Pvt. Ltd &nbsp;
+            <LinkWrap url='#' className='text-orange underline'>
+              Privacy & Policy
+            </LinkWrap>
+          </Chk>
+        </div>
+        <div className="col-span-12 flex justify-end">
           <BtnSuccess className="w-40 py-2">Order Shoutout</BtnSuccess>
           {/* <BtnWarn>Submit</BtnWarn> */}
         </div>

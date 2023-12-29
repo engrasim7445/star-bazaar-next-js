@@ -6,7 +6,7 @@ export function Chk({ id, name, children, className, setVal }: any) {
           id={name || id}
           name={name || id}
           value="1"
-          className="h-4 w-4" 
+          className="h-5 w-5" 
         />
       <label htmlFor={name || id} className="leading-none w-11/12">
       {children}

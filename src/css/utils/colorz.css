@@ -13,12 +13,16 @@
 }
 
 .btn-animate {
-  border: 1px solid transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1) ;
+  box-sizing: border-box;
+  opacity:0.8;
 }
 .btn-animate:hover {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.567) ;
-  border: 1px solid white;
+  /* box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.567) ; */
+  border: 2px solid rgba(255, 255, 255, 0.456);
+  opacity: 1;
   transition:  all 0.6s ease-in-out;
+
 }
 .bg-white1 {
   background-image: linear-gradient(white, rgb(166, 166, 166)) !important;

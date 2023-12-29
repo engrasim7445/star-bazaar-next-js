@@ -18,7 +18,7 @@ export default function PaymentBusiness({ children }: any) {
   const icon = 'business_center';
   return (
     <ContainerBB>
-      <PaymentCreatorDetail>{children}</PaymentCreatorDetail>
+      {/* <PaymentCreatorDetail>{children}</PaymentCreatorDetail> */}
       <ContainerC className="mb-3">
         <GridHeading
           className="bg-white1 text-black"
@@ -46,9 +46,12 @@ export default function PaymentBusiness({ children }: any) {
           <PaymentMethodButtons lbl="1 Link" />
           <PaymentMethodButtons lbl="Visa / Master" />
         </div>
+        {/* 
         <InputWrapper>
           <Txt name="mobileNo" lbl="Mobile Number" />
-        </InputWrapper>
+        </InputWrapper> 
+        */}
+
        
         <div className="col-span-12 mt-4">
           <Chk name='userPermit'>

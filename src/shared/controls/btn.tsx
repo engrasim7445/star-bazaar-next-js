@@ -6,7 +6,7 @@ export function Btnz({ onClick, className, children }: any) {
   return (
     <button
       type="button"
-      className={`rounded-full flex justify-center items-center text-md md:text-xl  p-3 btn-animate ${className}`}
+      className={`rounded-full flex justify-center items-center text-md  p-3 btn-animate ${className}`}
       onClick={onClick}
     >
       {children}
@@ -48,6 +48,8 @@ export function BtnDanger({ onClick, className, children }: any) {
     </Btnz>
   );
 }
+import easyPaisa from './../../../public/svg/easypaisa.svg'
+import jazzCash from './../../../public/svg/jazzcash.svg'
 export function PaymentMethodButtons({icon, lbl, onClick, isActive}: any) {
   const bgColor = isActive ? 'bg-orange1' : 'bg-white1' 
   return (

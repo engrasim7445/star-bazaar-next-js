@@ -1,5 +1,10 @@
-export function Customer_Route() {
+import { DetailProfile, WalletAmout } from "../components/detail-profile";
+
+export default function  Customer_Route() {
   return (
-    <h1>Customer Page</h1>
+    <DetailProfile>
+        <WalletAmout />
+
+    </DetailProfile>
   )
 }

@@ -1,5 +1,8 @@
-export function Agent_Route() {
+import { DetailProfile } from "../components/detail-profile";
+
+export default function  Agent_Route() {
   return (
-    <h1>Agent Page</h1>
+    <DetailProfile>
+    </DetailProfile>
   )
 }

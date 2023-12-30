@@ -7,10 +7,7 @@ import { ContainerXL } from '.';
 export function NavBar() {
   return (
     <ContainerXL className="bg-nav1 sticky top-0 z-10" clz2=" py-1 ">
-      <div
-        className="col-span-2 md:col-span-1 md:order-1
-      flex justify-center md:justify-end items-center"
-      >
+      <div className="col-span-2 md:col-span-1 md:order-1 flex justify-center md:justify-end items-center" >
         <LinkNav lbl="Notification" icon="link" />
       </div>
       <div className="col-span-8 md:col-span-2 flex justify-center  md:justify-start  ">
@@ -24,7 +21,7 @@ export function NavBar() {
         </LinkWrap>
       </div>
       <div className="col-span-2 md:col-span-1 flex justify-center items-center md:order-3 ">
-        <LinkNav lbl="Profile" icon="link" />
+        <LinkNav lbl="Profile" icon="link" url='../../../profile/customer' />
       </div>
       <div className="col-span-10 md:col-span-6 flex justify-center items-center ">
         <div

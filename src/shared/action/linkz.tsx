@@ -11,24 +11,25 @@ export function LinkWrap({ url, children, isRelative, className }: any) {
   return <Link href={finalURL}  className={`h-full cursor-pointer ${className}`}>{children}</Link>;
 }
 
-export function LinkFooter({ url, className, lbl }: any) {
+export function LinkFooter({ url, className, lbl, icon }: any) {
+  icon = icon || 'link'
   return (
     <Link
       href={url}
       className={`flex content-center mb-2 hover:text-yellow-200 ${className}`}>
-      <Iconz icon="link" className="px-3" />
+      <Iconz icon={icon} className="pe-3" />
       <span>{lbl}</span>
     </Link>
   );
 }
 
 export function LinkNav({ lbl, icon, className, url }: any) {
-  const router = useRouter();
+  url = url || '#'
   return (
-    <div onClick={() => router.push(url)} className={`flex flex-col text-center cursor-pointer text-orange ${className}`}>
+    <Link href={url} className={`flex flex-col text-center cursor-pointer text-orange ${className}`}>
       <Iconz icon={icon} />
       <span> {lbl}</span>
-    </div>
+    </Link>
   );
 }
 

@@ -9,17 +9,17 @@ import {
   TxtArea,
 } from '@/shared';
 import { Followerz } from '@/shared/utils/payment-creator-detail';
-import { ContainerB, ContainerC } from '@/theme';
+import { ContainerMD, ContainerGrid_BG } from '@/theme';
 
 export default function BusinessInquiry() {
   return (
-    <ContainerB>
+    <ContainerMD>
       <PaymentCreatorDetail>
         <Followerz lbl="Total Followers" val="335.221 K" />
         <Followerz lbl="Starting Price" val="PKR 999,999,9" />
       </PaymentCreatorDetail>
 
-      {/* <ContainerC className="mb-3 p-0 pe-2">
+      {/* <ContainerGrid_BG className="mb-3 p-0 pe-2">
         <div className="col-span-12 flex justify-start items-center">
           <div className="w-4/12 sm:2/12 md:w-2/12 ">
             <CardImageUtil className="rounded-tr-none -m-3 me-3" />
@@ -42,8 +42,8 @@ export default function BusinessInquiry() {
             </div>
           </div>
         </div>
-      </ContainerC> */}
-      <ContainerC>
+      </ContainerGrid_BG> */}
+      <ContainerGrid_BG>
         <GridHeading
           className="bg-green1"
           heading="Business Inquiry"
@@ -75,7 +75,7 @@ export default function BusinessInquiry() {
           <BtnWarn className="w-40  ms-3 py-2  ">Back to Home</BtnWarn>
           {/* <BtnWarn>Submit</BtnWarn> */}
         </div>
-      </ContainerC>
-    </ContainerB>
+      </ContainerGrid_BG>
+    </ContainerMD>
   );
 }

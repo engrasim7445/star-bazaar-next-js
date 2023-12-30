@@ -1,6 +1,6 @@
 // 'use client';
 import { Iconz } from '@/shared';
-import { Container } from '@/theme';
+import { ContainerXL } from '@/theme';
 import Image from 'next/image';
 
 export function Sliderz() {
@@ -11,7 +11,7 @@ export function Sliderz() {
   ];
 
   return (
-    <Container>
+    <ContainerXL>
       <div className="col-span-12">
         <div className="grid-cols-3 gap-2 hidden lg:grid" >
           <div className="col-span-1">
@@ -88,6 +88,6 @@ export function Sliderz() {
           </div>
         </div>
       </div>
-    </Container>
+    </ContainerXL>
   );
 }

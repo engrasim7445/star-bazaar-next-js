@@ -1,4 +1,4 @@
-import { Container } from '@/theme';
+import { ContainerXL } from '@/theme';
 import { BusinessCard } from './business-card';
 
 export function Card_6() {

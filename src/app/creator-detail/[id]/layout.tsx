@@ -1,13 +1,13 @@
-import { ContainerA } from "@/theme";
+import { ContainerXL_Height } from "@/theme";
 import { CreatorDetails } from "../components/creator-details";
 import { ShoutoutDemos } from "../components/shoutout-demos";
 
 export default function CreatorDetailLayout({children}: any) {
   return (
-    <ContainerA >
+    <ContainerXL_Height >
       <ShoutoutDemos />
       {children}
       <CreatorDetails />
-    </ContainerA>
+    </ContainerXL_Height>
   );
 }

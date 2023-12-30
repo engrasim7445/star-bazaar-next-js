@@ -2,11 +2,11 @@
 // import BtnRoute from "@/shared/button/btn-route";
 
 import { Iconz, Imgz, LinkNav, LinkWrap } from '@/shared';
-import { Container } from '.';
+import { ContainerXL } from '.';
 
 export function NavBar() {
   return (
-    <Container className="bg-nav1 sticky top-0 z-10" clz2=" py-1 ">
+    <ContainerXL className="bg-nav1 sticky top-0 z-10" clz2=" py-1 ">
       <div
         className="col-span-2 md:col-span-1 md:order-1
       flex justify-center md:justify-end items-center"
@@ -58,6 +58,6 @@ export function NavBar() {
           <div className="h-100 md:col-span-2 hidden md:flex bg-green-500 ">
             Customer Login
           </div> */}
-    </Container>
+    </ContainerXL>
   );
 }

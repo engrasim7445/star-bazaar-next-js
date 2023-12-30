@@ -1,9 +1,9 @@
 import { LinkFooter, Imgz } from '@/shared';
-import { Container } from '.';
+import { ContainerXL } from '.';
 
 export function Footer() {
   return (
-    <Container className='bg-blue2' clz2='pt-6 text-orange'>
+    <ContainerXL className='bg-blue2' clz2='pt-6 text-orange'>
       <div className="col-span-12 md:col-span-2">
         <Imgz />
       </div>
@@ -44,6 +44,6 @@ export function Footer() {
           &copy; STAR TECH BAZAAR (PRIVATE) LIMITED 2023. All Rights Reserved.
         </h6>
       </div>
-    </Container>
+    </ContainerXL>
   );
 }

@@ -1,9 +1,9 @@
 import { CardImageUtil, ProfessionBage } from '@/shared';
-import { ContainerC } from '@/theme';
+import { ContainerGrid_BG } from '@/theme';
 
 export function PaymentCreatorDetail({ children }: any) {
   return (
-    <ContainerC className="mb-3 p-0 pe-2">
+    <ContainerGrid_BG className="mb-3 p-0 pe-2">
       <div className="col-span-12 flex justify-start">
       {/* w-4/12 sm:3/12 md:w-3/12  */}
         <div className="max-w-[120px]">
@@ -25,7 +25,7 @@ export function PaymentCreatorDetail({ children }: any) {
           </div>
         </div>
       </div>
-    </ContainerC>
+    </ContainerGrid_BG>
   );
 }
 

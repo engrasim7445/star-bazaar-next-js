@@ -11,16 +11,16 @@ import {
   Txt,
   TxtCopy,
 } from '@/shared';
-import { ContainerBB, ContainerC } from '@/theme';
+import { ContainerSM, ContainerGrid_BG } from '@/theme';
 
 export default function PaymentBusiness({ children }: any) {
   const backgroundColor = 'bg-green1';
   const title = 'Business Payment';
   const icon = 'business_center';
   return (
-    <ContainerBB>
+    <ContainerSM>
       {/* <PaymentCreatorDetail>{children}</PaymentCreatorDetail> */}
-      <ContainerC className="mb-3">
+      <ContainerGrid_BG className="mb-3">
         <GridHeading
           className="bg-white1 text-black"
           heading="Shoutout Amount"
@@ -34,8 +34,8 @@ export default function PaymentBusiness({ children }: any) {
           <span>Use Wallet</span>
           <span>Toggle</span>
         </div>
-      </ContainerC>
-      <ContainerC>
+      </ContainerGrid_BG>
+      <ContainerGrid_BG>
         <GridHeading
           className="bg-green1"
           heading="Payment Methods"
@@ -114,7 +114,7 @@ export default function PaymentBusiness({ children }: any) {
           <BtnSuccess className="w-40 py-2">Order Shoutout</BtnSuccess>
           {/* <BtnWarn>Submit</BtnWarn> */}
         </div>
-      </ContainerC>
-    </ContainerBB>
+      </ContainerGrid_BG>
+    </ContainerSM>
   );
 }

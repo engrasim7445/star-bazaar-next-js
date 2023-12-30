@@ -2,20 +2,20 @@ import { BusinessPartner, Testamonial } from '@/shared';
 import { HomeRow } from './home-row';
 import { Sliderz } from './sliderz';
 import { Banners } from './banner';
-import { ContainerA } from '@/theme';
+import { ContainerXL_Height } from '@/theme';
 
 export function HomeComponent() {
   return (
     <>
       <Banners />
       <Sliderz />
-      <ContainerA>
+      <ContainerXL_Height>
         <BusinessPartner />
         <HomeRow />
         <HomeRow />
         <HomeRow />
         <Testamonial />
-      </ContainerA>
+      </ContainerXL_Height>
     </>
   );
 }

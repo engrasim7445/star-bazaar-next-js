@@ -1,5 +1,6 @@
 // import { environment } from "src/environments/environment";
 // import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+export const isServer = (typeof window === 'undefined')? false : true
 
 export const SHOUTOUT_MESSAGE = (o: { creator: string, receiver: string, by?: string, occasion: string, byGender: string, receiverGender: string, message: string }) => {
   return {

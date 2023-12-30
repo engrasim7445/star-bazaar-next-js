@@ -1,5 +1,5 @@
 'use client';
-import { Container } from '@/theme';
+import { ContainerXL } from '@/theme';
 import { Imgz } from '.';
 // import Sli from "../../../node_modules/react-slick/dist/react-slick.js";
 import Slider from 'react-slick';

@@ -1,4 +1,4 @@
-import { Container } from '@/theme';
+import { ContainerXL } from '@/theme';
 import { HomeCard } from '.';
 
 export function HomeRow({ d }: any) {

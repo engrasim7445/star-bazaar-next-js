@@ -1,10 +1,9 @@
-import { DetailProfile, WalletAmout } from "../components/detail-profile";
+import { DetailProfile, WalletAmout } from '../components/detail-profile';
 
-export default function  Customer_Route() {
+export default function Customer_Route() {
   return (
     <DetailProfile>
-        <WalletAmout />
-
+      <WalletAmout />
     </DetailProfile>
-  )
+  );
 }

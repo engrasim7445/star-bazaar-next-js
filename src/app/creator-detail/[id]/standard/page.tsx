@@ -1,5 +1,5 @@
-import CustomBasicInfo from '../custom/page';
+import CustomOrderRoute from '../custom/page';
 
-export default function OrderStandard() {
-  return <CustomBasicInfo />;
+export default function StandardOrderRoute() {
+  return <CustomOrderRoute />;
 }

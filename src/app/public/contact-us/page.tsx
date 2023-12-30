@@ -1,4 +1,4 @@
-export default function ContactUS() {
+export default function ContactUsRoute() {
   return (<>
     
   </>)

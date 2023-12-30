@@ -2,7 +2,7 @@ import { ContainerXL_Height } from '@/theme';
 import { Card_6 } from '../home/components/home-row';
 // import { RowHome } from "../home/home-row";
 
-export default function Details() {
+export default function SearchRoute() {
   return (
     <ContainerXL_Height>
       <div className="col-span-12">

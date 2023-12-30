@@ -11,7 +11,7 @@ import {
 import { Followerz } from '@/shared/utils/payment-creator-detail';
 import { ContainerMD, ContainerGrid_BG } from '@/theme';
 
-export default function BusinessInquiry() {
+export default function BusinessInquiryRoute() {
   return (
     <ContainerMD>
       <PaymentCreatorDetail>

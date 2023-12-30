@@ -1,6 +1,6 @@
 import { HomeComponent } from "./components";
 
-export default function Home() {
+export default function HomeRoute() {
   return (
       <HomeComponent />
   );

@@ -1,4 +1,4 @@
-export default function PrivacyPolicy() {
+export default function PrivacyPolicyRoute() {
   return (<>
     
   </>)

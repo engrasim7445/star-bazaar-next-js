@@ -1,5 +1,5 @@
 import { ShoutoutPackages } from '../components/shoutout-packages';
 
-export default function CreatorDetailPage() {
+export default function CreatorDetailRoute() {
   return <ShoutoutPackages />;
 }

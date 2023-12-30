@@ -2,7 +2,7 @@ import { BusinessPartner, Testamonial } from '@/shared';
 import { ContainerXL_Height } from '@/theme';
 import { Card_6 } from './components/business-row';
 
-export default function BusinessComponent() {
+export default function BusinessRoute() {
   return (
     <ContainerXL_Height>
       <BusinessPartner />

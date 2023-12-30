@@ -1,4 +1,4 @@
-export default function TermsAndCondition() {
+export default function TermsAndConditionRoute() {
   return (<>
     
   </>)

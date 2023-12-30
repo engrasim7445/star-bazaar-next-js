@@ -1,19 +1,14 @@
 import {
-  BtnDefault,
   BtnSuccess,
   Chk,
   GridHeading,
-  Iconz,
-  InputWrapper,
   LinkWrap,
-  PaymentCreatorDetail,
   PaymentMethodButtons,
-  Txt,
   TxtCopy,
 } from '@/shared';
 import { ContainerSM, ContainerGrid_BG } from '@/theme';
 
-export default function PaymentBusiness({ children }: any) {
+export default function PaymentLayout({ children }: any) {
   const backgroundColor = 'bg-green1';
   const title = 'Business Payment';
   const icon = 'business_center';

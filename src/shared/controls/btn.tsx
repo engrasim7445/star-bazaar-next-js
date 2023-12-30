@@ -50,10 +50,10 @@ export function BtnDanger({ onClick, className, children }: any) {
 }
 import easyPaisa from './../../../public/svg/easypaisa.svg'
 import jazzCash from './../../../public/svg/jazzcash.svg'
-export function PaymentMethodButtons({icon, lbl, onClick, isActive}: any) {
+export function PaymentMethodButtons({icon, lbl, onClick, isActive, className}: any) {
   const bgColor = isActive ? 'bg-orange1' : 'bg-white1' 
   return (
-    <BtnDefault className={`rounded-sm w-3/12 flex-col py-1 px-0 ${bgColor}`} onClick={onClick}>
+    <BtnDefault className={`rounded-sm w-3/12 flex-col py-1 px-0 ${bgColor} ${className}`} onClick={onClick}>
       <span className="h-5">
         <Iconz icon={icon}/>
       </span>

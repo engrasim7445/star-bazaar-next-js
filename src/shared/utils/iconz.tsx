@@ -1,6 +1,10 @@
-export function Iconz({className, icon, stl}: any) {
+export function Iconz({className, icon, stl, onClick}: any) {
   icon = icon || 'block'
   return (
-    <span className={`material-icons flex justify-center items-center ${className} `} style={stl || {}}>{icon}</span>
+    <span 
+      onClick={onClick}
+      className={`material-icons flex justify-center items-center ${className} `}
+      style={stl || {}}
+    >{icon}</span>
   );
 }

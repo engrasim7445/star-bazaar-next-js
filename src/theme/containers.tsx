@@ -24,6 +24,16 @@ export function ContainerXL_Height({ children, className, clz2 }: IContainer) {
     </ContainerXL>
   );
 }
+export function ContainerXL_Cols12({ children, className, clz2 }: IContainer) {
+  return (
+    // min-h-[63vh]
+    <ContainerXL_Height className={`min-h-[63vh] ${className}`} clz2={clz2}>
+      <div className="col-span-12">
+        {children}
+      </div>
+    </ContainerXL_Height>
+  );
+}
 export function ContainerMD({ children, className, clz2 }: IContainer) {
   return (
     <ContainerHeight className={className}>
@@ -49,6 +59,7 @@ export function ContainerGrid({ children, className }: IContainer) {
     </div>
   );
 }
+
 export function ContainerGrid_BG({ children, className }: IContainer) {
   return (
     <ContainerGrid className={`gap-3 bg-blue2 p-3 rounded-lg ${className}`}>

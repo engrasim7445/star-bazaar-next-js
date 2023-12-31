@@ -25,7 +25,7 @@ export function DetailProfile({ children }: any) {
 
 export function WalletAmout() {
   return (
-    <div className="bg-blue2 h-24 w-56 p-2 rounded-lg mt-1 absolute bottom-0">
+    <div className="bg-blue2 h-20 w-56 p-2 rounded-lg mt-1 absolute bottom-0">
       <h2 className="flex text-orange ">
         <LinkFooter
           url=""

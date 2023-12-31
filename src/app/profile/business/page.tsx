@@ -1,8 +1,11 @@
-import { DetailProfile } from "../components/detail-profile";
+import { CustomerAgentTable } from '../components/customer-agent-table';
+import { DetailProfile } from '../components/detail-profile';
 
-export default function  Business_Route() {
+export default function Business_Route() {
   return (
-    <DetailProfile>
-    </DetailProfile>
-  )
+    <>
+      <DetailProfile></DetailProfile>
+      <CustomerAgentTable />
+    </>
+  );
 }

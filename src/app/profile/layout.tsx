@@ -1,3 +1,4 @@
+'use client';
 import { ContainerXL_Height } from "@/theme";
 
 export default function ProfileLayout({children}: any) {

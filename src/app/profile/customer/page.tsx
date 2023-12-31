@@ -1,4 +1,5 @@
 import { Table, Tbody, Td, Th, Thead, Tr } from '@/shared';
+'use client';
 import { DetailProfile, WalletAmout } from '../components/detail-profile';
 import { CustomerAgentTable } from '../components/customer-agent-table';
 

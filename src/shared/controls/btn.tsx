@@ -36,7 +36,7 @@ export function BtnWarn({ onClick, className, children }: any) {
 }
 export function BtnPrimary({ onClick, className, children }: any) {
   return (
-    <Btnz onClick={onClick} className={`bg-purple ${className}`}>
+    <Btnz onClick={onClick} className={`bg-purple1 ${className}`}>
       {children}
     </Btnz>
   );

@@ -1,3 +1,4 @@
+'use client';
 import { Thead, Th, Tbody, Tr, Td, Table, BtnSuccess } from '@/shared';
 
 export function CustomerAgentTable() {

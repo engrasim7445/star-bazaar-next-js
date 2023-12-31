@@ -1,3 +1,4 @@
+'use client';
 import { CardImageUtil, LinkFooter, ProfessionBage } from '@/shared';
 
 export function DetailProfile({ children }: any) {

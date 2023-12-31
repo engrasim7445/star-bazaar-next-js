@@ -1,11 +1,14 @@
 import { LinkFooter, LinkNav } from '@/shared';
 import { ContainerXL, ContainerXL_Height } from '.';
+import { isPublicUrl } from '@/core/essentials';
 
 export function NavbarPublic({ children }: any) {
+  // const isPublic = isPublicUrl() ? '' : 'hidden';
+  const isPublic ='';
   return (
     <>
       <ContainerXL
-        className="bg-nav1 sticky top-0 z-10  flex items-center"
+        className={`bg-nav1 sticky top-0 z-10  flex items-center ${isPublic}`}
         clz2="py-1"
       >
         <div className="h-[50px] col-span-12 flex justify-between items-center ">

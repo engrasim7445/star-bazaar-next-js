@@ -1,5 +1,5 @@
 export default function AboutUsRoute() {
-  return (<>
+  return (<div>
     
-  </>)
+    </div>)
 }

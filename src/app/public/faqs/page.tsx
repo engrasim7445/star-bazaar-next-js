@@ -1,5 +1,5 @@
 export default function FaqRoute() {
-  return (<>
+  return (<div>
     
-  </>)
+    </div>)
 }

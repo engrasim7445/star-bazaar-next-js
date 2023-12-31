@@ -1,5 +1,5 @@
 export default function PrivacyPolicyRoute() {
-  return (<>
+  return (<div>
     
-  </>)
+    </div>)
 }

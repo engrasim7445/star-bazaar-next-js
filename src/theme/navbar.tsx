@@ -3,10 +3,13 @@
 
 import { Iconz, Imgz, LinkNav, LinkWrap } from '@/shared';
 import { ContainerXL } from '.';
+import { isPublicUrl } from '@/core/essentials';
 
 export function NavBar() {
+  // const isPublic = isPublicUrl() ? 'hidden' : '';
+  const isPublic = '';
   return (
-    <ContainerXL className="bg-nav1 sticky top-0 z-10" clz2=" py-1 ">
+    <ContainerXL className={`bg-nav1 sticky top-0 z-10 ${isPublic}`} clz2=" py-1 ">
       <div className="col-span-2 md:col-span-1 md:order-1 flex justify-center md:justify-end items-center" >
         <LinkNav lbl="Notification" icon="link" />
       </div>

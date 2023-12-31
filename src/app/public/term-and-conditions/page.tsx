@@ -1,5 +1,5 @@
 export default function TermsAndConditionRoute() {
-  return (<>
+  return (<div>
     
-  </>)
+    </div>)
 }

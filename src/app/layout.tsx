@@ -2,13 +2,16 @@ import type { Metadata } from 'next';
 import { Alumni_Sans } from 'next/font/google'; //Roboto_Flex, Poppins, Oswald, Alumni Sans
 import './globals.css';
 // import { Providers } from '@/core/redux/providers';
-import { Footer, NavBar } from '@/theme';
+import { Footer } from '@/theme';
+import { Providers } from '@/core/redux/providers';
+import { NavbarConditional } from '@/theme/navbar-conditional';
+import { NavBar } from '@/theme/navbar';
+import { NavbarPublic } from '@/theme/navbar-public';
 // import { useEffect } from 'react';
 
 const inter = Alumni_Sans({
   weight: ['100', '400'],
   subsets: ['latin'],
-
 });
 
 export const metadata: Metadata = {
@@ -24,6 +27,7 @@ export default function RootLayout({
   // useEffect(() => {
   //   console.log('called!')
   // })
+
   return (
     <html lang="en">
       <head>
@@ -31,10 +35,10 @@ export default function RootLayout({
         {/* <script src="/js/common.js" async/> */}
         <link
           rel="stylesheet"
-          type='text/css'
+          type="text/css"
           href="https://fonts.googleapis.com/css?display=optional&family=Roboto:300,400,500|Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-         />
-         <link
+        />
+        <link
           rel="stylesheet"
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
@@ -47,9 +51,12 @@ export default function RootLayout({
       </head>
       <body className={inter.className + ' bg-blue1'}>
         <div className="w-100">
-          <NavBar />
-          {children}
-          <Footer />
+          <Providers>
+            <NavBar />
+            {/* <NavbarPublic /> */}
+            {children}
+            <Footer />
+          </Providers>
         </div>
       </body>
     </html>

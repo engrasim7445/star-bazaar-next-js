@@ -1,6 +1,6 @@
 export function ContainerHeight({ children, className }: IContainer) {
   return (
-    <div className={`w-full min-h-[63vh] px-1 py-3 ${className} `}>
+    <div className={`min-h-[63vh] px-1 py-3 ${className} `}>
       {children}
     </div>
   );
@@ -8,8 +8,8 @@ export function ContainerHeight({ children, className }: IContainer) {
 
 export function ContainerXL({ children, className, clz2 }: IContainer) {
   return (
-    <div className={`w-full ${className}`}>
-      <div className="w-full xl:w-10/12  mx-auto">
+    <div className={`${className}`}>
+      <div className="xl:w-10/12  mx-auto">
         <div className={`grid grid-cols-12 px-1 py-2 ${clz2}`}>{children}</div>
       </div>
     </div>

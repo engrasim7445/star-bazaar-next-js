@@ -1,11 +1,9 @@
-import { ContainerXL_Height, Footer, NavbarPublic } from '@/theme';
+import { ContainerXL_Height } from '@/theme';
 
 export default function PublicLayout({ children }: any) {
   return (
     <>
-      <NavbarPublic />
       <ContainerXL_Height>{children}</ContainerXL_Height>
-      {/* <Footer /> */}
     </>
   );
 }

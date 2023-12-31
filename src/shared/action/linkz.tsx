@@ -16,13 +16,25 @@ export function LinkFooter({ url, className, lbl, icon }: any) {
   return (
     <Link
       href={url}
-      className={`flex content-center mb-2 hover:text-yellow-200 ${className}`}>
+      className={`flex items-center mb-2 hover:text-yellow-200 ${className}`}>
       <Iconz icon={icon} className="pe-3" />
       <span>{lbl}</span>
     </Link>
   );
 }
-
+export function LinkBack({ url, className, lbl, icon }: any) {
+  icon = icon || 'back_arrow'
+  const router = useRouter()
+  return (
+    <Link
+      href=''
+      onClick={() => router.back()}
+      className={`flex items-center mb-2 hover:text-yellow-200 ${className}`}>
+      <Iconz icon={icon} className="pe-3" />
+      <span>{lbl}</span>
+    </Link>
+  );
+}
 export function LinkNav({ lbl, icon, className, url }: any) {
   url = url || '#'
   return (

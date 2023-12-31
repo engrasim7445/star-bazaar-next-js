@@ -7,13 +7,13 @@ export function Table({ children }: any) {
 }
 export function Thead({ children }: any) {
   return (
-    <thead className="bg-gray-900 border-b">
+    <thead className=" border-b">
       <tr>{children}</tr>
     </thead>
   );
 }
-export function Tbody({ children }: any) {
-  return <tbody className="bg-gray-700 border-b">{children}</tbody>;
+export function Tbody({ children, className }: any) {
+  return <tbody className={className}>{children}</tbody>;
 }
 
 export function Th({ children, className }: any) {
@@ -25,14 +25,14 @@ export function Th({ children, className }: any) {
 }
 export function Tr({children}: any) {
   return (
-    <tr style={{borderBottom: '1px solid white'}}>
+    <tr className="bg-gray-900" style={{borderBottom: '1px solid white'}}>
       {children}
     </tr>
   )
 }
 export function Td({ children, className }: any) {
   return (
-    <td className={`p-2 whitespace-nowrap text-lg font-medium text-white leading-none  ${className}`}>
+    <td className={`p-2 whitespace-nowrap text-lg font-medium  leading-none  ${className}`}>
       {children}
     </td>
   );

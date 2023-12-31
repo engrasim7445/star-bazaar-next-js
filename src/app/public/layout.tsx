@@ -5,7 +5,7 @@ export default function PublicLayout({ children }: any) {
     <>
       <NavbarPublic />
       <ContainerXL_Height>{children}</ContainerXL_Height>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

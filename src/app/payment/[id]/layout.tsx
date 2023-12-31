@@ -2,8 +2,10 @@ import {
   BtnSuccess,
   Chk,
   GridHeading,
+  InputWrapper,
   LinkWrap,
   PaymentMethodButtons,
+  Txt,
   TxtCopy,
 } from '@/shared';
 import { ContainerSM, ContainerGrid_BG } from '@/theme';
@@ -12,6 +14,7 @@ export default function PaymentLayout({ children }: any) {
   const backgroundColor = 'bg-green1';
   const title = 'Business Payment';
   const icon = 'business_center';
+  
   return (
     <ContainerSM>
       {/* <PaymentCreatorDetail>{children}</PaymentCreatorDetail> */}
@@ -42,6 +45,11 @@ export default function PaymentLayout({ children }: any) {
           <PaymentMethodButtons lbl="1 Link" />
           <PaymentMethodButtons lbl="Visa / Master" />
         </div>
+                
+        <InputWrapper>
+          <Txt name="mobileNo" lbl="Mobile Number" />
+        </InputWrapper> 
+       
         <div className="col-span-12 flex justify-center gap-2">
           <PaymentMethodButtons className="w-full" lbl="Bank Transfer" />
         </div>
@@ -79,11 +87,7 @@ export default function PaymentLayout({ children }: any) {
             />
           </div>
         </div>
-        {/* 
-        <InputWrapper>
-          <Txt name="mobileNo" lbl="Mobile Number" />
-        </InputWrapper> 
-        */}
+
 
         <div className="col-span-12 mt-4">
           <Chk name="userPermit" checked={true}>

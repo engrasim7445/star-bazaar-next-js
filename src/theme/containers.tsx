@@ -27,7 +27,7 @@ export function ContainerXL_Height({ children, className, clz2 }: IContainer) {
 export function ContainerXL_Cols12({ children, className, clz2 }: IContainer) {
   return (
     // min-h-[63vh]
-    <ContainerXL_Height className={`min-h-[63vh] ${className}`} clz2={clz2}>
+    <ContainerXL_Height className={className} clz2={clz2}>
       <div className="col-span-12">
         {children}
       </div>

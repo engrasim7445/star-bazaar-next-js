@@ -1,9 +1,11 @@
-import { ContainerXL_Height } from '@/theme';
+import { ContainerXL_Cols12, ContainerXL_Height } from '@/theme';
 
 export default function PublicLayout({ children }: any) {
   return (
     <>
-      <ContainerXL_Height>{children}</ContainerXL_Height>
+      <ContainerXL_Height>
+        <div className='col-span-12 text-justify leading-tight text-xl'>{children}</div>
+      </ContainerXL_Height>
     </>
   );
 }

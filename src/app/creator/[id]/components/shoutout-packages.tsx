@@ -1,6 +1,4 @@
-'use client';
 import { LinkWrap } from '@/shared';
-import { useRouter, usePathname } from 'next/navigation';
 
 export function ShoutoutPackages() {
   return (
@@ -35,7 +33,7 @@ export function ShoutoutPackages() {
       </ShoutoutPackageLayer>
       <h5 className="text-xl">Business Shoutout</h5>
       <ShoutoutPackageLayer className="bg-green-gredient">
-        <LinkWrap url='../business-inquiry/101'>
+        <LinkWrap isRelative={true} url='business'>
           <h3 className="text-3xl">Business Shoutout</h3>
           <h4 className="text-4xl">
             <b> PKR 100,000 </b>

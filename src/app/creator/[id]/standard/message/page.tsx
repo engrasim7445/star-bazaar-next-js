@@ -1,6 +1,6 @@
 'use client'
-import { OrderShoutoutLayout } from '@/app/creator-detail/components';
 import { Iconz, LinkWrap } from '@/shared';
+import { OrderShoutoutLayout } from '../../components';
 
 export default function OrderStandard() {
 

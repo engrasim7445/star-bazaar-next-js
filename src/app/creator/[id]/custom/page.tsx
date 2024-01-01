@@ -1,4 +1,4 @@
-import { OrderShoutoutLayout, StandardOrderStop1 } from "../../components";
+import { OrderShoutoutLayout, StandardOrderStop1 } from "../components";
 
 
 export default function CustomOrderRoute() {

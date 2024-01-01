@@ -2,7 +2,7 @@ import { CardImageUtil, Iconz, LinkWrap } from '@/shared';
 export function HomeCard({ d }: any) {
   return (
     <div className="col-span-2 md:col-span-1 h-full text-sm xl:text-xl text-white ">
-      <LinkWrap url='/creator-detail/101'>
+      <LinkWrap url='/creator/101'>
         <CardImageUtil url={d?.image} className="h-52 sm:h-72 md:h-52 xl:h-72 2xl:h-80" />
         <div className="pt-2">
           <div className="md:text-xl h-10">

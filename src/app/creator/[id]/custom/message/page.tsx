@@ -1,5 +1,5 @@
-import { OrderShoutoutLayout } from '@/app/creator-detail/components';
 import { BtnSuccess, Iconz, LinkWrap, TxtArea } from '@/shared';
+import { OrderShoutoutLayout } from '../../components';
 
 export default function CustomMessage() {
   return (

@@ -46,14 +46,14 @@ export default function PaymentLayout({ children }: any) {
           <PaymentMethodButtons lbl="Visa / Master" />
         </div>
                 
-        <InputWrapper>
+        <InputWrapper className='hidden'>
           <Txt name="mobileNo" lbl="Mobile Number" />
         </InputWrapper> 
        
         <div className="col-span-12 flex justify-center gap-2">
           <PaymentMethodButtons className="w-full" lbl="Bank Transfer" />
         </div>
-        <div className="col-span-12">
+        <div className="col-span-12 hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1">
             <TxtCopy
               lbl="Bank Name"

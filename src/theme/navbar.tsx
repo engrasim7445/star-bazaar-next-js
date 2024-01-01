@@ -11,7 +11,8 @@ export function NavBar() {
   return (
     <ContainerXL className={`bg-nav1 sticky top-0 z-10 ${isPublic}`} clz2=" py-1 ">
       <div className="col-span-2 md:col-span-1 md:order-1 flex justify-center md:justify-end items-center" >
-        <LinkNav lbl="Notification" icon="link" />
+        {/* <LinkNav lbl="Notification" icon="link" /> */}
+        <LinkNav lbl="Creator Login" icon="link" url='/profile/customer' />
       </div>
       <div className="col-span-8 md:col-span-2 flex justify-center  md:justify-start  ">
         <LinkWrap url="\home">
@@ -24,7 +25,8 @@ export function NavBar() {
         </LinkWrap>
       </div>
       <div className="col-span-2 md:col-span-1 flex justify-center items-center md:order-3 ">
-        <LinkNav lbl="Profile" icon="link" url='../../../profile/customer' />
+        {/* <LinkNav lbl="Profile" icon="link" url='/profile/customer' /> */}
+        <LinkNav lbl="Customer Login" icon="link" url='/profile/customer' />
       </div>
       <div className="col-span-10 md:col-span-6 flex justify-center items-center ">
         <div
@@ -52,12 +54,7 @@ export function NavBar() {
       <div className="col-span-2 md:col-span-2 flex items-center cursor-pointer">
         Sort By: <Iconz icon="arrow_drop_down" />
       </div>
-      {/* <div className="h-100 md:col-span-2 hidden md:flex bg-yellow-500 ">
-            Creator Login
-          </div>
-          <div className="h-100 md:col-span-2 hidden md:flex bg-green-500 ">
-            Customer Login
-          </div> */}
+
     </ContainerXL>
   );
 }

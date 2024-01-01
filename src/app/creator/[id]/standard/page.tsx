@@ -1,3 +1,2 @@
-import CustomOrderRoute from '../custom/page';
-
-export default CustomOrderRoute
+import DefaultExport from '../custom/page';
+export default DefaultExport

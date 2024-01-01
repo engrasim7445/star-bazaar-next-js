@@ -1,2 +1,2 @@
-import PersonalizeLayout from '../custom/layout';
-export default PersonalizeLayout;
+import DefaultExport from '../custom/layout';
+export default DefaultExport;

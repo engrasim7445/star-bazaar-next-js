@@ -10,6 +10,9 @@ export function LinkWrap({ url, children, isRelative, className }: any) {
   const finalURL = isRelative ? pathName + '/' + url : url;
   return <Link href={finalURL}  className={`h-full cursor-pointer ${className}`}>{children}</Link>;
 }
+export function LinkFragement({ fragment, children, className }: any) {
+  return <Link href={'#' + fragment}  className={`h-full cursor-pointer ${className}`}>{children}</Link>;
+}
 
 export function LinkFooter({ url, className, lbl, icon }: any) {
   icon = icon || 'link'

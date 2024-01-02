@@ -12,6 +12,7 @@ export interface SwalParam {
 export function wentWrong(error: any = {}): any {
   return error({ message: 'Problem with service please try later' });
 }
+
 export function success(swalParam: Partial<SwalParam> | string) {
   if (typeof swalParam == 'string') {
     return dialog({ message: swalParam, icon: 'success', title: 'Success' });
@@ -21,6 +22,7 @@ export function success(swalParam: Partial<SwalParam> | string) {
     return dialog(swalParam);
   }
 }
+
 export function warn(swalParam: Partial<SwalParam> | string) {
   if (typeof swalParam == 'string') {
     return dialog({
@@ -34,6 +36,7 @@ export function warn(swalParam: Partial<SwalParam> | string) {
     return dialog(swalParam);
   }
 }
+
 export function error(swalParam: Partial<SwalParam> | string) {
   if (typeof swalParam == 'string') {
     return dialog({ message: swalParam, icon: 'error', title: 'Error' });
@@ -44,7 +47,7 @@ export function error(swalParam: Partial<SwalParam> | string) {
   }
 }
 
-export function dialog(swalParam: SwalParam) {
+function dialog(swalParam: SwalParam) {
   return Swal.fire({
     title: swalParam.title,
     text: swalParam.message,

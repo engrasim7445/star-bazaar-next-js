@@ -6,7 +6,7 @@ export function Btnz({ onClick, className, children }: any) {
   return (
     <button
       type="button"
-      className={`rounded-full flex justify-center items-center text-md  p-3 btn-animate ${className}`}
+      className={`rounded-full flex justify-center items-center text-md w-28 h-10 btn-animate ${className}`}
       onClick={onClick}
     >
       {children}

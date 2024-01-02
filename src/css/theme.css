@@ -24,8 +24,8 @@ body {
 }
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
-
 /* * {
   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
   transition: min-width 0.4s ease-in-out, min-height 0.4s ease-in-out;

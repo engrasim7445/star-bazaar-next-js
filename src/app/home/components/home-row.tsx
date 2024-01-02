@@ -1,6 +1,6 @@
 import { ContainerXL } from '@/theme';
 import { HomeCard } from '.';
-import { BtnPrimary, Iconz } from '@/shared';
+import { BtnPrimary, Iconz, LinkWrap } from '@/shared';
 
 export function HomeRow({ d }: any) {
   return (
@@ -10,7 +10,8 @@ export function HomeRow({ d }: any) {
         <Iconz icon='hotel_class' className='text-orange me-2' />
          Heading for Row
          </h2>
-        <BtnPrimary className='text-md py-1'>View All</BtnPrimary>
+         <LinkWrap url='/search?category=fashion'><BtnPrimary>View All</BtnPrimary></LinkWrap>
+        
       </div>
       <div className="col-span-12">
         <div className="grid grid-cols-6 gap-1 md:gap-2 xl:gap-4">

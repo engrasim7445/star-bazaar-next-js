@@ -40,18 +40,19 @@ export default function PaymentLayout({ children }: any) {
           icon={'shopping_cart'}
         />
         <div className="col-span-12 flex justify-center gap-2">
-          <PaymentMethodButtons lbl="EasyPaisa" isActive={true} />
-          <PaymentMethodButtons lbl="JazzCash" />
-          <PaymentMethodButtons lbl="1 Link" />
-          <PaymentMethodButtons lbl="Visa / Master" />
+          <PaymentMethodButtons className='h-12' icon='payments' lbl="EasyPaisa" isActive={true} />
+          <PaymentMethodButtons className='h-12' icon='local_atm' lbl="JazzCash" />
+          <PaymentMethodButtons className='h-12' icon='account_balance' lbl="1 Link (IBFT)" />
+          <PaymentMethodButtons className='h-12' icon='credit_card' lbl="Visa / Master" />
         </div>
                 
         <InputWrapper className='hidden'>
           <Txt name="mobileNo" lbl="Mobile Number" />
         </InputWrapper> 
        
-        <div className="col-span-12 flex justify-center gap-2">
-          <PaymentMethodButtons className="w-full" lbl="Bank Transfer" />
+        <div className="col-span-12 flex justify-cente">
+        {/* mobile_friendly */}
+          <PaymentMethodButtons className="w-full h-12" icon='devices' lbl="Bank Transfer" />
         </div>
         <div className="col-span-12 hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1">

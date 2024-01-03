@@ -1,13 +1,17 @@
+'use client'
 // import BtnLink from "@/shared/button/btn-link";
 // import BtnRoute from "@/shared/button/btn-route";
 
 import { Iconz, Imgz, LinkNav, LinkWrap } from '@/shared';
 import { ContainerXL } from '.';
 import { isPublicUrl } from '@/core/essentials';
+import { DialogUnfolding } from '@/shared/dialogs';
+import { useState } from 'react';
 
 export function NavBar() {
   // const isPublic = isPublicUrl() ? 'hidden' : '';
   const isPublic = '';
+  const [classNamez, setClassName] = useState('');
   return (
     <ContainerXL className={`bg-nav1 sticky top-0 z-10 ${isPublic}`} clz2=" py-1 ">
       <div className="col-span-2 md:col-span-1 md:order-1 flex justify-center md:justify-end items-center" >
@@ -51,9 +55,10 @@ export function NavBar() {
           </LinkWrap>
         </div>
       </div>
-      <div className="col-span-2 md:col-span-2 flex items-center cursor-pointer">
+      <div className="col-span-2 md:col-span-2 flex items-center cursor-pointer" onClick={() => setClassName('unfoldingDialog')}>
         Sort By: <Iconz icon="arrow_drop_down" />
       </div>
+    <DialogUnfolding className={classNamez} onClick={setClassName} >some my content</DialogUnfolding>
 
     </ContainerXL>
   );

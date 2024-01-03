@@ -25,14 +25,14 @@ export function OL_a({ children }: any) {
 export function OL_i({ children }: any) {
   return (
     <ol
-      className="list-inside mt-3 mx-5 "
+      className="list-inside mt-3 me-10 ms-14 "
       type="i"
-      style={{ listStyle: 'lower-roman', listStylePosition: 'inside' }}
+      style={{ listStyle: 'lower-roman', listStylePosition: 'outside' }}
     >
       {children}
     </ol>
   );
 }
 export function LI({ children, className }: any) {
-  return <li className={`mb-2 cursor-default hover:text-yellow-300 transition-colors ease-linear duration-200 ${className}`}>{children}</li>;
+  return <li className={`mb-2 cursor-default hover:text-yellow-300 transition-colors ease-linear duration-200 ${className}`}>&ensp;{children}</li>;
 }

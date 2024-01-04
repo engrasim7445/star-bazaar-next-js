@@ -5,7 +5,7 @@
 import { Iconz, Imgz, LinkNav, LinkWrap } from '@/shared';
 import { ContainerXL } from '.';
 import { isPublicUrl } from '@/core/essentials';
-import { DialogUnfolding } from '@/shared/dialogs';
+import { DialogRevealing, DialogSketch, DialogUnfolding } from '@/shared/dialogs';
 import { useState } from 'react';
 
 export function NavBar() {
@@ -30,7 +30,7 @@ export function NavBar() {
       </div>
       <div className="col-span-2 md:col-span-1 flex justify-center items-center md:order-3 ">
         {/* <LinkNav lbl="Profile" icon="folder_special" url='/profile/customer' /> */}
-        <LinkNav lbl="Customer Login" icon="person" url='#customer_login' />
+        <LinkNav lbl="Customer Login" icon="person" url='#customer_login'  onClick={() => setClassName('sketchDialog')} />
       </div>
       <div className="col-span-10 md:col-span-6 flex justify-center items-center ">
         <div
@@ -55,10 +55,10 @@ export function NavBar() {
           </LinkWrap>
         </div>
       </div>
-      <div className="col-span-2 md:col-span-2 flex items-center cursor-pointer" onClick={() => setClassName('unfoldingDialog')}>
+      <div className="col-span-2 md:col-span-2 flex items-center cursor-pointer">
         Sort By: <Iconz icon="arrow_drop_down" />
       </div>
-    <DialogUnfolding className={classNamez} onClick={setClassName} >some my content</DialogUnfolding>
+    <DialogSketch className={classNamez} onClick={setClassName} >some my content</DialogSketch>
 
     </ContainerXL>
   );

@@ -107,7 +107,7 @@ html.modal-customized-active, body.modal-customized-active {
   vertical-align: middle;
 }
 #modal-customized-container .modal-customized-background .modal-customized {
-  background: white;
+  background: var(--blue2);
   padding: 50px;
   display: inline-block;
   border-radius: 3px;

@@ -38,10 +38,10 @@ export function LinkBack({ url, className, lbl, icon }: any) {
     </Link>
   );
 }
-export function LinkNav({ lbl, icon, className, url }: any) {
+export function LinkNav({ lbl, icon, className, url, onClick }: any) {
   url = url || '#'
   return (
-    <Link href={url} className={`flex flex-col text-center cursor-pointer text-orange hover:text-yellow ${className}`}>
+    <Link href={url} onClick={() => onClick()} className={`flex flex-col text-center cursor-pointer text-orange hover:text-yellow ${className}`}>
       <Iconz icon={icon} />
       <span> {lbl}</span>
     </Link>

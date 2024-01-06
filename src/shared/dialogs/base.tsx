@@ -46,10 +46,12 @@ export function DialogSketch({ children, className, onClick }: any) {
           fill="none"
           width="100%"
           height="100%"
-          rx="3"
-          ry="3"
+          rx="15"
+          ry="15"
         ></rect>
       </svg>
     </DialogBase>;
 }
+
+
 {/* <DialogSketch className={classNamez} onClick={setClassName} >some my content</DialogSketch> */}

@@ -1,12 +1,15 @@
 'use client';
+import { DialogLoginBase } from "./login-base";
 
-import { DialogUnfolding } from ".";
-
-export function DialogLoginCustomer() {
+export function DialogLoginCustomer({children}: any) {
   
   return (
-    <DialogUnfolding>
+    <DialogLoginBase>
       
-    </DialogUnfolding>
+    </DialogLoginBase>
   );
 }
+// export function NavDialogs() {
+  
+//   <DialogSketch>some my content</DialogSketch>
+// }

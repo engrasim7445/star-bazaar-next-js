@@ -7,16 +7,16 @@ import { ContainerXL } from '.';
 import { isPublicUrl } from '@/core/essentials';
 import { DialogRevealing, DialogSketch, DialogUnfolding } from '@/shared/dialogs';
 import { useState } from 'react';
+import { NavCreatorLogin, NavCustomerLogin } from './navbar-action';
 
 export function NavBar() {
   // const isPublic = isPublicUrl() ? 'hidden' : '';
   const isPublic = '';
-  const [classNamez, setClassName] = useState('');
   return (
     <ContainerXL className={`bg-nav1 sticky top-0 z-10 ${isPublic}`} clz2=" py-1 ">
       <div className="col-span-2 md:col-span-1 md:order-1 flex justify-center md:justify-end items-center" >
         {/* <LinkNav lbl="Notification" icon="notifications" /> */}
-        <LinkNav lbl="Creator Login" icon="star" url='#creator_login' />
+        <NavCreatorLogin />
       </div>
       <div className="col-span-8 md:col-span-2 flex justify-center  md:justify-start  ">
         <LinkWrap url="\home">
@@ -30,7 +30,7 @@ export function NavBar() {
       </div>
       <div className="col-span-2 md:col-span-1 flex justify-center items-center md:order-3 ">
         {/* <LinkNav lbl="Profile" icon="folder_special" url='/profile/customer' /> */}
-        <LinkNav lbl="Customer Login" icon="person" url='#customer_login'  onClick={() => setClassName('sketchDialog')} />
+        <NavCustomerLogin />
       </div>
       <div className="col-span-10 md:col-span-6 flex justify-center items-center ">
         <div
@@ -58,8 +58,6 @@ export function NavBar() {
       <div className="col-span-2 md:col-span-2 flex items-center cursor-pointer">
         Sort By: <Iconz icon="arrow_drop_down" />
       </div>
-    <DialogSketch className={classNamez} onClick={setClassName} >some my content</DialogSketch>
-
-    </ContainerXL>
+   </ContainerXL>
   );
 }

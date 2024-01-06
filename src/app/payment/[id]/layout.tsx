@@ -9,12 +9,19 @@ import {
   TxtCopy,
 } from '@/shared';
 import { ContainerSM, ContainerGrid_BG } from '@/theme';
+import {
+  AccountBalance,
+  CreditCard,
+  Devices,
+  LocalAtm,
+  Payment,
+} from '@mui/icons-material';
 
 export default function PaymentLayout({ children }: any) {
   const backgroundColor = 'bg-green1';
   const title = 'Business Payment';
   const icon = 'business_center';
-  
+
   return (
     <ContainerSM>
       {/* <PaymentCreatorDetail>{children}</PaymentCreatorDetail> */}
@@ -40,19 +47,50 @@ export default function PaymentLayout({ children }: any) {
           icon={'shopping_cart'}
         />
         <div className="col-span-12 flex justify-center gap-2">
-          <PaymentMethodButtons className='h-12' icon='payments' lbl="EasyPaisa" isActive={true} />
-          <PaymentMethodButtons className='h-12' icon='local_atm' lbl="JazzCash" />
-          <PaymentMethodButtons className='h-12' icon='account_balance' lbl="1 Link (IBFT)" />
-          <PaymentMethodButtons className='h-12' icon='credit_card' lbl="Visa / Master" />
+          <PaymentMethodButtons
+            className="h-12"
+            icon="payments"
+            lbl="EasyPaisa"
+            isActive={true}
+          >
+            <Payment />
+          </PaymentMethodButtons>
+          <PaymentMethodButtons
+            className="h-12"
+            icon="local_atm"
+            lbl="JazzCash"
+          >
+            <LocalAtm />
+          </PaymentMethodButtons>
+          <PaymentMethodButtons
+            className="h-12"
+            icon="account_balance"
+            lbl="1 Link (IBFT)"
+          >
+            <AccountBalance />
+          </PaymentMethodButtons>
+          <PaymentMethodButtons
+            className="h-12"
+            icon="credit_card"
+            lbl="Visa / Master"
+          >
+            <CreditCard />
+          </PaymentMethodButtons>
         </div>
-                
-        <InputWrapper className='hidden'>
+
+        <InputWrapper className="hidden">
           <Txt name="mobileNo" lbl="Mobile Number" />
-        </InputWrapper> 
-       
+        </InputWrapper>
+
         <div className="col-span-12 flex justify-cente">
-        {/* mobile_friendly */}
-          <PaymentMethodButtons className="w-full h-12" icon='devices' lbl="Bank Transfer" />
+          {/* mobile_friendly */}
+          <PaymentMethodButtons
+            className="w-full h-12"
+            icon="devices"
+            lbl="Bank Transfer"
+          >
+            <Devices />
+          </PaymentMethodButtons>
         </div>
         <div className="col-span-12 hidden">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1">
@@ -81,14 +119,9 @@ export default function PaymentLayout({ children }: any) {
               val="xxxxxxxxxxxx"
               className="col-span-1"
             />
-            <TxtCopy
-              lbl="Email"
-              val="xxxxxxxxxxxx"
-              className="col-span-1"
-            />
+            <TxtCopy lbl="Email" val="xxxxxxxxxxxx" className="col-span-1" />
           </div>
         </div>
-
 
         <div className="col-span-12 mt-4">
           <Chk name="userPermit" checked={true}>

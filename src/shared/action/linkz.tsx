@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
-import { Iconz } from '..';
 import { usePathname, useRouter } from 'next/navigation';
+import { ArrowBack, LinkSharp, Star, StarOutlineTwoTone, StarRateOutlined, StarRounded } from '@mui/icons-material';
 
 
 // For Images and Buttons
@@ -14,13 +14,12 @@ export function LinkFragement({ fragment, children, className }: any) {
   return <Link href={'#' + fragment}  className={`h-full cursor-pointer ${className}`}>{children}</Link>;
 }
 
-export function LinkFooter({ url, className, lbl, icon }: any) {
-  icon = icon || 'link'
+export function LinkFooter({ url, className, lbl, children }: any) {
   return (
     <Link
       href={url}
       className={`flex items-center mb-2 hover:text-yellow-200 ${className}`}>
-      <Iconz icon={icon} className="pe-3" />
+      {children ? children : <StarRounded className='me-3'/>}
       <span>{lbl}</span>
     </Link>
   );
@@ -32,18 +31,18 @@ export function LinkBack({ url, className, lbl, icon }: any) {
     <Link
       href=''
       onClick={() => router.back()}
-      className={`flex items-center mb-2 hover:text-yellow-200 ${className}`}>
-      <Iconz icon={icon} className="pe-3" />
+      className={`flex items-center justify-center mb-2 hover:text-yellow-200 ${className}`}>
+      <ArrowBack className='me-3'/>
       <span>{lbl}</span>
     </Link>
   );
 }
-export function LinkNav({ lbl, icon, className, url, onClick }: any) {
+export function LinkNav({ lbl, children, className, url, onClick }: any) {
   url = url || '#'
   return (
-    <Link href={url} onClick={() => onClick()} className={`flex flex-col text-center cursor-pointer text-orange hover:text-yellow ${className}`}>
-      <Iconz icon={icon} />
-      <span> {lbl}</span>
+    <Link href={url} onClick={() => onClick()} className={`flex flex-col justify-center text-center  cursor-pointer text-orange hover:text-yellow ${className}`}>
+      {children}
+      <span>{lbl}</span>
     </Link>
   );
 }

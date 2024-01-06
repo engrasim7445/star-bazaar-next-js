@@ -1,5 +1,11 @@
 'use client';
 import { CardImageUtil, LinkFooter, ProfessionBage } from '@/shared';
+import {
+  AccountBalanceWallet,
+  DrawTwoTone,
+  EditAttributesRounded,
+  Logout,
+} from '@mui/icons-material';
 
 export function DetailProfile({ children }: any) {
   return (
@@ -7,17 +13,14 @@ export function DetailProfile({ children }: any) {
       <CardImageUtil className="h-48 me-3" />
       <div className="w-full min-h-48 relative">
         <h2 className="flex text-orange ">
-          <LinkFooter
-            url=""
-            lbl="Edit Profile"
-            icon="edit_square"
-            className="me-6"
-          />
-          <LinkFooter url="" lbl="Logout" icon="settings_power" />
+          <LinkFooter url="" lbl="Edit Profile">
+            <DrawTwoTone className="me-3" />
+          </LinkFooter>
+          <LinkFooter url="" lbl="Logout" icon="settings_power">
+            <Logout className="ms-10 me-3" />
+          </LinkFooter>
         </h2>
-        <h2 className="text-xl  leading-none">
-          Name of the Creator
-        </h2>
+        <h2 className="text-xl  leading-none">Name of the Creator</h2>
         {children}
       </div>
     </div>
@@ -31,9 +34,9 @@ export function WalletAmout() {
         <LinkFooter
           url=""
           lbl="Wallet Balance"
-          icon="account_balance_wallet"
-          className="me-6"
-        />
+        >
+          <AccountBalanceWallet className="me-3" />
+        </LinkFooter>
       </h2>
       <h2 className="text-2xl text-center text-green">PKR 10000000</h2>
     </div>

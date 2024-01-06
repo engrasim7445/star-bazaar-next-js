@@ -1,6 +1,7 @@
 'use client'
-import { Iconz, LinkWrap } from '@/shared';
+import { LinkWrap } from '@/shared';
 import { OrderShoutoutLayout } from '../../components';
+import { Celebration, Mosque } from '@mui/icons-material';
 
 export default function OrderStandard() {
 
@@ -11,7 +12,7 @@ export default function OrderStandard() {
         className="p-3 bg-purple1 text-xl flex items-center mb-3"
         style={{ borderBottom: '1px solid yellow' }}
       >
-        <Iconz icon="celebration" className="me-3" />
+        <Celebration className='me-3'/>
         Select Occasion
       </h2>
       <div className="px-4">
@@ -22,11 +23,7 @@ export default function OrderStandard() {
               key={x}
               className="col-span-1 flex items-center px-4 py-2 rounded-md bg-blue1 cursor-pointer border border-transparent hover:border-orange-400  "
             >
-              <Iconz
-                icon="mosque"
-                className="me-2 text-green"
-                stl={{ fontSize: '30px' }}
-              />
+              <Mosque className='me-3 text-green'/>
               <h2 className="text-xl ms-3">Hajj Shoutout</h2>
             </div>
             </LinkWrap>

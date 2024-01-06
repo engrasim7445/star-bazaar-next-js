@@ -1,4 +1,5 @@
-import { CardImageUtil, Iconz, LinkWrap } from '@/shared';
+import { CardImageUtil, LinkWrap } from '@/shared';
+import { Timer } from '@mui/icons-material';
 export function HomeCard({ d }: any) {
   return (
     <div className="col-span-2 md:col-span-1 h-full text-sm xl:text-xl text-white ">
@@ -14,7 +15,7 @@ export function HomeCard({ d }: any) {
           <div className="col-span-5 flex justify-between items-center">
             <h3 className="h-5">PKR 1000 </h3>
             <div className="flex items-center text-yellow-300">
-              <Iconz icon="timer" />
+              <Timer />
               <h3 className="h-5 ">10 Days</h3>
             </div>
           </div>

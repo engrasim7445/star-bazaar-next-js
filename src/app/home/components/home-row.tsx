@@ -1,13 +1,13 @@
-import { ContainerXL } from '@/theme';
 import { HomeCard } from '.';
-import { BtnPrimary, Iconz, LinkWrap } from '@/shared';
+import { BtnPrimary, LinkWrap } from '@/shared';
+import { LocalActivity } from '@mui/icons-material';
 
 export function HomeRow({ d }: any) {
   return (
     <>
       <div className="col-span-12 flex justify-between items-start mb-1 mt-4 pb-1" >
         <h2 className="text-2xl flex items-center"> 
-        <Iconz icon='hotel_class' className='text-orange me-2' />
+        <LocalActivity className='text-orange me-2' />
          Heading for Row
          </h2>
          <LinkWrap url='/search?category=fashion'><BtnPrimary>View All</BtnPrimary></LinkWrap>

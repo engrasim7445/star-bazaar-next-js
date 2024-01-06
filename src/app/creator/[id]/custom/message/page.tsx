@@ -1,5 +1,6 @@
-import { BtnSuccess, Iconz, LinkWrap, TxtArea } from '@/shared';
+import { BtnSuccess, LinkWrap, TxtArea } from '@/shared';
 import { OrderShoutoutLayout } from '../../components';
+import { Draw } from '@mui/icons-material';
 
 export default function CustomMessage() {
   return (
@@ -9,7 +10,7 @@ export default function CustomMessage() {
         style={{ borderBottom: '1px solid yellow' }}
       >
         {/* history_edu */}
-        <Iconz icon="draw" className="me-3" /> Custom Shoutout
+        <Draw />
       </h2>
       <div className="px-4">
         <TxtArea placeholder="Enter your custom shoutout message" />

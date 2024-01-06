@@ -1,4 +1,5 @@
-import { Iconz, LinkWrap } from '@/shared';
+import { LinkWrap } from '@/shared';
+import { ArrowBackIos } from '@mui/icons-material';
 
 export function OrderShoutoutLayout({ children }: any) {
 
@@ -6,7 +7,7 @@ export function OrderShoutoutLayout({ children }: any) {
     <div className="col-span-12 md:col-span-7 lg:col-span-5 row-span-3 order-3 lg:order-2">
       <h5 className="text-2xl mb-3 flex items-center">
         <LinkWrap isRelative={true} url="../" className='flex items-center'>
-          <Iconz icon="arrow_back_ios" className="me-1" />
+          <ArrowBackIos />
         </LinkWrap>
         Order Shoutout
       </h5>

@@ -1,5 +1,6 @@
 'use client'
-import { Iconz } from "..";
+
+import { ContentCopyOutlined } from "@mui/icons-material";
 
 export function TxtBase({
   id,
@@ -45,7 +46,7 @@ export function TxtCopy({ id, name, lbl, setVal, val, className, clz2, onClick }
         className={`w-full h-full bg-transparent ${clz2}`}
         disabled={true}
       />
-      <Iconz icon='content_copy' className='cursor-pointer ms-1' onClick={onClick}/>
+      <ContentCopyOutlined className='cursor-pointer ms-1' onClick={onClick} />
     </TxtBase>
   );
 }

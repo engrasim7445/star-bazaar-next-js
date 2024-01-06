@@ -1,6 +1,5 @@
 'use client';
 
-import { Iconz } from "..";
 
 export function Btnz({ onClick, className, children }: any) {
   return (
@@ -50,12 +49,12 @@ export function BtnDanger({ onClick, className, children }: any) {
 }
 import easyPaisa from './../../../public/svg/easypaisa.svg'
 import jazzCash from './../../../public/svg/jazzcash.svg'
-export function PaymentMethodButtons({icon, lbl, onClick, isActive, className}: any) {
+export function PaymentMethodButtons({children, lbl, onClick, isActive, className}: any) {
   const bgColor = isActive ? 'bg-orange1' : 'bg-white1' 
   return (
     <BtnDefault className={`rounded-sm w-3/12 flex-col py-1 px-0 ${bgColor} ${className}`} onClick={onClick}>
       <span className="h-5">
-        <Iconz icon={icon}/>
+        {children}
       </span>
       <span>{lbl}</span>
     </BtnDefault>

@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 import Head from 'next/head';
 import { useScreenSize } from '@/core';
 import { useState } from 'react';
+import { NavigateBefore, NavigateNext } from '@mui/icons-material';
 
 export function Testamonial() {
   let slider: any;
@@ -27,18 +28,12 @@ export function Testamonial() {
       <div className="col-span-12 flex justify-between items-center my-2">
         <h4 className="text-2xl col-span-12">Testamonial</h4>
         <div className="col-span-12 flex justify-end mb-2">
-          <span
-            className="material-icons rounded-full bg-blue-950  !text-5xl mx-2 cursor-pointer"
-            onClick={() => slider.slickPrev()}
-          >
-            navigate_before
-          </span>
-          <span
+          <NavigateBefore  className="material-icons rounded-full bg-blue-950  !text-5xl mx-2 cursor-pointer"
+            onClick={() => slider.slickPrev()} />
+          <NavigateNext
             className="material-icons rounded-full bg-blue-950  !text-5xl mx-2 cursor-pointer"
             onClick={() => slider.slickNext()}
-          >
-            navigate_next
-          </span>
+           />
         </div>
       </div>
 

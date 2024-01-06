@@ -1,15 +1,16 @@
 'use client';
-import { Txt, Radioz, Iconz, BtnSuccess, LinkWrap } from '@/shared';
+import { Txt, Radioz, BtnSuccess, LinkWrap } from '@/shared';
+import { EmojiObjects } from '@mui/icons-material';
 import { useState } from 'react';
 export function StandardOrderStop1() {
   const [orderFor, setOrderFor] = useState('forMe');
   return (
     <>
       <h2
-        className="p-3 bg-white1 text-xl flex items-center mb-3 text-black"
-        style={{ borderBottom: '1px solid yellow' }}
+        className="p-3 bg-white1 text-xl flex items-center mb-3 text-black drop-shadow-lg"
+        style={{ borderBottom: '1px solid yellow ' }}
       >
-        Who do this video for <Iconz icon="emoji_objects"></Iconz>
+        Who do this video for <EmojiObjects className='text-yellow-400 drop-shadow-lg' />
       </h2>
       <div className="px-4">
         <div className="flex">

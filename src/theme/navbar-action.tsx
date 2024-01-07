@@ -9,7 +9,6 @@ export function NavCustomerLogin() {
   const dialogz = useSelector((state: any) => state.dialogz);
 
   const dialogOpen = () => {
-    console.log('LoginCustomer Called')
     dispatch(dialogShow({LoginCustomer: true}));
     console.log(dialogz)
   };
@@ -25,7 +24,7 @@ export function NavCreatorLogin() {
     dispatch(dialogShow({LoginCreator: true}));
   };
   return (
-    <LinkNav lbl="Creator Login" icon="star" url="#creator_login" onClick={dialogOpen}>
+    <LinkNav lbl="Creator Login" icon="star" url="#creator_login" onClick={dialogOpen} >
       <Star className='flex place-self-center'/>
     </LinkNav>
   );

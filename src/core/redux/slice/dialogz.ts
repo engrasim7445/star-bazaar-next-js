@@ -7,21 +7,18 @@ const Slice = createSlice({
   initialState,
   reducers: {
     dialogShow: (state, action) => {
-      console.log(action)
       state.data = {
         ...dialogs,
         ...action.payload,
       }
     },
     dialogHide: (state, action) => {
-      console.log(action)
       state.data = {
         ...state.data,
         ...action.payload,
       }
     },
     dialogHideAll: (state, action) => {
-      console.log(action)
       state.data = {
         ...dialogs
       }

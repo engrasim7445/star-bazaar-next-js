@@ -1,6 +1,7 @@
 'use client'
 
-import { ContentCopyOutlined } from "@mui/icons-material";
+import { ContentCopyOutlined, Visibility, VisibilityOff } from "@mui/icons-material";
+import { useState } from "react";
 
 export function TxtBase({
   id,
@@ -16,7 +17,7 @@ export function TxtBase({
       </label>
       <div
         style={{ height: '40px', border: '1px solid white' }}
-        className={`rounded-full rounded-tl-none px-4 control ${className}`}
+        className={`rounded-full px-4 control ${className}`}
       >
         {children}
       </div>
@@ -32,6 +33,27 @@ export function Txt({ id, name, lbl, setVal, className, clz2 }: any) {
         id={id || name}
         className={`w-full h-full bg-transparent ${clz2}`}
       />
+    </TxtBase>
+  );
+}
+export function TxtPassword({ id, name, lbl, setVal, val, className, clz2, onClick }: any) {
+  const [toggleType, setToggleType ] = useState('password');
+  return (
+    <TxtBase lbl={lbl} className={`flex justify-between items-center  ${className}`}>
+      <input
+        type={toggleType}
+        name={name}
+        value={val}
+        id={id || name}
+        className={`w-full h-full bg-transparent ${clz2}`}
+        // disabled={true}
+      />
+      {
+        toggleType == 'password' ? 
+        <VisibilityOff className='cursor-pointer ms-1'   onClick={() => setToggleType('text')} />
+        :
+        <Visibility className='cursor-pointer ms-1' onClick={() => setToggleType('password')} />
+      }
     </TxtBase>
   );
 }

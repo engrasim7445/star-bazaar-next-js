@@ -1,11 +1,10 @@
 'use client';
 import { DialogLoginBase } from "./login-base";
 
-export function DialogLoginCustomer({children}: any) {
-  
+export function DialogLoginCustomer() {
   return (
-    <DialogLoginBase>
-      
+    <DialogLoginBase dialogName='LoginCustomer' >
+      Login Customer
     </DialogLoginBase>
   );
 }

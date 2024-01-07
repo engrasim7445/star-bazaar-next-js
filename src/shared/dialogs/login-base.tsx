@@ -1,10 +1,11 @@
-import { DialogUnfolding } from ".";
+import { MatDialog } from "./base-mat-dialog";
 
-export function DialogLoginBase({children}: any) {
+export function DialogLoginBase({children, dialogName}: any) {
   
   return (
-    <DialogUnfolding>
-      
-    </DialogUnfolding>
+    <MatDialog dialogName={dialogName}  >
+      Hello from Dialog Login Base
+      {children}
+    </MatDialog>
   );
 }

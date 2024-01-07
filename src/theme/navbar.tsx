@@ -15,10 +15,11 @@ import { NavCreatorLogin, NavCustomerLogin } from './navbar-action';
 import {
   ArrowDropDown,
   FolderSpecial,
+  Mail,
   Notifications,
   SavedSearch,
 } from '@mui/icons-material';
-
+import Badge from '@mui/material/Badge';
 export function NavBar() {
   // const isPublic = isPublicUrl() ? 'hidden' : '';
   const isPublic = '';
@@ -28,10 +29,14 @@ export function NavBar() {
       clz2=" py-1 "
     >
       <div className="col-span-2 md:col-span-1 md:order-1 flex justify-center md:justify-end items-center">
-        <LinkNav lbl="Notification">
-          <Notifications className="flex place-self-center" />
-        </LinkNav>
-        {/* <NavCreatorLogin /> */}
+        {/* <LinkNav lbl="Notification">
+          <span>
+            <Badge badgeContent='' variant="dot"  color="success"  anchorOrigin={{ vertical: 'top', horizontal: 'right'}}>
+              <Notifications className="flex place-self-center" />
+            </Badge>
+          </span>
+        </LinkNav> */}
+        <NavCreatorLogin />
       </div>
       <div className="col-span-8 md:col-span-2 flex justify-center  md:justify-start  ">
         <LinkWrap url="\home">
@@ -44,10 +49,10 @@ export function NavBar() {
         </LinkWrap>
       </div>
       <div className="col-span-2 md:col-span-1 flex justify-center items-center md:order-3 ">
-        <LinkNav lbl="Profile" url="/profile/customer">
+        {/* <LinkNav lbl="Profile" url="/profile/customer">
           <FolderSpecial className="flex place-self-center" />
-        </LinkNav>
-        {/* <NavCustomerLogin /> */}
+        </LinkNav> */}
+        <NavCustomerLogin />
       </div>
       <div className="col-span-10 md:col-span-6 flex justify-center items-center ">
         <div

@@ -3,16 +3,25 @@ import { createSlice } from '@reduxjs/toolkit';
 import { initialState } from '../global-redux';
 
 const Slice = createSlice({
-  name: 'dialogShow',
+  name: 'dialogz',
   initialState,
   reducers: {
     dialogShow: (state, action) => {
+      console.log(action)
       state.data = {
         ...dialogs,
-        [action.payload.key]: action.payload.value
+        ...action.payload,
       }
     },
     dialogHide: (state, action) => {
+      console.log(action)
+      state.data = {
+        ...state.data,
+        ...action.payload,
+      }
+    },
+    dialogHideAll: (state, action) => {
+      console.log(action)
       state.data = {
         ...dialogs
       }

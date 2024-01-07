@@ -7,6 +7,7 @@ import { Providers } from '@/core/redux/providers';
 import { NavbarConditional } from '@/theme/navbar-conditional';
 import { NavBar } from '@/theme/navbar';
 import { NavbarPublic } from '@/theme/navbar-public';
+import { DialogAll } from '@/shared/dialogs/dialog-all';
 // import { useEffect } from 'react';
 
 const inter = Alumni_Sans({
@@ -33,11 +34,11 @@ export default function RootLayout({
       <head>
         {/* <script src="https://cdn.tailwindcss.com" async/> */}
         {/* <script src="/js/common.js" async/> */}
-        <link
+        {/* <link
           rel="stylesheet"
           type="text/css"
           href="https://fonts.googleapis.com/css?display=optional&family=Roboto:300,400,500|Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-        />
+        /> */}
         <link
           rel="stylesheet"
           type="text/css"
@@ -56,6 +57,7 @@ export default function RootLayout({
             {/* <NavbarPublic /> */}
             {children}
             <Footer />
+            <DialogAll  />
           </Providers>
         </div>
       </body>

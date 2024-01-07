@@ -5,6 +5,7 @@ import {
   DrawTwoTone,
   EditAttributesRounded,
   Logout,
+  PowerSettingsNewRounded,
 } from '@mui/icons-material';
 
 export function DetailProfile({ children }: any) {
@@ -17,7 +18,7 @@ export function DetailProfile({ children }: any) {
             <DrawTwoTone className="me-3" />
           </LinkFooter>
           <LinkFooter url="" lbl="Logout" icon="settings_power">
-            <Logout className="ms-10 me-3" />
+            <PowerSettingsNewRounded className="ms-10 me-3" />
           </LinkFooter>
         </h2>
         <h2 className="text-xl  leading-none">Name of the Creator</h2>

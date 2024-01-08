@@ -1,4 +1,3 @@
-
 import {
   BtnSuccess,
   BtnWarn,
@@ -10,6 +9,7 @@ import {
 } from '@/shared';
 import { Followerz } from '@/shared/utils/payment-creator-detail';
 import { ContainerMD, ContainerGrid_BG } from '@/theme';
+import { Assignment } from '@mui/icons-material';
 
 export default function BusinessInquiryRoute() {
   return (
@@ -44,11 +44,9 @@ export default function BusinessInquiryRoute() {
         </div>
       </ContainerGrid_BG> */}
       <ContainerGrid_BG>
-        <GridHeading
-          className="bg-green1"
-          heading="Business Inquiry"
-          icon="assignments"
-        />
+        <GridHeading className="bg-green1" heading="Business Inquiry">
+          <Assignment />
+        </GridHeading>
         <InputWrapper className="md:col-span-6">
           <Txt name="businessName" lbl="Business Name" />
         </InputWrapper>

@@ -1,6 +1,7 @@
 import {
   BtnSuccess,
   Chk,
+  ChksPrivacy_Terms,
   GridHeading,
   InputWrapper,
   LinkWrap,
@@ -11,11 +12,14 @@ import {
 import { ContainerSM, ContainerGrid_BG } from '@/theme';
 import {
   AccountBalance,
+  AccountBalanceWallet,
   CreditCard,
   Devices,
   LocalAtm,
   Payment,
+  ShoppingCart,
 } from '@mui/icons-material';
+import { Switch } from '@mui/material';
 
 export default function PaymentLayout({ children }: any) {
   const backgroundColor = 'bg-green1';
@@ -26,26 +30,24 @@ export default function PaymentLayout({ children }: any) {
     <ContainerSM>
       {/* <PaymentCreatorDetail>{children}</PaymentCreatorDetail> */}
       <ContainerGrid_BG className="mb-3">
-        <GridHeading
-          className="bg-white1 text-black"
-          heading="Shoutout Amount"
-          icon="account_balance_wallet"
-        />
+        <GridHeading className="bg-white1 text-black" heading="Shoutout Amount">
+          <AccountBalanceWallet />
+        </GridHeading>
         <div className="col-span-12 flex justify-between">
           <span>In Store Amount</span>
           <span>PKR 1,000</span>
         </div>
         <div className="col-span-12 flex justify-between">
           <span>Use Wallet</span>
-          <span>Toggle</span>
+          <span>
+            <Switch color="warning" />
+          </span>
         </div>
       </ContainerGrid_BG>
       <ContainerGrid_BG>
-        <GridHeading
-          className="bg-green1"
-          heading="Payment Methods"
-          icon={'shopping_cart'}
-        />
+        <GridHeading className="bg-green1" heading="Payment Methods">
+          <ShoppingCart />
+        </GridHeading>
         <div className="col-span-12 flex justify-center gap-2">
           <PaymentMethodButtons
             className="h-12"
@@ -130,18 +132,7 @@ export default function PaymentLayout({ children }: any) {
             <br className="hidden md:block" /> social media and for other
             promotional purposes.
           </Chk>
-          <Chk name="termsAndCondition" checked={true}>
-            I agree to Star Tech Bazaar Pvt. Ltd &nbsp;
-            <LinkWrap url="#" className="text-orange underline">
-              Terms & Conditions
-            </LinkWrap>
-          </Chk>
-          <Chk name="privacyPolicy" checked={true}>
-            I agree to Star Tech Bazaar Pvt. Ltd &nbsp;
-            <LinkWrap url="#" className="text-orange underline">
-              Privacy & Policy
-            </LinkWrap>
-          </Chk>
+          <ChksPrivacy_Terms />
         </div>
         <div className="col-span-12 flex justify-end">
           <BtnSuccess className="w-40 py-2">Order Shoutout</BtnSuccess>

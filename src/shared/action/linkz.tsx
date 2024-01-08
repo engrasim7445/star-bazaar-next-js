@@ -1,14 +1,16 @@
 'use client';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { ArrowBack, LinkSharp, Star, StarOutlineTwoTone, StarRateOutlined, StarRounded } from '@mui/icons-material';
+import { ArrowBack, StarRounded } from '@mui/icons-material';
+import { Chk } from '..';
 
 
 // For Images and Buttons
-export function LinkWrap({ url, children, isRelative, className }: any) {
+export function LinkWrap({ url, children, isRelative, className, onClick }: any) {
   const pathName = usePathname();
   const finalURL = isRelative ? pathName + '/' + url : url;
-  return <Link href={finalURL}  className={`h-full cursor-pointer ${className}`}>{children}</Link>;
+  onClick = onClick || ((x: any) => {});
+  return <Link href={finalURL} onClick={onClick}  className={`h-full cursor-pointer ${className}`}>{children}</Link>;
 }
 export function LinkFragement({ fragment, children, className }: any) {
   return <Link href={'#' + fragment}  className={`h-full cursor-pointer ${className}`}>{children}</Link>;
@@ -44,6 +46,24 @@ export function LinkNav({ lbl, children, className, url, onClick }: any) {
       {children}
       <span>{lbl}</span>
     </Link>
+  );
+}
+export function ChksPrivacy_Terms() {
+  return (
+    <>
+      <Chk name="termsAndCondition" checked={true}>
+        I agree to Star Tech Bazaar Pvt. Ltd &nbsp;
+        <LinkWrap url="#" className="text-orange underline">
+          Terms & Conditions
+        </LinkWrap>
+      </Chk>
+      <Chk name="privacyPolicy" checked={true}>
+        I agree to Star Tech Bazaar Pvt. Ltd &nbsp;
+        <LinkWrap url="#" className="text-orange underline">
+          Privacy & Policy
+        </LinkWrap>
+      </Chk>
+    </>
   );
 }
 

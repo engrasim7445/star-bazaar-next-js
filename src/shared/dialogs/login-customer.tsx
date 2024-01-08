@@ -12,16 +12,13 @@ export function DialogLoginCustomer() {
     >
       <div className="w-full flex justify-between gap-2">
         <BtnDefault className="w-32 mt-2">
-          <Google className="text-red-500" /> &nbsp;
-          Gmail
+          <Google className="text-red-500" /> &nbsp; Gmail
         </BtnDefault>
         <BtnDefault className="w-32 mt-2">
-          <Facebook className="text-sky-500" />
-          Facebook &nbsp;
+          <Facebook className="text-sky-500" /> &nbsp; Facebook 
         </BtnDefault>
         <BtnDefault className="w-32 mt-2">
-          <Apple /> &nbsp;
-          Apple
+          <Apple /> &nbsp; Apple
         </BtnDefault>
       </div>
     </DialogLoginBase>

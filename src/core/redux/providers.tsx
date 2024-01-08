@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import { ThemeProvider, createTheme } from '@mui/material';
 import { green, purple } from '@mui/material/colors';
+const purple1 = 'linear-gradient(348deg, #8822B0 22%, #953289 55%) 0% 0% no-repeat padding-box !important'
 const theme = createTheme({
   typography: {
     fontFamily: ['__Alumni_Sans_ee155b', 'Roboto', 'Arial', 'sans-serif'].join(','),
@@ -26,6 +27,18 @@ const theme = createTheme({
         },
       },
     },
+    MuiSwitch: {
+      styleOverrides: {
+        track: {
+          background: 'pink'
+        },
+        thumb: {
+          // background: purple1
+        }
+      }
+      
+    }
+   
   }
 });
 // Create a Layer around React App for Redux

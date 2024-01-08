@@ -9,14 +9,14 @@ import {
 import {
   ContainerGrid_BG,
   ContainerHeight,
-  ContainerMD,
-  ContainerSM,
+  CardBG_MD,
+  CardBG_SM,
 } from '@/theme';
 import { AccountBox } from '@mui/icons-material';
 
 export default function SignUpCustomer() {
   return (
-    <ContainerMD>
+    <CardBG_MD>
       <ContainerGrid_BG>
         <GridHeading className="bg-white1" heading="Signup Customer">
           <AccountBox />
@@ -41,6 +41,6 @@ export default function SignUpCustomer() {
           <BtnWarn className="self-center w-52"> Register Now</BtnWarn>
         </div>
       </ContainerGrid_BG>
-    </ContainerMD>
+    </CardBG_MD>
   );
 }

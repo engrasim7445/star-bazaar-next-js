@@ -1,6 +1,6 @@
 export function ContainerHeight({ children, className }: IContainer) {
   return (
-    <div className={`min-h-[63vh] px-1 py-3 ${className} `}>
+    <div className={`min-h-[63vh] px-1 py-3 flex justify-center ${className} `}>
       {children}
     </div>
   );
@@ -34,16 +34,34 @@ export function ContainerXL_Cols12({ children, className, clz2 }: IContainer) {
     </ContainerXL_Height>
   );
 }
-export function ContainerMD({ children, className, clz2 }: IContainer) {
+export function CardBG_XL({ children, className, clz2 }: IContainer) {
   return (
     <ContainerHeight className={className}>
-      <div className={`sm:w-full md:w-10/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 rounded-2xl mx-auto ${clz2}`}>
+      <div className={`w-full xl:w-10/12 2xl:w-9/12 rounded-2xl mx-auto ${clz2}`}>
         {children}
       </div>
     </ContainerHeight>
   );
 }
-export function ContainerSM({ children, className, clz2 }: IContainer) {
+export function CardBG_LG({ children, className, clz2 }: IContainer) {
+  return (
+    <ContainerHeight className={className}>
+      <div className={`w-full lg:w-10/12 xl:w-9/12 2xl:w-8/12 rounded-2xl mx-auto ${clz2}`}>
+        {children}
+      </div>
+    </ContainerHeight>
+  );
+}
+export function CardBG_MD({ children, className, clz2 }: IContainer) {
+  return (
+    <ContainerHeight className={className}>
+      <div className={`w-full md:w-10/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12 rounded-2xl mx-auto ${clz2}`}>
+        {children}
+      </div>
+    </ContainerHeight>
+  );
+}
+export function CardBG_SM({ children, className, clz2 }: IContainer) {
   return (
     <ContainerHeight className={className}>
       <div className={`sm:w-full md:w-8/12 lg:w-6/12 xl:w-5/12 rounded-2xl mx-auto ${clz2}`}>

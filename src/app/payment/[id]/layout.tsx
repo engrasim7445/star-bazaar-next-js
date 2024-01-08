@@ -9,7 +9,7 @@ import {
   Txt,
   TxtCopy,
 } from '@/shared';
-import { ContainerSM, ContainerGrid_BG } from '@/theme';
+import { CardBG_SM, ContainerGrid_BG } from '@/theme';
 import {
   AccountBalance,
   AccountBalanceWallet,
@@ -27,7 +27,7 @@ export default function PaymentLayout({ children }: any) {
   const icon = 'business_center';
 
   return (
-    <ContainerSM>
+    <CardBG_SM>
       {/* <PaymentCreatorDetail>{children}</PaymentCreatorDetail> */}
       <ContainerGrid_BG className="mb-3">
         <GridHeading className="bg-white1 text-black" heading="Shoutout Amount">
@@ -139,6 +139,6 @@ export default function PaymentLayout({ children }: any) {
           {/* <BtnWarn>Submit</BtnWarn> */}
         </div>
       </ContainerGrid_BG>
-    </ContainerSM>
+    </CardBG_SM>
   );
 }

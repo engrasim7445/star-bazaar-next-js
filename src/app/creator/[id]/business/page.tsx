@@ -8,12 +8,12 @@ import {
   TxtArea,
 } from '@/shared';
 import { Followerz } from '@/shared/utils/payment-creator-detail';
-import { ContainerMD, ContainerGrid_BG } from '@/theme';
+import { CardBG_MD, ContainerGrid_BG } from '@/theme';
 import { Assignment } from '@mui/icons-material';
 
 export default function BusinessInquiryRoute() {
   return (
-    <ContainerMD>
+    <CardBG_MD>
       <PaymentCreatorDetail>
         <Followerz lbl="Total Followers" val="335.221 K" />
         <Followerz lbl="Starting Price" val="PKR 999,999,9" />
@@ -74,6 +74,6 @@ export default function BusinessInquiryRoute() {
           {/* <BtnWarn>Submit</BtnWarn> */}
         </div>
       </ContainerGrid_BG>
-    </ContainerMD>
+    </CardBG_MD>
   );
 }

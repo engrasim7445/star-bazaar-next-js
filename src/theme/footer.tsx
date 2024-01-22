@@ -10,11 +10,11 @@ export function Footer() {
       <div className="col-span-5 md:col-span-4 row-span-2 ">
         <h5 className="mb-3 text-xl">Quick Links</h5>
         <div className="inline-block">
-          <LinkFooter url="/public/about-us" lbl='About us' />
-          <LinkFooter url="/public/contact-us" lbl='Contact Us'/>
-          <LinkFooter url="/public/faqs" lbl='FAQs'/>
-          <LinkFooter url="/public/term-and-conditions" lbl='Terms & Conditions' />
-          <LinkFooter url="/public/privacy-policy" lbl='Privacy Policy' />
+          <LinkFooter url="/about-us" lbl='About us' />
+          <LinkFooter url="/contact-us" lbl='Contact Us'/>
+          <LinkFooter url="/faqs" lbl='FAQs'/>
+          <LinkFooter url="/term-and-conditions" lbl='Terms & Conditions' />
+          <LinkFooter url="/privacy-policy" lbl='Privacy Policy' />
         </div>
       </div>
       <div className="col-span-7 md:col-span-3">

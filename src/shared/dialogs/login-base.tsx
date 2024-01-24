@@ -2,13 +2,19 @@
 import { FormControl, FormControlLabel, Radio, RadioGroup } from '@mui/material';
 import { BtnSuccess, BtnWarn, InputWrapper, LinkWrap, Txt, TxtPassword } from '..';
 import { MatDialog } from './base-mat-dialog';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { dialogHide } from '@/core/redux/slice/dialogz';
 
 export function DialogLoginBase({ children, dialogName, heading, type }: any) {
   const [typez, setTypez] = useState(type)
+  const [form, setForm] = useState({}as any)
   const dispatch = useDispatch();
+  const logIn = () => {
+
+  }
+  // useEffect(() => {
+  // }, [])
 
   const handleClose = () => {
     dispatch(dialogHide({ [dialogName]: false }));
@@ -18,10 +24,10 @@ export function DialogLoginBase({ children, dialogName, heading, type }: any) {
       <h1 className="text-xl">{heading}</h1>
       <h2 className="text-lg mt-3">Enter Your Email Id & Password To Login</h2>
       <InputWrapper className="mt-2 bg-white text-black ">
-        <Txt name="userName" lbl="" />
+        <Txt name="userName" lbl="" value={form.userName}/>
       </InputWrapper>
       <InputWrapper className="mt-4 bg-white text-black">
-        <TxtPassword name="password" lbl="" />
+        <TxtPassword name="password" value={form.password} lbl="" />
       </InputWrapper>
       <div className={`ps-1 ${(type == 'creator' || type == 'agent') ? '' : 'hidden'}`}>
         <FormControl >
@@ -32,7 +38,7 @@ export function DialogLoginBase({ children, dialogName, heading, type }: any) {
           </RadioGroup>
         </FormControl>
       </div>
-      <BtnSuccess className='w-full mt-3'>Submit</BtnSuccess>
+      <BtnSuccess className='w-full mt-3' onClick={}>Log In</BtnSuccess>
       <h2  className='text-lg text-orange flex justify-end mt-2'>
         <LinkWrap url='/forgot-password'>
           Forgot Password?

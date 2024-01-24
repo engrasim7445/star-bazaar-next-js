@@ -24,7 +24,8 @@ export function TxtBase({
     </div>
   );
 }
-export function Txt({ id, name, lbl, setVal, className, clz2 }: any) {
+export function Txt({ id, name, lbl, setVal, className, clz2, onChange }: any) {
+  onChange = onChange || function (){ }
   return (
     <TxtBase lbl={lbl} className={className}>
       <input
@@ -36,8 +37,9 @@ export function Txt({ id, name, lbl, setVal, className, clz2 }: any) {
     </TxtBase>
   );
 }
-export function TxtPassword({ id, name, lbl, setVal, val, className, clz2, onClick }: any) {
+export function TxtPassword({ id, name, lbl, setVal, val, className, clz2, onClick, onChange }: any) {
   const [toggleType, setToggleType ] = useState('password');
+  onChange = onChange || function (){ }
   return (
     <TxtBase lbl={lbl} className={`flex justify-between items-center  ${className}`}>
       <input

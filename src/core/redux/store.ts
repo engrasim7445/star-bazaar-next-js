@@ -3,6 +3,7 @@ import { configureStore } from '@reduxjs/toolkit'
 // import userz from '@/core/redux/slice/userz'
 // import todo from '@/core/redux/slice/todo'
 import dialogz from '@/core/redux/slice/dialogz'
+import formz from '@/core/redux/slice/formz'
 
 
 export const store = configureStore({
@@ -10,6 +11,7 @@ export const store = configureStore({
     // user,
     // userz,
     // todo,
-    dialogz
+    dialogz,
+    formz
   }
 })

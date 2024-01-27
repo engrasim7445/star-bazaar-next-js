@@ -4,31 +4,27 @@ import { initialState } from '../global-redux';
 
 const Slice = createSlice({
   name: 'formz',
-  initialState,
+  initialState : {} as any,
   reducers: {
     formzInit: (state, action) => {
-      state.data = {
+      state = {
         ...action.payload,
       }
     },
     formzUpdate: (state, action) => {
-      state.data = {
-        ...state.data,
+      state = {
+        ...state,
         ...action.payload,
       }
     },
     formzUpdateKey: (state, action) => {
-      state.data[state.data.key] = state.data.value
+      state[state.key] = state.value
     },
     formzReset: (state, action) => {
-      state.data = { }
+      state = { }
     }
   }
 });
-
-const dialogs = {
-  
-}
 
 export const { formzInit, formzUpdate, formzReset, formzUpdateKey } = Slice.actions
 export default Slice.reducer;

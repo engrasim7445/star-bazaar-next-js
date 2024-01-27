@@ -4,9 +4,9 @@ import './globals.css';
 // import { Providers } from '@/core/redux/providers';
 import { Footer } from '@/theme';
 import { Providers } from '@/core/redux/providers';
-import { NavbarConditional } from '@/theme/navbar-conditional';
-import { NavBar } from '@/theme/navbar';
-import { NavbarPublic } from '@/theme/navbar-public';
+import { NavbarConditional } from '@/theme/navbar/navbar-conditional';
+import { NavBar } from '@/theme/navbar/navbar';
+import { NavbarPublic } from '@/theme/navbar/navbar-public';
 import { DialogAll } from '@/shared/dialogs/dialog-all';
 // import { useEffect } from 'react';
 

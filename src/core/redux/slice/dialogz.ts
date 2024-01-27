@@ -4,22 +4,22 @@ import { initialState } from '../global-redux';
 
 const Slice = createSlice({
   name: 'dialogz',
-  initialState,
+  initialState: {} as any,
   reducers: {
     dialogShow: (state, action) => {
-      state.data = {
+      state = {
         ...dialogs,
         ...action.payload,
       }
     },
     dialogHide: (state, action) => {
-      state.data = {
-        ...state.data,
+      state = {
+        ...state,
         ...action.payload,
       }
     },
     dialogHideAll: (state, action) => {
-      state.data = {
+      state = {
         ...dialogs
       }
     }
@@ -38,4 +38,9 @@ const dialogs = {
 
 export const { dialogHide, dialogShow } = Slice.actions
 export default Slice.reducer;
+
+// const dispatch = useDispatch();
+// dispatch(dialogHide({ [dialogName]: false }));
+
+
 

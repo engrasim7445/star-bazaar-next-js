@@ -1,22 +1,9 @@
 'use client';
-// import BtnLink from "@/shared/button/btn-link";
-// import BtnRoute from "@/shared/button/btn-route";
-
-import { Imgz, LinkNav, LinkWrap } from '@/shared';
-import { ContainerXL } from '.';
-import { isPublicUrl } from '@/core/essentials';
-import {
-  DialogRevealing,
-  DialogSketch,
-  DialogUnfolding,
-} from '@/shared/dialogs';
-import { useState } from 'react';
+import { Imgz, LinkWrap } from '@/shared';
+import { ContainerXL } from '..';
 import { NavCreatorLogin, NavCustomerLogin } from './navbar-action';
 import {
   ArrowDropDown,
-  FolderSpecial,
-  Mail,
-  Notifications,
   SavedSearch,
 } from '@mui/icons-material';
 import Badge from '@mui/material/Badge';

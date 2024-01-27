@@ -1,6 +1,5 @@
 import { LinkFooter, LinkNav } from '@/shared';
-import { ContainerXL, ContainerXL_Height } from '.';
-import { isPublicUrl } from '@/core/essentials';
+import { ContainerXL, ContainerXL_Height } from '..';
 
 export function NavbarPublic({ children }: any) {
   // const isPublic = isPublicUrl() ? '' : 'hidden';

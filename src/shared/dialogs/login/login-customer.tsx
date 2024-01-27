@@ -1,7 +1,7 @@
 'use client';
 import { Apple, Facebook, Google } from '@mui/icons-material';
-import { BtnDefault, BtnWarn, LinkWrap } from '..';
 import { DialogLoginBase } from './login-base';
+import { BtnDefault } from '@/shared';
 
 export function DialogLoginCustomer() {
   return (

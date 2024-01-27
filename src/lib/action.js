@@ -2,9 +2,9 @@
 import { redirect } from 'next/navigation';
 import { revalidatePath } from 'next/cache'
 import { saveMeal } from './meals'
-import { Validate } from './util';
+import { Validate, ValidateArray } from './util';
 
-export async function shareMeal(prevState,formData) {
+export async function shareMeal(prevState, formData) {
   const meal = {
     title: formData.get('title'),
     summary: formData.get('summary'),
@@ -13,24 +13,18 @@ export async function shareMeal(prevState,formData) {
     creator: formData.get('name'),
     creator_email: formData.get('email'),
   }
-  try{
-    Validate(meal,'title');
-    Validate(meal,'summary');
-    Validate(meal,'instructions');
-    Validate(meal,'creator');
-    Validate(meal,'creator');
-    Validate(meal,'creator_email');
-  
+  try {
+    ValidateArray(meal, ['title', 'summary', 'instructions', 'creator', 'creator_email'])
   } catch (err) {
     return {
       message: err.message
     }
   }
- 
-  if(
+
+  if (
     !meal.creator_email.includes('@') ||
-    !meal.image || 
-    meal.image.size === 0 
+    !meal.image ||
+    meal.image.size === 0
   ) {
     return {
       message: 'Invalid Input'

@@ -1,5 +1,5 @@
 import { DialogLoginCustomer } from ".";
-import { DialogLoginCreator } from "./login-creator";
+import { DialogLoginCreator } from "./login/login-creator";
 
 export function DialogAll() {
   return (<>

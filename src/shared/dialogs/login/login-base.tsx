@@ -1,15 +1,18 @@
 'use client'
 import { FormControl, FormControlLabel, Radio, RadioGroup } from '@mui/material';
-import { BtnSuccess, BtnWarn, InputWrapper, LinkWrap, Txt, TxtPassword } from '..';
-import { MatDialog } from './base-mat-dialog';
-import { useEffect, useState } from 'react';
+import { BtnSuccess, BtnWarn, InputWrapper, LinkWrap, Txt, TxtPassword } from '../..';
+import { MatDialog } from '../base-mat-dialog';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { dialogHide } from '@/core/redux/slice/dialogz';
+import { useRouter } from 'next/navigation';
 
 export function DialogLoginBase({ children, dialogName, heading, type }: any) {
   const [typez, setTypez] = useState(type)
   const dispatch = useDispatch();
-  const logIn = (data: any) => {
+  const router = useRouter();
+
+  const logIn = () => {
     
   }
   // useEffect(() => {

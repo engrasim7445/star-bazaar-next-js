@@ -1,6 +1,6 @@
-import { Error, Success } from "@/core/alertz";
-import { HttpPOST } from "@/core/http";
 import { StrgKey, StrgSet } from "@/core/storage";
+import { HttpPOST } from "@/http/http";
+import { Success } from "@/utils/alertz";
 
 export function Login({password, email, userType}: any) {
   let dto: any = {

@@ -64,6 +64,15 @@ export function Validate(obj, key) {
     throw new Error(`${key} is required`)
   }
 }
+export function ValidateArray(obj, keys) {
+  keys.forEach(k => {
+    if (!obj[k] || obj[k].trim() === '') {
+      throw new Error(`${k} is required`)
+    }
+  })
+ 
+}
+
 export async function CreateDirIfNot(folder) {
   try {
     await access(folder)

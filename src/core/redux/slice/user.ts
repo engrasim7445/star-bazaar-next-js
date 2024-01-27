@@ -16,7 +16,7 @@ const Slice = createSlice({
       StrgSet('user', d)
     },
     getUser: (state, action) => {
-      state = StrgGet('user')
+      state.data = StrgGet('user') || {}
     }
   }
 });

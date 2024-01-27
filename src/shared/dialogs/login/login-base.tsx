@@ -12,25 +12,24 @@ import { HTTP_SignIn } from '@/http/auth';
 export function DialogLoginBase({ children, dialogName, heading, type }: any) {
   const [typez, setTypez] = useState(type)
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(
-      formzInit({
-        userType: 'customer', 
-      })
-    )
-  }, [])
-
-
-  
   const router = useRouter();
-  
   const formz = useSelector((state: any) => state?.formz.data);
   const logIn = () => {
+    setTypez(type)
+    dispatch(
+      formzInit({
+        userType: typez, 
+      })
+    )
     console.log(formz)
     HTTP_SignIn({
-      ...formz
-    }, dispatch).then((result) => {
-      if(result?.user) {
+      ...formz,
+      userType: typez
+    }, dispatch)
+    .then((res) => {
+      if(res?.user) {
+        router.push(`profile/${res.user.type}`),
+        handleClose();
       }
     })
   }

@@ -16,9 +16,11 @@ export function LinkFragement({ fragment, children, className }: any) {
   return <Link href={'#' + fragment}  className={`h-full cursor-pointer ${className}`}>{children}</Link>;
 }
 
-export function LinkFooter({ url, className, lbl, children }: any) {
+export function LinkFooter({ url, className, lbl, children, onClick }: any) {
+  onClick = onClick || function () {}
   return (
     <Link
+      onClick={onClick}
       href={url}
       className={`flex items-center mb-2 hover:text-yellow-200 ${className}`}>
       {children ? children : <StarRounded className='me-3'/>}
@@ -39,14 +41,13 @@ export function LinkBack({ url, className, lbl, icon }: any) {
     </Link>
   );
 }
-export function LinkNav({ lbl, children, className, url, onClick }: any) {
+export function LinkNav({ lbl, children, className, url, onClick, isHide }: any) {
   url = url || '#'
-  return (
-    <Link href={url} onClick={() => onClick()} className={`flex flex-col justify-center text-center  cursor-pointer text-orange hover:text-yellow ${className}`}>
-      {children}
-      <span>{lbl}</span>
-    </Link>
-  );
+  return (!isHide ? null : <Link href={url} onClick={() => onClick()} 
+    className={`flex flex-col justify-center text-center  cursor-pointer text-orange hover:text-yellow ${className}`}>
+    {children}
+    <span>{lbl}</span>
+  </Link> );
 }
 export function ChksPrivacy_Terms() {
   return (

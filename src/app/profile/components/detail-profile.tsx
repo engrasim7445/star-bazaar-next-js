@@ -1,4 +1,6 @@
 'use client';
+import { getUser } from '@/core/redux/slice/user';
+import { StrgClear } from '@/core/storage';
 import { CardImageUtil, LinkFooter, ProfessionBage } from '@/shared';
 import {
   AccountBalanceWallet,
@@ -7,8 +9,18 @@ import {
   Logout,
   PowerSettingsNewRounded,
 } from '@mui/icons-material';
+// import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
+import { useDispatch } from 'react-redux';
 
 export function DetailProfile({ children }: any) {
+  const router = useRouter();
+  const dispatch = useDispatch()
+  const logout = () => {
+    StrgClear();
+    dispatch(getUser({}))
+    router.replace('/')
+  }
   return (
     <div className="col-span-12 flex ">
       <CardImageUtil className="h-48 me-3" />
@@ -17,8 +29,8 @@ export function DetailProfile({ children }: any) {
           <LinkFooter url="" lbl="Edit Profile">
             <DrawTwoTone className="me-3" />
           </LinkFooter>
-          <LinkFooter url="" lbl="Logout" icon="settings_power">
-            <PowerSettingsNewRounded className="ms-10 me-3" />
+          <LinkFooter url="/" lbl="Logout" icon="settings_power" onClick={logout}>
+            <PowerSettingsNewRounded className="ms-10 me-3"  />
           </LinkFooter>
         </h2>
         <h2 className="text-xl  leading-none">Name of the Creator</h2>

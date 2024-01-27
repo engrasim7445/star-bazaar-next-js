@@ -9,14 +9,23 @@ export function StrgGetToken() {
 
 
 
-
+export function StrgClear(key: string = ''){
+  if(key) {
+    localStorage.removeItem(key)
+  }else  {
+    localStorage.clear();
+  }
+}
 
 export function StrgSet(key: string, value: any) {
   const result = typeof(value) == 'string' ? value : JSON.stringify(value)
   localStorage.setItem(key, result)
 }
 export function StrgGet(key: string) {
-  return JSON.parse(localStorage.getItem(key) || '')
+  const jsonData = localStorage.getItem(key)
+  if(jsonData) {
+    return JSON.parse(localStorage.getItem(key) || '')
+  } else return ''
 }
 
 export const StrgKey = {

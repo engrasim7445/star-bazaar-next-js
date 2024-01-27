@@ -31,7 +31,6 @@ export function DialogLoginBase({ children, dialogName, heading, type }: any) {
       ...formz
     }, dispatch).then((result) => {
       if(result?.user) {
-        handleClose()
       }
     })
   }

@@ -67,3 +67,17 @@ export interface Param {
   body?: any;
   method?: 'POST' | 'PUT' | 'DELETE' | 'GET' | 'PATCH';
 }
+
+
+// HttpPOST({
+//   ep: EP.SIGN_IN,
+//   body: {
+//     ...data,
+//     type:'email',
+//     loginField:data.email
+//   }
+// }).then((res) => {
+//   // const {token, user } = data
+//   if (res.isSuccess) {
+//   }
+// })

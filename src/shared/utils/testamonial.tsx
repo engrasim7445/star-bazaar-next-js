@@ -1,11 +1,8 @@
 'use client';
-import { ContainerXL } from '@/theme';
 import { Imgz } from '.';
 // import Sli from "../../../node_modules/react-slick/dist/react-slick.js";
 import Slider from 'react-slick';
-import Head from 'next/head';
 import { useScreenSize } from '@/core';
-import { useState } from 'react';
 import { NavigateBefore, NavigateNext } from '@mui/icons-material';
 
 export function Testamonial() {

@@ -1,27 +1,27 @@
 'use client';
 import { createSlice } from '@reduxjs/toolkit';
-import { initialState } from '../global-redux';
+import { initialObj } from '../global-redux';
 
 const Slice = createSlice({
   name: 'formz',
-  initialState : {} as any,
+  initialState : initialObj,
   reducers: {
     formzInit: (state, action) => {
-      state = {
+      state.data = {
         ...action.payload,
       }
     },
     formzUpdate: (state, action) => {
-      state = {
-        ...state,
+      state.data = {
+        ...state.data,
         ...action.payload,
       }
     },
     formzUpdateKey: (state, action) => {
-      state[state.key] = state.value
+      state.data[state.data.key] = state.data.value
     },
     formzReset: (state, action) => {
-      state = { }
+      state.data = { }
     }
   }
 });

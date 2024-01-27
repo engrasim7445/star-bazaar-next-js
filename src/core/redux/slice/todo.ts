@@ -1,10 +1,10 @@
 'use client';
 import { createSlice, nanoid } from '@reduxjs/toolkit';
-import { initialState } from '../global-redux';
+import { initialArr } from '../global-redux';
 
 const Slice = createSlice({
   name: 'sliceTodo',
-  initialState,
+  initialState: initialArr,
   reducers: {
     addTodo: (state, action) => {
       const data = {

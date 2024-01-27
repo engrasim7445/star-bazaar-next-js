@@ -1,25 +1,25 @@
 'use client';
 import { createSlice } from '@reduxjs/toolkit';
-import { initialState } from '../global-redux';
+import { initialObj } from '../global-redux';
 
 const Slice = createSlice({
   name: 'dialogz',
-  initialState: {} as any,
+  initialState: initialObj, // We Need data in it
   reducers: {
     dialogShow: (state, action) => {
-      state = {
+      state.data = {
         ...dialogs,
         ...action.payload,
       }
     },
     dialogHide: (state, action) => {
-      state = {
-        ...state,
+      state.data = {
+        ...state.data,
         ...action.payload,
       }
     },
     dialogHideAll: (state, action) => {
-      state = {
+      state.data = {
         ...dialogs
       }
     }

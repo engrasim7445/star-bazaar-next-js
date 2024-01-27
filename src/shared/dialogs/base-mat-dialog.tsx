@@ -18,7 +18,7 @@ export function MatDialog({ children, dialogName, className, width }: any) {
   return (
     <Fragment>
       <Dialog
-        open={dialogz[dialogName] || false}
+        open={dialogz?.data[dialogName] || false}
         onClose={handleClose}
         // fullScreen={fullScreen}
         scroll={'body'}

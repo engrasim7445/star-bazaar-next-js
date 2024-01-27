@@ -1,11 +1,12 @@
 'use client';
 
 import { StrgGet, StrgSet } from "@/core/storage";
-import { createSlice, nanoid, current } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
+import { initialObj } from "../global-redux";
 
 const Slice = createSlice({
   name: 'user',
-  initialState: {},
+  initialState: initialObj,
   reducers: {
     setUser: (state, action) => {
       state = action.payload

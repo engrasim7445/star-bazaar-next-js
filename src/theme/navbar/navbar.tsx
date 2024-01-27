@@ -56,7 +56,7 @@ export function NavBar() {
       <div className="col-span-2 md:col-span-1 flex justify-center items-center md:order-3 ">
         <LinkNav
           lbl="Profile"
-          url={`/profile/${user.type}`}
+          url={`profile/${user.type}`}
           isHide={user?.type}
         >
           <FolderSpecial className="flex place-self-center" />

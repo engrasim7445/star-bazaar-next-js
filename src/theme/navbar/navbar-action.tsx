@@ -10,7 +10,6 @@ export function NavCustomerLogin({isHide}: any) {
 
   const dialogOpen = () => {
     dispatch(dialogShow({LoginCustomer: true}));
-    console.log(dialogz)
   };
   return (
     <LinkNav lbl="Customer Login" icon="person" url="#customer_login" onClick={dialogOpen} isHide={isHide} >

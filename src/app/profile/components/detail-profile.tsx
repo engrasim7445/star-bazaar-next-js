@@ -1,11 +1,10 @@
 'use client';
 import { getUser } from '@/core/redux/slice/user';
 import { StrgClear } from '@/core/storage';
-import { CardImageUtil, LinkFooter, ProfessionBage } from '@/shared';
+import { CardImageUtil, LinkFooter } from '@/shared';
 import {
   AccountBalanceWallet,
   DrawTwoTone,
-  EditAttributesRounded,
   Logout,
   PowerSettingsNewRounded,
 } from '@mui/icons-material';

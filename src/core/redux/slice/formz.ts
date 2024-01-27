@@ -17,9 +17,12 @@ const Slice = createSlice({
         ...action.payload,
       }
     },
-    // formzReset: (state, action) => {
-    //   state.data = { }
-    // }
+    formzUpdateKey: (state, action) => {
+      state.data[state.data.key] = state.data.value
+    },
+    formzReset: (state, action) => {
+      state.data = { }
+    }
   }
 });
 
@@ -27,6 +30,6 @@ const dialogs = {
   
 }
 
-export const { formzInit, formzUpdate } = Slice.actions
+export const { formzInit, formzUpdate, formzReset, formzUpdateKey } = Slice.actions
 export default Slice.reducer;
 

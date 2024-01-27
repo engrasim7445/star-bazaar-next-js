@@ -1,5 +1,5 @@
 'use client';
-import { dialogHide, dialogShow } from '@/core/redux/slice/dialogz';
+import { dialogShow } from '@/core/redux/slice/dialogz';
 import { LinkNav } from '@/shared';
 import { Person2Rounded, Star } from '@mui/icons-material';
 import { useDispatch, useSelector } from 'react-redux';

@@ -62,7 +62,7 @@ export function NavBar() {
           <FolderSpecial className="flex place-self-center" />
         </LinkNav>
         <NavCustomerLogin isHide={!user?.type} />
-        <NavBusinessLogin isHide={!user?.type} />
+        {/* <NavBusinessLogin isHide={!user?.type} /> */}
       </div>
       <div className="col-span-10 md:col-span-6 flex justify-center items-center ">
         <div

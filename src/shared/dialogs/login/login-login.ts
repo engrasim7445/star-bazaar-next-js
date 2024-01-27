@@ -2,30 +2,22 @@ import { StrgKey, StrgSet } from "@/core/storage";
 import { HttpPOST } from "@/http/http";
 import { Success } from "@/utils/alertz";
 
-export function Login({password, email, userType}: any) {
-  let dto: any = {
-    email,
-    password,
-    userType,
-    type: 'email',
-  }
-  // if (this.addUpdateForm.valid) {
-  if (!password) return Error('Please enter password');
-  if (!email) return Error('Please enter email')
-  HttpPOST({
-    ep: '',
-    body: dto,
-  }).then((res) => {
-    console.log(res)
-    const { isSuccess, data, token } = res;
-    if (isSuccess) {
-      Success('Login Successfull')
-      StrgSet(StrgKey.USER, data.user)
-      StrgSet(StrgKey.TOKEN, token.accessToken)
-      // this.analytics.Log_In('user_login', 'Register with Email', .data?.user?._id);
-    }
-  })
-}
+// export function Login({password, email, userType}: any) {
+  
+//   HttpPOST({
+//     ep: '',
+//     body: dto,
+//   }).then((res) => {
+//     console.log(res)
+//     const { isSuccess, data, token } = res;
+//     if (isSuccess) {
+//       Success('Login Successfull')
+//       StrgSet(StrgKey.USER, data.user)
+//       StrgSet(StrgKey.TOKEN, token.accessToken)
+//       // this.analytics.Log_In('user_login', 'Register with Email', .data?.user?._id);
+//     }
+//   })
+// }
 // loginWithGoogle() {
 //   this.GoogleAuth();
 //   let info = {

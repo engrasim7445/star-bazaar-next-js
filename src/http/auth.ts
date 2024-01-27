@@ -3,14 +3,27 @@
 import { useDispatch } from "react-redux";
 import { EP } from "./end-points";
 import { HttpPOST } from "./http";
-import { Success } from "@/utils/alertz";
+import { Error, Success } from "@/utils/alertz";
 import { setUser } from "@/core/redux/slice/user";
 import { StrgSet } from "@/core/storage";
 
-export function SIGN_IN() {
-  const dispatch = useDispatch()
+export interface SignIn {
+  email: string;
+  loginField?: string;
+  password: string;
+  userType: string;
+  type?: 'email' | 'phone'
+}
+export function HTTP_SignIn(data: SignIn, dispatch: any): Promise<any> {
+  if (!data.password) return Error('Please enter password');
+  if (!data.email) return Error('Please enter email')
   return HttpPOST({
-    ep: EP.SIGN_IN
+    ep: EP.SIGN_IN,
+    body: {
+      ...data,
+      type:'email',
+      loginField:data.email
+    }
   }).then((res) => {
     // const {token, user } = data
     if (res.isSuccess) {
@@ -21,13 +34,13 @@ export function SIGN_IN() {
       StrgSet('token', token.accessToken);
       StrgSet('accessToken', token.accessToken);
 
-      if (user.type == 'creator') {
+      if (data.userType == 'creator') {
         // Navigate to Creator Profile
-      } else if (user.type == 'customer') {
+      } else if (data.userType == 'customer') {
         // Navigate to Customer Profile
-      } else if (user.type == 'business') {
+      } else if (data.userType == 'business') {
 
-      } else if (user.type == 'agent') {
+      } else if (data.userType == 'agent') {
 
       }
       return { user }

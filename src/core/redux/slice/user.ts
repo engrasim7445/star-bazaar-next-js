@@ -9,8 +9,10 @@ const Slice = createSlice({
   initialState: initialObj,
   reducers: {
     setUser: (state, action) => {
-      state = action.payload
-      const d = JSON.stringify(current(state));
+      const {payload} = action;
+      state.data = payload
+      console.log()
+      const d = JSON.stringify(payload);
       StrgSet('user', d)
     },
     getUser: (state, action) => {

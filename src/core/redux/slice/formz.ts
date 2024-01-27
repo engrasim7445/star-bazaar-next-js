@@ -28,4 +28,15 @@ const Slice = createSlice({
 
 export const { formzInit, formzUpdate, formzReset, formzUpdateKey } = Slice.actions
 export default Slice.reducer;
+// const dialogz = useSelector((state: any) => state?.dialogz);
+
+// const dispatch = useDispatch();
+// useEffect(() => {
+//   dispatch(
+//     formzInit({
+//       userType: type, 
+//       type: 'email', 
+//     })
+//   )
+// }, [])
 

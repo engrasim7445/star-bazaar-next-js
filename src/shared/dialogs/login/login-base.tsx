@@ -2,18 +2,38 @@
 import { FormControl, FormControlLabel, Radio, RadioGroup } from '@mui/material';
 import { BtnSuccess, BtnWarn, InputWrapper, LinkWrap, Txt, TxtPassword } from '../..';
 import { MatDialog } from '../base-mat-dialog';
-import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { dialogHide } from '@/core/redux/slice/dialogz';
 import { useRouter } from 'next/navigation';
+import { formzInit } from '@/core/redux/slice/formz';
+import { HTTP_SignIn } from '@/http/auth';
 
 export function DialogLoginBase({ children, dialogName, heading, type }: any) {
   const [typez, setTypez] = useState(type)
   const dispatch = useDispatch();
-  const router = useRouter();
+  useEffect(() => {
+    dispatch(
+      formzInit({
+        userType: 'customer', 
+      })
+    )
+  }, [])
 
+
+  
+  const router = useRouter();
+  
+  const formz = useSelector((state: any) => state?.formz.data);
   const logIn = () => {
-    
+    console.log(formz)
+    HTTP_SignIn({
+      ...formz
+    }, dispatch).then((result) => {
+      if(result?.user) {
+        handleClose()
+      }
+    })
   }
   // useEffect(() => {
   // }, [])
@@ -26,7 +46,7 @@ export function DialogLoginBase({ children, dialogName, heading, type }: any) {
       <h1 className="text-xl">{heading}</h1>
       <h2 className="text-lg mt-3">Enter Your Email Id & Password To Login</h2>
       <InputWrapper className="mt-2 bg-white text-black ">
-        <Txt name="userName" lbl=""/>
+        <Txt name="email" lbl=""/>
       </InputWrapper>
       <InputWrapper className="mt-4 bg-white text-black">
         <TxtPassword name="password" lbl="" />

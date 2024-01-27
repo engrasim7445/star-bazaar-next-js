@@ -50,6 +50,7 @@ export function TxtPassword({
 }: any) {
   const [toggleType, setToggleType] = useState('password');
   onChange = onChange || function () {};
+  const { formz, updateForm } = BaseFormCntrlHook({name});
   return (
     <TxtBase
       lbl={lbl}
@@ -61,6 +62,7 @@ export function TxtPassword({
         value={val}
         id={id || name}
         className={`w-full h-full bg-transparent ${clz2}`}
+        onChange={updateForm}
         // disabled={true}
       />
       {toggleType == 'password' ? (

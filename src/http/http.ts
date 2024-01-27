@@ -36,23 +36,26 @@ function QueryToURL(param: Partial<Param>) {
   if (param.ep) result = `${result}/${param.ep}`
   if (param.res) result = `${result}/${param.res}`
   if (param.param) result = `${result}?${param.param}`
-  const queryResult = objToURLQuery(param.query)
+  const queryResult = objToURLQuery(param?.query)
   if (param.query && !param.param) result = `${result}?${queryResult}`
   if (param.query && param.param) result = `${result}${queryResult}`
   return result;
 }
 
-function objToURLQuery(param: Partial<Param>) {
+function objToURLQuery(query: any) {
   // For Simple Object Only
   let result = '';
-  const obj = param.query;
-  Object.keys(obj).forEach((key) => {
-    if (obj[key] != null && obj[key] != '' && obj[key] != undefined) {
-      result += '&' + key + '=' + obj[key];
-    }
-  });
-  if (result) result = result.substring(1, result.length);
-  return result;
+  if (query) {
+    const obj = query;
+    Object.keys(obj).forEach((key) => {
+      if (obj[key] != null && obj[key] != '' && obj[key] != undefined) {
+        result += '&' + key + '=' + obj[key];
+      }
+    });
+    if (result) result = result.substring(1, result.length);
+    return result;
+  } else return '';
+
 }
 
 export interface Param {

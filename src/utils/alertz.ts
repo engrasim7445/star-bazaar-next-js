@@ -3,7 +3,7 @@ export function Error(p: string) {
   param.title = param.title || 'Error';
   param.msg = param.msg || param || 'Something Went Wrong!';
   param.icon = 'error'
-  return alert(param)
+  return alertz(param)
 }
 
 export function Success(p: string) {
@@ -11,7 +11,7 @@ export function Success(p: string) {
   param.title = param.title || 'Success';
   param.msg = param.msg || 'Submitted Successfully!';
   param.icon = 'success'
-  return alert(param)
+  return alertz(param)
 }
 
 export function Warn(p: string) {
@@ -19,7 +19,7 @@ export function Warn(p: string) {
   param.title = param.title || 'Warning';
   param.msg = param.msg || 'Are you Sure!';
   param.icon = 'warn'
-  return alert(param)
+  return alertz(param)
 }
 
 export function Info(p: string) {
@@ -30,8 +30,8 @@ export function Info(p: string) {
   return alert(param)
 }
 
-export function alertz(param: AlertMessage) {
-
+export function alertz(param: AlertMessage): Promise<AlertMessage> {
+  return Promise.reject(param)
 }
 export interface AlertMessage {
   title?: string;

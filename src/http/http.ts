@@ -1,5 +1,9 @@
 
 export const baseURL: string = 'https://dev-app.starbazaar.pk/api/v1';
+export function HttpGET_Strg(param: Param) {
+  param.method = 'GET'
+  return MyFetch(param)
+}
 
 export function HttpGET(param: Param) {
   param.method = 'GET'

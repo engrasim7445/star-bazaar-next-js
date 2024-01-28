@@ -8,6 +8,12 @@ const nextConfig = {
         hostname: 'dqc65nwcqwvpl.cloudfront.net',
         port: '',
         pathname: '**',
+      }, 
+      {
+        protocol: 'https',
+        hostname: 'starbazaarpublicbucket.s3.amazonaws.com',
+        port: '',
+        pathname: '**'
       }
     ],
   }

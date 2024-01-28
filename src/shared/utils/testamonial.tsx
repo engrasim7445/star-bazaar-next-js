@@ -3,12 +3,18 @@ import { Imgz } from '.';
 // import Sli from "../../../node_modules/react-slick/dist/react-slick.js";
 import Slider from 'react-slick';
 import { useScreenSize } from '@/core';
-import { NavigateBefore, NavigateNext } from '@mui/icons-material';
+import { NavigateBefore, NavigateNext, Star } from '@mui/icons-material';
+import { HttpStrgTestimonial } from '@/http/strg-http';
+import { useEffect, useState } from 'react';
 
 export function Testamonial() {
   let slider: any;
-  let data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  data = [...data, ...data, ...data];
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    HttpStrgTestimonial().then(d => {
+      setData(d)
+    })
+  }, []) 
   const screenSize = useScreenSize();
   // let [slidesToShow, setSlidesToShow] = useState()
   const settings = {
@@ -40,20 +46,17 @@ export function Testamonial() {
           ref={(c) => (slider = c)}
           slidesToShow={screenSize.screen}
         >
-          <InternalSlide />
-          <InternalSlide />
-          <InternalSlide />
-          <InternalSlide />
-          <InternalSlide />
-          <InternalSlide />
-          <InternalSlide />
+          {
+            data.map((x: any) => <InternalSlide key={x._id} data={x}/>)
+          }
         </Slider>
       </div>
     </>
   );
 }
 
-export function InternalSlide() {
+export function InternalSlide({data}: any) {
+  const ratings = [1,2,3,4,5]
   return (
     <div>
       <div
@@ -64,26 +67,32 @@ export function InternalSlide() {
         }}
       >
         <div className="flex">
-          <Imgz width="50" height="50" />
-          <h2 className="mt-3 ms-2 text-xl ">Name Goes Here</h2>
+          <div style={{width: '70px', height: '70px', borderRadius: '50px', overflow: 'hidden'}}>
+          <Imgz fill src={data.image} />
+          </div>
+          
+          <h2 className="mt-3 ms-2 text-xl ">{data.name || ''}</h2>
         </div>
 
         <div>
           <div className="my-2">
-            <span
-              className="material-icons text-yellow-200 "
-              style={{ textShadow: '0px 0px 8px yellow ' }}
-            >
-              star
-            </span>
-            <span className="material-icons text-yellow-200">star</span>
-            <span className="material-icons text-yellow-200">star</span>
-            <span className="material-icons text-yellow-200">star</span>
-            <span className="material-icons text-gray-700">star</span>
+          
+            {
+              ratings.map((x: any, i: any) => (
+              i <= data.rating ? <Star 
+                fill='true' 
+                key={'star-fill-'+i} 
+                style={{color: 'yellow'}}
+              /> : <Star 
+                key={'star-none-'+i} 
+                fill='false'
+                style={{color: 'gray'}}
+              />
+              ))
+            }
           </div>
-
           <p className="text-sm">
-            <i>Here goes my some text that needs to be displayed</i>
+            <i>{data.comment || ''}</i>
           </p>
         </div>
       </div>

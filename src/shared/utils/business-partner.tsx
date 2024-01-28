@@ -1,18 +1,26 @@
+'use client'
+import { useEffect, useState } from "react";
 import { Imgz } from ".";
+import { HttpStrgBrands } from "@/http/strg-http";
 
 export function BusinessPartner() {
-  let data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  data = [...data, ...data, ...data];
+  const [data, setData] = useState([] as any);
+  useEffect(() => {
+    HttpStrgBrands().then(d => {
+      setData(d)
+    })
+  }, []) 
   return (
     <>
       <h4 className="text-2xl col-span-12 mt-2">Business Partner</h4>
       <div className="col-span-12 overflow-hidden mb-2">
       <div className="logos-slide">
-            {data.map((x, i) => (
+            {data.map((x: any, i: any) => (
               <Imgz
                 width="100"
                 height="100"
                 className="mx-3"
+                src={x.image}
                 key={'partner_' + i}
               />
             ))}

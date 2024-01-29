@@ -10,7 +10,7 @@ export async function SaveFile(image, folder) {
 
   stream.write(Buffer.from(bufferedImage), (error) => {
     if (error) {
-      console.error(error)
+      console.error({SaveFile: error})
       throw new Error('Saving image failed');
     }
   });

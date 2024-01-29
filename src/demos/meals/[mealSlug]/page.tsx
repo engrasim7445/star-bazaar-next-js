@@ -26,9 +26,7 @@ import fs from 'fs/promises';
 // {meal, params }: any
 export default async function MealDetailsPage(props: any) {
   // WHEN NOT USING GET STATIC PROPS
-  console.log({props})
   const meal = await getMeal(props.params.mealSlug);
-  console.log({meal})
   if(!meal) {
     return notFound();
   }

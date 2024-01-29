@@ -8,7 +8,6 @@ import { Success } from "@/utils/alertz";
 //     ep: '',
 //     body: dto,
 //   }).then((res) => {
-//     console.log(res)
 //     const { isSuccess, data, token } = res;
 //     if (isSuccess) {
 //       Success('Login Successfull')
@@ -133,7 +132,6 @@ import { Success } from "@/utils/alertz";
 //         const credential = OAuthProvider.credentialFromError(error);
 //       });
 //   } catch (e) {
-//     console.log(e);
 //   }
 // }
 // loginWithFacebook() {

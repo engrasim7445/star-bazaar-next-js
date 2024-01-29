@@ -21,7 +21,6 @@ export function DialogLoginBase({ children, dialogName, heading, type }: any) {
         userType: typez, 
       })
     )
-    console.log(formz)
     HTTP_SignIn({
       ...formz,
       userType: typez

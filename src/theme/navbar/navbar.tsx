@@ -1,7 +1,7 @@
 'use client';
 import { Imgz, LinkNav, LinkWrap } from '@/shared';
 import { ContainerXL } from '..';
-import { NavBusinessLogin, NavCreatorLogin, NavCustomerLogin } from './navbar-action';
+import { NavCreatorLogin, NavCustomerLogin } from './navbar-action';
 import {
   ArrowDropDown,
   FolderSpecial,
@@ -18,7 +18,6 @@ export function NavBar() {
   // const isPublic = isPublicUrl() ? 'hidden' : '';
   const isPublic = '';
   const user = useSelector((state: any) => state?.user?.data || {});
-  console.log({user})
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getUser({}))

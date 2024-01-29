@@ -11,7 +11,6 @@ const Slice = createSlice({
     setUser: (state, action) => {
       const {payload} = action;
       state.data = payload
-      console.log()
       const d = JSON.stringify(payload);
       StrgSet('user', d)
     },

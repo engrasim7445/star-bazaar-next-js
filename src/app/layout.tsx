@@ -26,7 +26,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   // useEffect(() => {
-  //   console.log('called!')
   // })
 
   return (

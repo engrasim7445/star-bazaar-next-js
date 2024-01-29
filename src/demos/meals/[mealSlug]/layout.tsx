@@ -2,7 +2,6 @@
 
 // MealDetailsPage.getInitialProps = async ({params}: any) => {
 //   const meal = await getMeal(params.mealSlug);
-//   console.log({meal})
 //   return {
 //     pageProps: {
 //       meal,
@@ -13,7 +12,6 @@
 // }
 // export async function getInitialProps({params}: any) {
 //   const meal = await getMeal(params.mealSlug);
-//   console.log({meal})
 //   return {
 //     pageProps: {
 //       meal,

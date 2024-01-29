@@ -27,7 +27,7 @@ export async function SaveFileToDir(image, folder) {
     const stream = createWriteStream(`public/${fileName}`);
     stream.write(Buffer.from(bufferedImage), (error) => {
       if (error) {
-        console.error(error)
+        console.error({createWriteStream: error})
         throw new Error('Saving image failed');
       }
     });

@@ -23,7 +23,6 @@ export function StrgSet(key: string, value: any) {
 }
 export function StrgGet(key: string) {
   const jsonData = localStorage.getItem(key)
-  console.log({key, jsonData})
   if(jsonData != null && jsonData != undefined && jsonData != '') {
     return JSON.parse(jsonData)
   } else return ''

@@ -16,10 +16,7 @@ export function HomeRowAll() {
     activeProfessions:  [] as any //defaultData
   });
   useEffect(() => {
-    HttpStrgHome().then((d) => {
-      console.log({d})
-      setData(d);
-    });
+    HttpStrgHome().then(setData);
   }, []);
   return (
     <>

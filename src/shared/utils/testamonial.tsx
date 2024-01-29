@@ -11,9 +11,7 @@ export function Testamonial() {
   let slider: any;
   const [data, setData] = useState([]);
   useEffect(() => {
-    HttpStrgTestimonial().then(d => {
-      setData(d)
-    })
+    HttpStrgTestimonial().then(setData)
   }, []) 
   const screenSize = useScreenSize();
   // let [slidesToShow, setSlidesToShow] = useState()

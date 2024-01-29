@@ -6,9 +6,7 @@ import { HttpStrgBrands } from "@/http/strg-http";
 export function BusinessPartner() {
   const [data, setData] = useState([] as any);
   useEffect(() => {
-    HttpStrgBrands().then(d => {
-      setData(d)
-    })
+    HttpStrgBrands().then(setData)
   }, []) 
   return (
     <>

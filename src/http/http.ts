@@ -1,8 +1,31 @@
+import { StrgGet, StrgSet } from "@/core/storage";
 
 export const baseURL: string = 'https://dev-app.starbazaar.pk/api/v1';
 export function HttpGET_Strg(param: Param) {
+  // param.ep +=1
   param.method = 'GET'
-  return MyFetch(param)
+  let result = StrgGet(param.ep)
+  if(result) {
+    return new Promise((resolve, reject) => {
+      return resolve(result)
+    })
+  }
+  return MyFetch(param).then(res => {
+    if(res.isSuccess) {
+      let {data} = res
+      if(data){
+        data = JSON.stringify(data)
+        StrgSet(param.ep, data)
+      }
+      return res.data
+    } else return {}
+  })
+}
+export function HttpGETs_Strg(param: Param){
+  return HttpGET_Strg(param).then(res => {
+    if(!res?.length) return [];
+    else return res;
+  })
 }
 
 export function HttpGET(param: Param) {

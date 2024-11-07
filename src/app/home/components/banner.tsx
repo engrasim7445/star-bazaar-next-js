@@ -1,4 +1,5 @@
 'use client';
+
 import { LinkWrap } from '@/shared';
 import Image from 'next/image';
 

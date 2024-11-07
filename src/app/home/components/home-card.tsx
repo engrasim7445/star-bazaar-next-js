@@ -1,5 +1,7 @@
 import { CardImageUtil, LinkWrap } from '@/shared';
 import { Timer } from '@mui/icons-material';
+
+
 export function HomeCard({ d }: any) {
   let pricing = 0
   if(d.pricing[0].isActive) {

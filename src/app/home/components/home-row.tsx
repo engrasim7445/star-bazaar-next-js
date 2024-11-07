@@ -29,15 +29,15 @@ export function HomeRow({ d, noCategory }: any) {
   );
 }
 
-// export function Card_6() {
-//   return (
-//     <>
-//       <HomeCard d={{ image: '/temp/mikaal.webp' }} />
-//       <HomeCard d={{ image: '/temp/mahira-khan.webp' }} />
-//       <HomeCard />
-//       <HomeCard />
-//       <HomeCard />
-//       <HomeCard />
-//     </>
-//   );
-// }
+export function Card_6() {
+  return (
+    <>
+      <HomeCard d={{ image: '/temp/mikaal.webp' }} />
+      <HomeCard d={{ image: '/temp/mahira-khan.webp' }} />
+      <HomeCard />
+      <HomeCard />
+      <HomeCard />
+      <HomeCard />
+    </>
+  );
+}
